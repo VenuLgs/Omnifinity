@@ -1,12 +1,15 @@
 {
   "files": {
     "main.css": "/static/css/main.b51a4264.css",
-    "main.js": "/static/js/main.378542f0.js",
+    "main.js": "/static/js/main.3c6ad844.js",
     "static/media/pexels-tima-miroshnichenko-5377697 (2160p).mp4": "/static/media/pexels-tima-miroshnichenko-5377697 (2160p).1595ab188b0030418c0b.mp4",
+    "static/media/homepage3.webp": "/static/media/homepage3.103ac80d726c4357232c.webp",
+    "static/media/homepage4.webp": "/static/media/homepage4.357baa8b1cc8c3a04b11.webp",
     "static/media/fa-solid-900.ttf": "/static/media/fa-solid-900.45a265d0f07b31cde85f.ttf",
     "static/media/polarioncsm.webp": "/static/media/polarioncsm.afb94044b6a6d599008f.webp",
     "static/media/polarionmedicalicon.png": "/static/media/polarionmedicalicon.2897d165a8a2c0af7bfb.png",
     "static/media/enterpriseSystemsbg.jpg": "/static/media/enterpriseSystemsbg.f324e73cb0ea9351e3d8.jpg",
+    "static/media/homepage2.webp": "/static/media/homepage2.f968d4c55ef92a88470b.webp",
     "static/media/fa-brands-400.ttf": "/static/media/fa-brands-400.6205fd00fb1b573e9f0f.ttf",
     "static/media/sapcustomerbg.jpg": "/static/media/sapcustomerbg.144346d5e086f0f19c11.jpg",
     "static/media/sapbusinessbg.jpg": "/static/media/sapbusinessbg.ba4199addfa46e9e7bbf.jpg",
@@ -50,6 +53,7 @@
     "static/media/enterprise1.jpg": "/static/media/enterprise1.3a8c36b8a939d56a1cd4.jpg",
     "static/media/sapcustomer1.jpg": "/static/media/sapcustomer1.24d12f6628e2ee46e7da.jpg",
     "static/media/managedcloud4.jpg": "/static/media/managedcloud4.20634818cee9617e3f1d.jpg",
+    "static/media/homepage1.webp": "/static/media/homepage1.ad93dc7e50be9d2c8efa.webp",
     "static/media/mendix3.webp": "/static/media/mendix3.ba48f0045d2313b666c8.webp",
     "static/media/enterprise5.jpg": "/static/media/enterprise5.6b341f26b25e7a3ef19e.jpg",
     "static/media/enterprise6.jpg": "/static/media/enterprise6.5ca85e4e385fc936e245.jpg",
@@ -121,10 +125,10 @@
     "static/media/purple.webp": "/static/media/purple.6aca80b702fa1f4de148.webp",
     "static/media/green.webp": "/static/media/green.b211cc9da1a86f827dd5.webp",
     "main.b51a4264.css.map": "/static/css/main.b51a4264.css.map",
-    "main.378542f0.js.map": "/static/js/main.378542f0.js.map"
+    "main.3c6ad844.js.map": "/static/js/main.3c6ad844.js.map"
   },
   "entrypoints": [
     "static/css/main.b51a4264.css",
-    "static/js/main.378542f0.js"
+    "static/js/main.3c6ad844.js"
   ]
 }

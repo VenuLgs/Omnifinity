@@ -17,6 +17,11 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import "./Home.css";
 
+import homepage1 from "../../images/HomePage/homepage1.webp";
+import homepage2 from "../../images/HomePage/homepage2.webp";
+import homepage3 from "../../images/HomePage/homepage3.webp";
+import homepage4 from "../../images/HomePage/homepage4.webp";
+
 export default function HomePage() {
   const [state, updateState] = useState("EnterpriseSystems");
   useEffect(() => {
@@ -56,29 +61,25 @@ export default function HomePage() {
   const Banners = [
     {
       projectId: 1,
-      imageUrl:
-        "https://27058982.fs1.hubspotusercontent-eu1.net/hu…).png?width=2100&name=Untitled%20design%20(5).png",
+      imageUrl: homepage1,
       title: "Operate",
       description: "Master Your Operations with Expert Managed Services",
     },
     {
       projectId: 2,
-      imageUrl:
-        "https://27058982.fs1.hubspotusercontent-eu1.net/hu…tal%20core.png?width=2100&name=digital%20core.png",
+      imageUrl: homepage2,
       title: "BUILD YOUR DIGITAL CORE",
       description: "Empower Your Enterprise with Unrivalled Systems",
     },
     {
       projectId: 3,
-      imageUrl:
-        "	https://27058982.fs1.hubspotusercontent-eu1.net/hu…Transform-4.jpg?width=2100&name=1-Transform-4.jpg",
+      imageUrl: homepage3,
       title: "Embrace the AI Transformation",
       description: "Unleashing New Business Horizons",
     },
     {
       projectId: 4,
-      imageUrl:
-        "https://27058982.fs1.hubspotusercontent-eu1.net/hub/27058982/hubfs/Innovate.png?width=2100&name=Innovate.png",
+      imageUrl: homepage4,
       title: "Innovate",
       description: "Harness Cutting-Edge Frameworks for Business Innovation",
     },
@@ -168,13 +169,13 @@ export default function HomePage() {
         <div className="row">
           <div className="col-12">
             <Carousel>
-              {HomeImages.map((each, index) => (
+              {Banners.map((each, index) => (
                 <Carousel.Item>
                   <img
                     style={{ height: "750px", maxWidth: "100%" }}
                     className="d-block w-100 carouselBanner"
-                    src={`${process.env.REACT_APP_FETCH_IMAGE_URL}/uploads/banners/${each.banner.image}`}
-                    alt={each.banner.title}
+                    src={each.imageUrl}
+                    alt={each.title}
                   />
                   <div className="homepage-carousel-caption-overlay">
                     <h1
@@ -184,7 +185,7 @@ export default function HomePage() {
                         fontSize: "65px",
                       }}
                     >
-                      {each.banner.title}
+                      {each.title}
                     </h1>
                     <p
                       style={{
@@ -193,7 +194,7 @@ export default function HomePage() {
                         fontWeight: "400",
                       }}
                     >
-                      {each.banner.description}
+                      {each.description}
                     </p>
                   </div>
                 </Carousel.Item>

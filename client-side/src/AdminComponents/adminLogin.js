@@ -14,7 +14,7 @@ const AdminLogin = () => {
 
   const handleLogin = async () => {
     try {
-      const response = await fetch("http://localhost:4000/api/v1/adminlogin", {
+      const response = await fetch(`http://localhost:4000/api/v1/adminlogin`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
