@@ -7,6 +7,7 @@ import Navbar from "./Components/Header/Navbar";
 import ResellerMendixPage from "./Components/Services/ResellerMendixPage";
 import ResellerPolarionPage from "./Components/Services/ResellerPolarianPage";
 import Analytics from "./Components/Services/InnovationSolution/AnalyticsBI/Analytics.js";
+import ApplicationDevelopment from "./Components/Services/InnovationSolution/ApplicationDevelopment/ApplicationDevelopment.js"
 import AdminRegistration from "./AdminComponents/adminSignUp";
 import AdminEmailVerify from "./AdminComponents/adminEmailVerify";
 import AdminLogin from "./AdminComponents/adminLogin";
@@ -60,6 +61,7 @@ function App() {
     <>
       {!isInsideAdminPanel && <Navbar />}
       <Routes>
+      <Route path="/ApplicationDevelopment" element={<ApplicationDevelopment />} />
         <Route path="/about-us" element={<AboutUs />} />
         <Route exact path="/" element={<HomePage />} />
         <Route path="/adminregister" element={<AdminRegistration />} />

@@ -88,27 +88,24 @@ export default function Analytics() {
         <div className="row">
           <div className="col-12">
             <div>
-              <div className="AnalyticsImageContainer"></div>
+              <div className="AnalyticsImageContainer  mr-0 w-100"></div>
 
               <div className="content-container">
                 <Fade direction="up">
-                  <h6 className="pl-5 ml-5 mb-3" style={{ fontSize: "30px" }}>
+                  <h6 className="p-2  mb-3 AnalyticsSubHeadings">
                     Innovation Solutions
                   </h6>
-                  <h1
-                    className="pl-5  ml-5  mb-3"
-                    style={{ fontSize: "65px", fontWeight: "bold" }}
-                  >
+                  <h1 className="p-2   mb-3 AnalyticsHeading">
                     Advanced Analytics & <br /> Business Intelligence
                   </h1>
-                  <p className="pl-5 ml-5 mb-3" style={{ fontSize: "25px" }}>
+                  <p className="p-2 mb-3 AnalyticsParagraph">
                     Actionable Insights, Transformative Results
                   </p>
                 </Fade>
               </div>
             </div>
           </div>
-          <div className="col-12 col-md-6">
+          <div className="col-12 col-lg-6">
             <p style={{ fontSize: "18px" }} className="p-4 pl-3 mt-3">
               In today's data-driven world, businesses cannot afford to ignore
               the power of Advanced Analytics and Business Intelligence (BI).
@@ -119,14 +116,15 @@ export default function Analytics() {
               data-driven decisions and stay ahead of the curve.
             </p>
           </div>
-          <div className="col-12 col-md-6 p-5">
+          <div className="col-12 col-lg-6 p-5 d-flex justify-content-center">
             <Fade direction="down">
               <div className="AnalyticsCardsContainer shadow">
                 <h1
-                  className="p-3 text-center  mb-0 AnalyticsHeading"
+                  className="p-3 text-center  mb-0 AnalyticsEnquiryHeading"
                   style={{
                     marginBottom: "0px",
                     color: "#ffffff",
+
                     fontWeight: "bold",
                     background: "#4353ff",
                   }}
@@ -208,9 +206,8 @@ export default function Analytics() {
                   <textarea
                     required
                     rows="5"
-                    cols="85"
                     id="message"
-                    className="mb-3"
+                    className="mb-3 w-100"
                   ></textarea>
                   <button
                     className="p-3"
@@ -399,12 +396,12 @@ export default function Analytics() {
             </div>
             <div className="col-12 text-center">
               <p style={{ fontSize: "18px" }}>
-                Abacus Cambridge Partners can help you master the art of
-                utilizing real-time data streams. Solve business-critical
-                challenges, enhance the customer experience, and meet your
-                organizational goals. With 35+ years of industry expertise and
-                dedicated GCP-certified specialists, we promise impactful,
-                scalable, and quantifiable results.
+                Omnifinity can help you master the art of utilizing real-time
+                data streams. Solve business-critical challenges, enhance the
+                customer experience, and meet your organizational goals. With
+                35+ years of industry expertise and dedicated GCP-certified
+                specialists, we promise impactful, scalable, and quantifiable
+                results.
               </p>
               <div className="text-center d-flex justify-content-center mt-3 w-100  mb-4">
                 <button

@@ -1,0 +1,98 @@
+.ApplicationDevelopmentTotalContainer {
+  min-height: 100vh;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+.ApplicationDevelopmentImageContainer {
+  background-image: url("https://abacuscambridge.com/hubfs/ACP---Innovative-Solutions---End-to-End-Software-Engineering1920x540-px%20%282%29.jpg") !important;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  width: 100%;
+  filter: brightness(0.7);
+  height: 600px !important;
+}
+.ApplicationDevelopmentcontent-container {
+  position: absolute;
+  top: 19% !important;
+  width: 100%;
+  /* padding: 10px; */
+  text-align: left;
+  font-family: "PT Sans";
+  color: #ffffff;
+}
+.ApplicationDevelopmentSubHeadings {
+  font-size: 30px !important;
+  padding-left: 50px !important;
+}
+.ApplicationDevelopmentHeading {
+  font-size: 65px !important;
+  font-weight: bold;
+  padding-left: 50px !important;
+}
+.ApplicationDevelopmentCardsContainer {
+  margin-top: -400px;
+  z-index: 100;
+}
+.ApplicationDevelopmentParagraph {
+  font-size: 25px !important;
+  padding-left: 50px !important;
+}
+@media (max-width: 1024px) {
+  .ApplicationDevelopmentCardsContainer {
+    margin-top: 9px;
+  }
+  .ApplicationDevelopmentHeading {
+    font-size: 30px !important;
+    font-weight: bold;
+  }
+}
+
+@media (min-width: 280px) and (max-width: 653px) {
+  .ApplicationDevelopmentHeading {
+    font-size: 30px !important;
+    font-weight: bold;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .ApplicationDevelopmentCardsContainer {
+    margin-top: 9px !important;
+  }
+}
+.ApplicationDevelopmentEnquiryHeading {
+  border-top-left-radius: 16px !important;
+  border-top-right-radius: 16px !important;
+  font-size: 24px;
+}
+
+.ApplicationDevelopmentCardsContent {
+  font-family: PT Sans;
+  font-size: 17px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.9;
+  margin: 0 0 1.4rem;
+  text-decoration: none;
+}
+
+.ApplicationDevelopmentCardsContent :hover {
+  box-shadow: 0 60px 100px rgba(0, 0, 0, 0.2);
+}
+.ApplicationDevelopmentButton {
+  border-radius: 3px;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 17px;
+  font-weight: 400;
+  height: auto;
+  line-height: 1.1;
+  padding: 24px 43px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  transition: all 0.15s linear;
+  white-space: normal;
+  width: auto;
+  word-break: break-word;
+}

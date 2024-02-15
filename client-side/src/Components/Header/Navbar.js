@@ -99,7 +99,7 @@ const Navbar = () => {
                       <Link to="#" className="sub-menu-list-item">
                         <li>Digital Identity</li>
                       </Link>
-                      <Link to="#" className="sub-menu-list-item">
+                      <Link to="/ApplicationDevelopment" className="sub-menu-list-item">
                         <li>Application Development</li>
                       </Link>
                       <Link to="#" className="sub-menu-list-item">
