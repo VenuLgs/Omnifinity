@@ -53,32 +53,36 @@ export default function HomePage() {
 
   const [HomeImages, setCards] = useState([]);
 
-  const Banners=[
+  const Banners = [
     {
-      projectId:1,
-      imageUrl:"https://27058982.fs1.hubspotusercontent-eu1.net/hu…).png?width=2100&name=Untitled%20design%20(5).png",
-      title:"Operate",
-      description:"Master Your Operations with Expert Managed Services"
+      projectId: 1,
+      imageUrl:
+        "https://27058982.fs1.hubspotusercontent-eu1.net/hu…).png?width=2100&name=Untitled%20design%20(5).png",
+      title: "Operate",
+      description: "Master Your Operations with Expert Managed Services",
     },
     {
-      projectId:2,
-      imageUrl:"https://27058982.fs1.hubspotusercontent-eu1.net/hu…tal%20core.png?width=2100&name=digital%20core.png",
-      title:"BUILD YOUR DIGITAL CORE",
-      description:"Empower Your Enterprise with Unrivalled Systems"
+      projectId: 2,
+      imageUrl:
+        "https://27058982.fs1.hubspotusercontent-eu1.net/hu…tal%20core.png?width=2100&name=digital%20core.png",
+      title: "BUILD YOUR DIGITAL CORE",
+      description: "Empower Your Enterprise with Unrivalled Systems",
     },
     {
-      projectId:3,
-      imageUrl:"	https://27058982.fs1.hubspotusercontent-eu1.net/hu…Transform-4.jpg?width=2100&name=1-Transform-4.jpg",
-      title:"Embrace the AI Transformation",
-      description:"Unleashing New Business Horizons"
+      projectId: 3,
+      imageUrl:
+        "	https://27058982.fs1.hubspotusercontent-eu1.net/hu…Transform-4.jpg?width=2100&name=1-Transform-4.jpg",
+      title: "Embrace the AI Transformation",
+      description: "Unleashing New Business Horizons",
     },
     {
-      projectId:4,
-      imageUrl:"https://27058982.fs1.hubspotusercontent-eu1.net/hub/27058982/hubfs/Innovate.png?width=2100&name=Innovate.png",
-      title:"Innovate",
-      description:"Harness Cutting-Edge Frameworks for Business Innovation"
+      projectId: 4,
+      imageUrl:
+        "https://27058982.fs1.hubspotusercontent-eu1.net/hub/27058982/hubfs/Innovate.png?width=2100&name=Innovate.png",
+      title: "Innovate",
+      description: "Harness Cutting-Edge Frameworks for Business Innovation",
     },
-  ]
+  ];
 
   const getBannerImages = async () => {
     try {
@@ -169,7 +173,7 @@ export default function HomePage() {
                   <img
                     style={{ height: "750px", maxWidth: "100%" }}
                     className="d-block w-100 carouselBanner"
-                    src={`http://localhost:4000/uploads/banners/${each.banner.image}`}
+                    src={`${process.env.REACT_APP_FETCH_IMAGE_URL}/uploads/banners/${each.banner.image}`}
                     alt={each.banner.title}
                   />
                   <div className="homepage-carousel-caption-overlay">
@@ -318,12 +322,7 @@ export default function HomePage() {
             <Slider {...settings} style={{ width: "95%" }}>
               {images.map((image, index) => (
                 <div key={index}>
-                  <img
-                    src={image}
-                    alt={`${index + 1}`}
-                
-                    width="200"
-                  />
+                  <img src={image} alt={`${index + 1}`} width="200" />
                 </div>
               ))}
             </Slider>
