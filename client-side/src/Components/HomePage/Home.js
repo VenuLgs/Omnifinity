@@ -90,7 +90,7 @@ export default function HomePage() {
           slidesToShow: 2,
           slidesToScroll: 1,
           infinite: true,
-          dots:false,
+          dots: false,
           prevArrow: <BsArrowLeft size="30" color="black" />,
           nextArrow: <BsArrowRight size="30" color="black" />,
           speed: 2000,
@@ -104,7 +104,7 @@ export default function HomePage() {
           slidesToShow: 1,
           slidesToScroll: 1,
           infinite: true,
-          dots:false,
+          dots: false,
           prevArrow: <BsArrowLeft size="30" color="black" />,
           nextArrow: <BsArrowRight size="30" color="black" />,
           speed: 2000,
@@ -118,7 +118,7 @@ export default function HomePage() {
           slidesToShow: 1,
           slidesToScroll: 1,
           infinite: true,
-          dots:false,
+          dots: false,
           prevArrow: <BsArrowLeft size="30" color="black" />,
           nextArrow: <BsArrowRight size="30" color="black" />,
           speed: 2000,
@@ -128,13 +128,11 @@ export default function HomePage() {
       },
     ],
   };
-  
 
   const images = [image1, image2, image3, image];
 
   const [HomeImages, setCards] = useState([]);
 
-  const Banners = [
   const Banners = [
     {
       projectId: 1,
@@ -164,7 +162,6 @@ export default function HomePage() {
       title: "Innovate",
       description: "Harness Cutting-Edge Frameworks for Business Innovation",
     },
-  ];
   ];
 
   const getBannerImages = async () => {
@@ -261,7 +258,7 @@ export default function HomePage() {
                   />
                   <div className="homepage-carousel-caption-overlay w-100">
                     <h1
-                    className="carouselHeading"
+                      className="carouselHeading"
                       style={{
                         color: "#ffffff",
                         fontWeight: "bolder",
@@ -271,11 +268,10 @@ export default function HomePage() {
                       {each.title}
                     </h1>
                     <p
-                    className="carouselParagraph"
-                   
+                      className="carouselParagraph"
                       style={{
                         color: "#ffffff",
-                       
+
                         fontWeight: "400",
                       }}
                     >
@@ -408,7 +404,7 @@ export default function HomePage() {
             <Slider {...settings} style={{ width: "95%" }} className="mt-2">
               {images.map((image, index) => (
                 <div key={index}>
-                  <img src={image}  alt={`${index + 1}`} width="200" />
+                  <img src={image} alt={`${index + 1}`} width="200" />
                 </div>
               ))}
             </Slider>
