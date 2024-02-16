@@ -136,29 +136,27 @@ export default function HomePage() {
   const Banners = [
     {
       projectId: 1,
-      imageUrl:
-        "https://27058982.fs1.hubspotusercontent-eu1.net/hu…).png?width=2100&name=Untitled%20design%20(5).png",
+      imageUrl: homepage3,
       title: "Operate",
       description: "Master Your Operations with Expert Managed Services",
     },
     {
       projectId: 2,
-      imageUrl:
-        "https://27058982.fs1.hubspotusercontent-eu1.net/hu…tal%20core.png?width=2100&name=digital%20core.png",
+      imageUrl: homepage2,
+
       title: "BUILD YOUR DIGITAL CORE",
       description: "Empower Your Enterprise with Unrivalled Systems",
     },
     {
       projectId: 3,
-      imageUrl:
-        "	https://27058982.fs1.hubspotusercontent-eu1.net/hu…Transform-4.jpg?width=2100&name=1-Transform-4.jpg",
+      imageUrl: homepage1,
+
       title: "Embrace the AI Transformation",
       description: "Unleashing New Business Horizons",
     },
     {
       projectId: 4,
-      imageUrl:
-        "https://27058982.fs1.hubspotusercontent-eu1.net/hub/27058982/hubfs/Innovate.png?width=2100&name=Innovate.png",
+      imageUrl: homepage4,
       title: "Innovate",
       description: "Harness Cutting-Edge Frameworks for Business Innovation",
     },
@@ -256,9 +254,9 @@ export default function HomePage() {
                     src={each.imageUrl}
                     alt={each.title}
                   />
-                  <div className="homepage-carousel-caption-overlay w-100">
+                  <div className="homepage-carousel-caption-overlay  w-100">
                     <h1
-                      className="carouselHeading"
+                      className="carouselHeading p-2"
                       style={{
                         color: "#ffffff",
                         fontWeight: "bolder",
@@ -268,7 +266,7 @@ export default function HomePage() {
                       {each.title}
                     </h1>
                     <p
-                      className="carouselParagraph"
+                      className="carouselParagraph p-3"
                       style={{
                         color: "#ffffff",
 
@@ -381,7 +379,7 @@ export default function HomePage() {
             <h1>Strategic Partnerships</h1>
           </div>
           <div className="col-12">
-            <p style={{ textAlign: "center" }}>
+            <p style={{ textAlign: "center" }} className="p-2">
               Partnership and collaboration with global technology leaders are
               at the core of Omnifinity philosophy. By bringing together
               specialists and leaders, our goal is to generate significant value
@@ -394,14 +392,14 @@ export default function HomePage() {
             </p>
           </div>
           <div
-            className="col-12"
+            className="col-12 p-3"
             style={{
               textAlign: "center",
               display: "flex",
               justifyContent: "center",
             }}
           >
-            <Slider {...settings} style={{ width: "95%" }} className="mt-2">
+            <Slider {...settings} style={{ width: "85%" }} className="mt-2">
               {images.map((image, index) => (
                 <div key={index}>
                   <img src={image} alt={`${index + 1}`} width="200" />
@@ -416,9 +414,9 @@ export default function HomePage() {
           <div className="col-12 mb-3 mt-3">
             <h1 className="text-center mb-2">Omnifinity at a Glance</h1>
           </div>
-          <div className="col-12 col-md-6 text-center mb-2">
+          <div className="col-12 col-md-6 text-center mt-3 mb-2">
             <div className="HomeContentContainer d-flex text-center justify-content-center">
-              <IoHome size="60" color="rgba(15, 68, 148, 1.0)" />
+              <IoHome size="60"   color="rgba(15, 68, 148, 1.0)" />
               <div>
                 <h5>1987 Genesis</h5>
                 <p style={{ width: "250px" }}>
@@ -440,7 +438,7 @@ export default function HomePage() {
               </div>
             </div>
           </div>
-          <div className="col-12 col-md-6 text-center mb-2">
+          <div className="col-12 col-md-6 text-center  mb-2">
             <div className="HomeContentContainer d-flex text-center   justify-content-center">
               <AiOutlineGlobal size="60" color="rgba(15, 68, 148, 1.0)" />
               <div>
@@ -452,7 +450,7 @@ export default function HomePage() {
               </div>
             </div>
           </div>
-          <div className="col-12 col-md-6 text-center mb-2">
+          <div className="col-12 col-md-6 text-center  mb-2">
             <div className="HomeContentContainer d-flex text-center  justify-content-center">
               <BsFillPeopleFill size="60" color="rgba(15, 68, 148, 1.0)" />
               <div>
@@ -469,7 +467,7 @@ export default function HomePage() {
       <div className="container">
         <div className="row">
           <div className="col-12">
-            <h1 className="text-center mb-3 mt-2">Featured Solutions</h1>
+            <h1 className="text-center mb-3 ">Featured Solutions</h1>
           </div>
           {HomeCards.map((each) => (
             <div className="col-12 col-md-4  mb-3">

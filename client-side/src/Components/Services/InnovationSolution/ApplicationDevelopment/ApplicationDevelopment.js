@@ -276,7 +276,7 @@ export default function ApplicationDevelopment() {
       <div className="container">
         <div className="row">
           {cards1.map((each, index) => (
-            <div className="col-12 mt-3 mb-3  col-md-4 text-center  shadow">
+            <div className="col-12 mt-3 mb-3   col-md-4 text-center  shadow">
               <Fade direction="up">
                 <img src={each.imageUrl} height="150" width="150" className="mt-2" alt={`${index + each.title}`} />
                 <h3 className="mb-2 mt-2 p-2" style={{ color: "#134391" }}>

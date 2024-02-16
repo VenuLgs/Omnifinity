@@ -235,10 +235,10 @@ export default function Analytics() {
       <div className="container">
         <div className="row">
           <div className="col-12">
-            <h1 className="text-center">
+            <h1 className="text-center p-2">
               Key Solutions for your Advance Analytics and Business Intelligence
             </h1>
-            <p>
+            <p className="p-2 text-center">
               Integrate our credible knowledge with the most robust BI and smart
               analytics tools in the world to make insightful, data-driven
               decisions and elevate your business.
@@ -274,17 +274,17 @@ export default function Analytics() {
           <div className="col-12 col-md-6 AnalyticsListContainer mb-3">
             <Fade direction="up">
               <h1>Why BigQuery?</h1>
-              <ul className="AnalyticsList mt-3 p-3">
-                <li className="mt-3 mb-3">
+              <ul className="AnalyticsList text-center mt-3  p-2 pl-3">
+                <li className="mt-3 mb-3 ">
                   Fully managed and serverless for max agility and scale
                 </li>
-                <li className="mt-3 mb-3">
+                <li className="mt-3 mb-3 ">
                   Fast, in-memory BI Engine - rapid reporting and analysis
                 </li>
-                <li className="mt-3 mb-3">
+                <li className="mt-3 mb-3 ">
                   Gigabyte to petabyte-scale storage and SQL queries
                 </li>
-                <li className="mt-3 mb-3">
+                <li className="mt-3 mb-3 ">
                   Encrypted, resilient, and readily accessible.
                 </li>
               </ul>
@@ -293,14 +293,14 @@ export default function Analytics() {
           <div className="col-12 col-md-6 AnalyticsListContainer mb-3">
             <Fade direction="up">
               <h1>Why Looker?</h1>
-              <ul className="AnalyticsList mt-3 p-3">
-                <li className="mt-3 mb-3">
+              <ul className="AnalyticsList text-center mt-3 p-2">
+                <li className="mt-3 mb-3 ">
                   LookML which standardizes enterprise-wide data & metrics
                 </li>
                 <li className="mt-3 mb-3">
                   100% in-database, no restriction or loading delay
                 </li>
-                <li className="mt-3 mb-3">
+                <li className="mt-3 mb-3 ">
                   Multi-cloud, multi-database access, supporting any data
                   framework
                 </li>
@@ -371,7 +371,7 @@ export default function Analytics() {
                 Improve
               </button>
             </div>
-            <div className="col-12 col-md-6 mt-3 mb-3">
+            <div className="col-12 col-xl-6  mt-3 mb-3">
               <h4 className="mt-3 mb-3 p-2">{Filtered[0].title1}</h4>
               <p className="mt-3 mb-3 p-2">{Filtered[0].description1}</p>
               <h4 className="mt-3 mb-3 p-2">{Filtered[0].title2}</h4>
@@ -382,7 +382,7 @@ export default function Analytics() {
               <p className="mt-3 mb-3 p-2">{Filtered[0].description4}</p>
             </div>
             <div
-              className="col-12 col-md-6 mt-3 text-center mb-3"
+              className="col-12 col-xl-6 mt-3 mb-3"
               style={{
                 display: "flex",
                 justifyContent: "center",

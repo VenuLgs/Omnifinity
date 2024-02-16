@@ -78,8 +78,11 @@
 
 .AnalyticsList {
   padding: 0px !important;
-  list-style-type: disc;
+  list-style-type: none;
 }
+
+
+
 .AnalyticsListContainer {
   display: flex;
   flex-direction: column;
