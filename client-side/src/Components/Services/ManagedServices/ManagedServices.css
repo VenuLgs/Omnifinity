@@ -170,12 +170,109 @@
 }
 
 @media (max-width: 768px) {
+  .managed-services-main-description {
+    margin: 18px;
+    width: 80%;
+    line-height: 2rem;
+  }
+  .managed-services-card-main-heading {
+    font-size: 40px;
+    color: #000;
+    margin: 0px 0px 23px;
+    text-align: center;
+    width: 70%;
+    font-weight: 700;
+  }
   .managed-services-card-container {
-    width: 45%;
+    width: 40%;
+  }
+  .managed-services-card-description {
+    font-size: 14px;
+    color: #444444;
+    margin: 0px;
+    overflow: hidden;
+    line-height: 2rem;
+  }
+  .managed-services-card-heading {
+    font-size: 22px;
+    color: #134391;
+    font-weight: 400;
+    margin: 0px;
+    font-style: normal;
+    text-align: center;
+  }
+  .managed-services-bg-heading {
+    color: #fff;
+    font-size: 45px;
+    margin: 0px;
   }
 }
 @media (max-width: 512px) {
+  .managed-services-bg-sub-container {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+  }
+  .managed-services-first-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+    width: 100%;
+    position: relative;
+  }
+  .managed-services-bg-heading {
+    color: #fff;
+    font-size: 30px;
+    width: 80%;
+    margin: 0px;
+  }
+  .managed-services-card-image {
+    max-width: 60%;
+    height: auto;
+  }
+  .managed-services-card-main-heading {
+    font-size: 36px;
+    color: #000;
+    margin: 0px 0px 23px;
+    text-align: center;
+    width: 70%;
+    font-weight: 700;
+  }
+  .managed-services-card-flex-container {
+    padding-left: 0px;
+  }
+
+  .managed-services-main-description {
+    margin: 16px;
+    width: 80%;
+    line-height: 2rem;
+  }
   .managed-services-card-container {
     width: 95%;
+  }
+  .managed-services-text-fields-container {
+    display: flex;
+    justify-content: center;
+    /* flex-direction: column; */
+    flex-wrap: wrap;
+    width: 90%;
+  }
+  .managed-services-third-text {
+    color: #fff;
+    font-size: 17px;
+    line-height: 1.9rem;
+    font-weight: 400;
+    width: 80%;
+    padding: 20px;
+  }
+  .managed-services-third-heading {
+    font-size: 35px;
+    margin: 0px 0px 23px;
+    color: white;
+    text-align: center;
   }
 }

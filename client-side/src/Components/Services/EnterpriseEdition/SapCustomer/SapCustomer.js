@@ -140,7 +140,7 @@ const SapCustomer = () => {
           {data.map((each) => {
             return (
               <Fade damping={0.1} direction="up" delay={90}>
-                <li className="sap-customer-card-container">
+                <li className="saphana-systems-card-container">
                   <img
                     src={each.image}
                     alt=""
