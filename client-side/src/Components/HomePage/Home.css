@@ -7,12 +7,28 @@
   width: 50%;
   transform: translate(-50%, -50%);
  
-  text-align: center;
+  text-align: center!important;
 
   z-index: 2;
   
   /* background: #02070cb8; */
   padding: 20px;
+}
+.carouselHeading{
+  font-size:65px !important;
+}
+
+.carouselParagraph{
+  font-size:25px!important;
+}
+
+@media(max-width:991px){
+  .carouselHeading{
+    font-size:40px !important;
+  }
+  .carouselParagraph{
+    font-size:20px!important;
+  }
 }
 
 .HomePageTotalContainer {
