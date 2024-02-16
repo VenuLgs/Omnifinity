@@ -17,6 +17,11 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import "./Home.css";
 
+import homepage1 from "../../images/HomePage/homepage1.webp";
+import homepage2 from "../../images/HomePage/homepage2.webp";
+import homepage3 from "../../images/HomePage/homepage3.webp";
+import homepage4 from "../../images/HomePage/homepage4.webp";
+
 export default function HomePage() {
   const [state, updateState] = useState("EnterpriseSystems");
   useEffect(() => {
@@ -130,6 +135,7 @@ export default function HomePage() {
   const [HomeImages, setCards] = useState([]);
 
   const Banners = [
+  const Banners = [
     {
       projectId: 1,
       imageUrl:
@@ -158,6 +164,7 @@ export default function HomePage() {
       title: "Innovate",
       description: "Harness Cutting-Edge Frameworks for Business Innovation",
     },
+  ];
   ];
 
   const getBannerImages = async () => {
@@ -244,13 +251,13 @@ export default function HomePage() {
         <div className="row">
           <div className="col-12">
             <Carousel>
-              {HomeImages.map((each, index) => (
+              {Banners.map((each, index) => (
                 <Carousel.Item>
                   <img
                     style={{ height: "750px", maxWidth: "100%" }}
                     className="d-block w-100 carouselBanner"
-                    src={`http://localhost:4000/uploads/banners/${each.banner.image}`}
-                    alt={each.banner.title}
+                    src={each.imageUrl}
+                    alt={each.title}
                   />
                   <div className="homepage-carousel-caption-overlay w-100">
                     <h1
@@ -261,7 +268,7 @@ export default function HomePage() {
                         fontSize: "65px",
                       }}
                     >
-                      {each.banner.title}
+                      {each.title}
                     </h1>
                     <p
                     className="carouselParagraph"
@@ -272,7 +279,7 @@ export default function HomePage() {
                         fontWeight: "400",
                       }}
                     >
-                      {each.banner.description}
+                      {each.description}
                     </p>
                   </div>
                 </Carousel.Item>
