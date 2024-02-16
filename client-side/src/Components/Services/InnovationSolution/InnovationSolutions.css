@@ -117,11 +117,77 @@
   line-height: 2rem;
 }
 @media (max-width: 768px) {
+  .innovation-solutions-main-description {
+    margin: 18px;
+    width: 80%;
+    line-height: 2rem;
+  }
+  .innovation-solutions-card-main-heading {
+    font-size: 40px;
+    color: #000;
+    margin: 0px 0px 23px;
+    text-align: center;
+    width: 70%;
+    font-weight: 700;
+  }
   .innovation-solutions-card-container {
-    width: 45%;
+    width: 40%;
+  }
+  .innovation-solutions-card-description {
+    font-size: 14px;
+    color: #444444;
+    margin: 0px;
+    overflow: hidden;
+    line-height: 2rem;
+  }
+  .innovation-solutions-card-heading {
+    font-size: 22px;
+    color: #134391;
+    font-weight: 400;
+    margin: 0px;
+    font-style: normal;
+    text-align: center;
+  }
+  .innovation-solutions-bg-heading {
+    color: #fff;
+    font-size: 45px;
+    margin: 0px;
   }
 }
 @media (max-width: 512px) {
+  .innovation-solutions-first-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+    width: 100%;
+    position: relative;
+  }
+  .innovation-solutions-card-flex-container {
+    padding-left: 0px;
+  }
+  .innovation-solutions-bg-heading {
+    color: #fff;
+    font-size: 40px;
+    margin: 0px;
+  }
+  .innovation-solutions-card-image {
+    width: 100px;
+    height: 100px;
+  }
+  .innovation-solutions-card-main-heading {
+    font-size: 36px;
+    color: #000;
+    margin: 0px 0px 23px;
+    text-align: center;
+    width: 70%;
+    font-weight: 700;
+  }
+  .innovation-solutions-main-description {
+    margin: 16px;
+    width: 80%;
+    line-height: 2rem;
+  }
   .innovation-solutions-card-container {
     width: 95%;
   }

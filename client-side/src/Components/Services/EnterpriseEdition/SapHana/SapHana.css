@@ -188,7 +188,7 @@
   font-size: 18px;
 }
 
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
   .saphana-second-main-container {
     flex-direction: column;
     align-items: center;
@@ -200,6 +200,65 @@
   .enquiry-form-main-container {
     width: 90%;
     margin-top: 0px;
+  }
+}
+
+@media screen and (max-width: 512px) {
+  .saphana-systems-card-flex-container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    list-style-type: none;
+    margin-top: 2%;
+    padding-left: 0px;
+    gap: 7%;
+    width: 80%;
+  }
+  .saphana-systems-card-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    width: 80%;
+    height: 470px;
+    padding: 20px;
+  }
+  .saphana-systems-card-heading {
+    font-size: 28px;
+    color: #134391;
+    font-weight: 400;
+    margin: 0px;
+    font-style: normal;
+    text-align: center;
+  }
+  .saphana-systems-card-description {
+    font-size: 14px;
+    color: #444444;
+    margin: 0px;
+    line-height: 1.5rem;
+    overflow: hidden;
+  }
+  .saphana-bg-sub-heading {
+    color: #fff;
+    font-size: 24px;
+    margin: 0px;
+    width: 80%;
+  }
+  .saphana-bg-heading {
+    color: #fff;
+    font-size: 40px;
+    margin: 0px;
+    width: 80%;
+  }
+
+  .saphana-second-main-left-descripton {
+    font-size: 17px;
+  }
+
+  .saphana-last-description {
+    font-size: 15px;
   }
 }
 
@@ -243,15 +302,6 @@
   filter: brightness(0.4);
   background-size: cover;
   background-position: center;
-}
-
-.sap-customer-card-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 10px;
-  width: 45%;
-  padding: 30px;
 }
 
 /* =========================== SAP Ariba CSS ================================== */
