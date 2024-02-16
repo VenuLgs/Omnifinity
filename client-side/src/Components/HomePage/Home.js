@@ -5,7 +5,7 @@ import Player from "../Videos/pexels-tima-miroshnichenko-5377697 (2160p).mp4";
 import { IoHome } from "react-icons/io5";
 import { IoPower } from "react-icons/io5";
 import { AiOutlineGlobal } from "react-icons/ai";
-import { BsBrightnessAltHigh, BsFillPeopleFill } from "react-icons/bs";
+import { BsFillPeopleFill } from "react-icons/bs";
 import image1 from "../Images/image (1).png";
 import image2 from "../Images/image (2).png";
 import image3 from "../Images/image (3).png";
@@ -47,13 +47,88 @@ export default function HomePage() {
 
   const settings = {
     dots: false,
-    prevArrow: <BsArrowLeft size="30" color="black" />, // Replace CustomPrevArrow and CustomNextArrow with your own arrow components
+    prevArrow: <BsArrowLeft size="30" color="black" />,
     nextArrow: <BsArrowRight size="30" color="black" />,
+    speed: 2000,
     infinite: true,
-    speed: 1000,
-    slidesToShow: 4,
-    slidesToScroll: 4,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    autoplay: true, // Enable autoplay
+    autoplaySpeed: 4000, // Set autoplay speed in milliseconds (e.g., 2000ms = 2 seconds)
+    responsive: [
+      {
+        breakpoint: 1200, // Extra large devices (1200px and above)
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 1,
+          infinite: true,
+          dots: false,
+          prevArrow: <BsArrowLeft size="30" color="black" />,
+          nextArrow: <BsArrowRight size="30" color="black" />,
+          speed: 2000,
+          autoplay: true,
+          autoplaySpeed: 4000, // Enable autoplay
+        },
+      },
+      {
+        breakpoint: 992, // Large devices (992px - 1200px)
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 1,
+          infinite: true,
+          dots: false,
+          prevArrow: <BsArrowLeft size="30" color="black" />,
+          nextArrow: <BsArrowRight size="30" color="black" />,
+          speed: 2000,
+          autoplay: true,
+          autoplaySpeed: 4000,
+        },
+      },
+      {
+        breakpoint: 768, // Medium devices (768px - 992px)
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+          infinite: true,
+          dots: false,
+          prevArrow: <BsArrowLeft size="30" color="black" />,
+          nextArrow: <BsArrowRight size="30" color="black" />,
+          speed: 2000,
+          autoplay: true,
+          autoplaySpeed: 4000,
+        },
+      },
+      {
+        breakpoint: 576, // Small devices (576px - 768px)
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          infinite: true,
+          dots: false,
+          prevArrow: <BsArrowLeft size="30" color="black" />,
+          nextArrow: <BsArrowRight size="30" color="black" />,
+          speed: 2000,
+          autoplay: true,
+          autoplaySpeed: 4000,
+        },
+      },
+      {
+        breakpoint: 0, // Extra small devices (up to 576px)
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          infinite: true,
+          dots: false,
+          prevArrow: <BsArrowLeft size="30" color="black" />,
+          nextArrow: <BsArrowRight size="30" color="black" />,
+          speed: 2000,
+          autoplay: true,
+          autoplaySpeed: 4000,
+        },
+      },
+    ],
   };
+
   const images = [image1, image2, image3, image];
 
   const [HomeImages, setCards] = useState([]);
@@ -61,25 +136,29 @@ export default function HomePage() {
   const Banners = [
     {
       projectId: 1,
-      imageUrl: homepage1,
+      imageUrl:
+        "https://27058982.fs1.hubspotusercontent-eu1.net/hu…).png?width=2100&name=Untitled%20design%20(5).png",
       title: "Operate",
       description: "Master Your Operations with Expert Managed Services",
     },
     {
       projectId: 2,
-      imageUrl: homepage2,
+      imageUrl:
+        "https://27058982.fs1.hubspotusercontent-eu1.net/hu…tal%20core.png?width=2100&name=digital%20core.png",
       title: "BUILD YOUR DIGITAL CORE",
       description: "Empower Your Enterprise with Unrivalled Systems",
     },
     {
       projectId: 3,
-      imageUrl: homepage3,
+      imageUrl:
+        "	https://27058982.fs1.hubspotusercontent-eu1.net/hu…Transform-4.jpg?width=2100&name=1-Transform-4.jpg",
       title: "Embrace the AI Transformation",
       description: "Unleashing New Business Horizons",
     },
     {
       projectId: 4,
-      imageUrl: homepage4,
+      imageUrl:
+        "https://27058982.fs1.hubspotusercontent-eu1.net/hub/27058982/hubfs/Innovate.png?width=2100&name=Innovate.png",
       title: "Innovate",
       description: "Harness Cutting-Edge Frameworks for Business Innovation",
     },
@@ -177,8 +256,9 @@ export default function HomePage() {
                     src={each.imageUrl}
                     alt={each.title}
                   />
-                  <div className="homepage-carousel-caption-overlay">
+                  <div className="homepage-carousel-caption-overlay w-100">
                     <h1
+                      className="carouselHeading"
                       style={{
                         color: "#ffffff",
                         fontWeight: "bolder",
@@ -188,9 +268,10 @@ export default function HomePage() {
                       {each.title}
                     </h1>
                     <p
+                      className="carouselParagraph"
                       style={{
                         color: "#ffffff",
-                        fontSize: "25px",
+
                         fontWeight: "400",
                       }}
                     >
@@ -300,7 +381,7 @@ export default function HomePage() {
             <h1>Strategic Partnerships</h1>
           </div>
           <div className="col-12">
-            <p>
+            <p style={{ textAlign: "center" }}>
               Partnership and collaboration with global technology leaders are
               at the core of Omnifinity philosophy. By bringing together
               specialists and leaders, our goal is to generate significant value
@@ -320,7 +401,7 @@ export default function HomePage() {
               justifyContent: "center",
             }}
           >
-            <Slider {...settings} style={{ width: "95%" }}>
+            <Slider {...settings} style={{ width: "95%" }} className="mt-2">
               {images.map((image, index) => (
                 <div key={index}>
                   <img src={image} alt={`${index + 1}`} width="200" />
