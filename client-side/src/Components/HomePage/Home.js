@@ -252,7 +252,7 @@ export default function HomePage() {
                     src={`http://localhost:4000/uploads/banners/${each.banner.image}`}
                     alt={each.banner.title}
                   />
-                  <div className="homepage-carousel-caption-overlay">
+                  <div className="homepage-carousel-caption-overlay w-100">
                     <h1
                     className="carouselHeading"
                       style={{
