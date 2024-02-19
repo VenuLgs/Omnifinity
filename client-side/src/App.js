@@ -8,14 +8,14 @@ import Navbar from "./Components/Header/Navbar";
 import ResellerMendixPage from "./Components/Services/ResellerMendixPage";
 import ResellerPolarionPage from "./Components/Services/ResellerPolarianPage";
 import Analytics from "./Components/Services/InnovationSolution/AnalyticsBI/Analytics.js";
-import ApplicationDevelopment from "./Components/Services/InnovationSolution/ApplicationDevelopment/ApplicationDevelopment.js"
+import ApplicationDevelopment from "./Components/Services/InnovationSolution/ApplicationDevelopment/ApplicationDevelopment.js";
 import AdminRegistration from "./AdminComponents/adminSignUp";
 import AdminEmailVerify from "./AdminComponents/adminEmailVerify";
 import AdminLogin from "./AdminComponents/adminLogin";
 import AdminPannel from "./AdminComponents/adminPanel";
 import Contact from "./Components/ContactUs/Contact";
 import Footer from "./Components/Footer/Footer";
-
+import DigitalIdentity from "./Components/Services/InnovationSolution/DigitalIdentity/DgitalIdentity.js";
 import InnovationSolutions from "./Components/Services/InnovationSolution/InnovationSolutions";
 import ForgetPassword from "./AdminComponents/forgetPassword.js";
 import EnterpriseSystems from "./Components/Services/EnterpriseEdition/EnterpriseSystems";
@@ -62,7 +62,10 @@ function App() {
     <>
       {!isInsideAdminPanel && <Navbar />}
       <Routes>
-      <Route path="/ApplicationDevelopment" element={<ApplicationDevelopment />} />
+        <Route
+          path="/ApplicationDevelopment"
+          element={<ApplicationDevelopment />}
+        />
         <Route path="/about-us" element={<AboutUs />} />
         <Route exact path="/" element={<HomePage />} />
         <Route exact path="/digitalFinance" element={<DigitalFinance />} />
@@ -70,7 +73,7 @@ function App() {
         <Route path="/innovation-solutions" element={<InnovationSolutions />} />
         <Route path="/enterprise-systems" element={<EnterpriseSystems />} />
         <Route path="/managed-services" element={<ManagedServices />} />
-
+        <Route path="/digitalIdentity" element={<DigitalIdentity />} />
         <Route path="/enterprise-systems/sap-hana" element={<SapHana />} />
         <Route
           path="/enterprise-systems/sap-business-by-design"
