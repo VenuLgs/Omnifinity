@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import { Route, Routes, useLocation } from "react-router-dom";
 import AboutUs from "./Components/AboutUs/AboutUs";
 import ResetPassword from "./AdminComponents/resetPassword.js";
+import DigitalFinance from "./Components/Services/InnovationSolution/DigitalFinance/dgitalFinance.js";
 import HomePage from "./Components/HomePage/Home";
 import Navbar from "./Components/Header/Navbar";
 import ResellerMendixPage from "./Components/Services/ResellerMendixPage";
@@ -64,6 +65,7 @@ function App() {
       <Route path="/ApplicationDevelopment" element={<ApplicationDevelopment />} />
         <Route path="/about-us" element={<AboutUs />} />
         <Route exact path="/" element={<HomePage />} />
+        <Route exact path="/digitalFinance" element={<DigitalFinance />} />
         <Route path="/adminregister" element={<AdminRegistration />} />
         <Route path="/innovation-solutions" element={<InnovationSolutions />} />
         <Route path="/enterprise-systems" element={<EnterpriseSystems />} />
