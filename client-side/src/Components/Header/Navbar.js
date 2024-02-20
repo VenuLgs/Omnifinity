@@ -99,7 +99,10 @@ const Navbar = () => {
                       <Link to="#" className="sub-menu-list-item">
                         <li>Digital Identity</li>
                       </Link>
-                      <Link to="/ApplicationDevelopment" className="sub-menu-list-item">
+                      <Link
+                        to="/ApplicationDevelopment"
+                        className="sub-menu-list-item"
+                      >
                         <li>Application Development</li>
                       </Link>
                       <Link to="#" className="sub-menu-list-item">
@@ -153,16 +156,28 @@ const Navbar = () => {
                 Solutions <FaCaretDown />
               </Link>
               <ul className="sub-menu">
-                <Link to="#" className="sub-menu-list-item">
+                <Link
+                  to="/solutions/sap-on-google"
+                  className="sub-menu-list-item"
+                >
                   <li>SAP on Google Cloud</li>
                 </Link>
-                <Link to="#" className="sub-menu-list-item">
+                <Link
+                  to="/solutions/retail-end-to-end"
+                  className="sub-menu-list-item"
+                >
                   <li>Retail End-to-End</li>
                 </Link>
-                <Link to="#" className="sub-menu-list-item">
+                <Link
+                  to="/solutions/sap-moderization"
+                  className="sub-menu-list-item"
+                >
                   <li>SAP Moderization</li>
                 </Link>
-                <Link to="#" className="sub-menu-list-item">
+                <Link
+                  to="/solutions/open-finance"
+                  className="sub-menu-list-item"
+                >
                   <li>Open Finance</li>
                 </Link>
               </ul>

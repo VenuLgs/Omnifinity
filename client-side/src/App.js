@@ -7,7 +7,7 @@ import Navbar from "./Components/Header/Navbar";
 import ResellerMendixPage from "./Components/Services/ResellerMendixPage";
 import ResellerPolarionPage from "./Components/Services/ResellerPolarianPage";
 import Analytics from "./Components/Services/InnovationSolution/AnalyticsBI/Analytics.js";
-import ApplicationDevelopment from "./Components/Services/InnovationSolution/ApplicationDevelopment/ApplicationDevelopment.js"
+import ApplicationDevelopment from "./Components/Services/InnovationSolution/ApplicationDevelopment/ApplicationDevelopment.js";
 import AdminRegistration from "./AdminComponents/adminSignUp";
 import AdminEmailVerify from "./AdminComponents/adminEmailVerify";
 import AdminLogin from "./AdminComponents/adminLogin";
@@ -27,6 +27,8 @@ import SapAriba from "./Components/Services/EnterpriseEdition/SapAriba/SapAriba.
 import ManagedCloud from "./Components/Services/ManagedServices/ManagedCloud/ManagedCloud.js";
 import DevOps from "./Components/Services/ManagedServices/DevOps/DevOps.js";
 import Staff from "./Components/Services/ManagedServices/StaffAgumentation/Staff.js";
+import SapOnGoogle from "./Components/Solutions/SapOnGoogleCloud/SapOnGoogle.js";
+import RetailEndToEnd from "./Components/Solutions/RetailEndToEnd/RetailEndToEnd.js";
 
 function App() {
   const location = useLocation();
@@ -61,7 +63,10 @@ function App() {
     <>
       {!isInsideAdminPanel && <Navbar />}
       <Routes>
-      <Route path="/ApplicationDevelopment" element={<ApplicationDevelopment />} />
+        <Route
+          path="/ApplicationDevelopment"
+          element={<ApplicationDevelopment />}
+        />
         <Route path="/about-us" element={<AboutUs />} />
         <Route exact path="/" element={<HomePage />} />
         <Route path="/adminregister" element={<AdminRegistration />} />
@@ -94,7 +99,12 @@ function App() {
           path="/managed-services/staff-augmentation"
           element={<Staff />}
         />
+        <Route
+          path="/solutions/retail-end-to-end"
+          element={<RetailEndToEnd />}
+        />
 
+        <Route path="/solutions/sap-on-google" element={<SapOnGoogle />} />
         <Route path="/enterprise-systems/sap-ariba" element={<SapAriba />} />
         <Route path="/AnalyticsBI" element={<Analytics />} />
         <Route path="/adminVerifyEmail" element={<AdminEmailVerify />} />

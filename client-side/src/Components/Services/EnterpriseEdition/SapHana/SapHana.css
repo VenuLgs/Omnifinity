@@ -378,6 +378,86 @@
   font-size: 30px;
 }
 
+/* ========================================= SAP On Google CSS =========================== */
+
+.sap-on-google-systems-card-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  width: 45%;
+  height: 515px;
+  padding: 30px;
+}
+.sap-on-google-systems-card-container:hover {
+  box-shadow: 0 43px 70px rgba(0, 0, 0, 0.12);
+  border-radius: 10px;
+}
+
+/* ======================================== Retail End to End CSS ========================= */
+
+.retail-end-to-end-first-container {
+  width: 100%;
+  background-image: linear-gradient(
+    to bottom,
+    rgba(15, 68, 148, 1),
+    rgba(44, 60, 111, 1)
+  );
+  padding: 9%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.retail-end-to-end-text-container {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.retail-end-to-end-heading {
+  font-size: 40px;
+  font-weight: 600;
+  color: white;
+}
+
+.retail-end-to-end-para {
+  font-size: 25px;
+  text-align: center;
+  font-weight: 500;
+  color: white;
+}
+
+.retail-end-to-end-banner-container {
+  width: 100%;
+  background-image: linear-gradient(
+    to bottom,
+    rgba(15, 68, 148, 1),
+    rgba(44, 60, 111, 1)
+  );
+  padding: 6%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.retail-end-to-end-banner-heading {
+  font-size: 40px;
+  color: white;
+  font-weight: 600;
+}
+
+.retail-end-to-end-sub-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
 @media screen and (max-width: 768px) {
   .saphana-second-main-container {
     flex-direction: column;
@@ -469,6 +549,40 @@
     font-size: 35px;
     width: 80%;
     margin-top: 20px;
+  }
+
+  /* ==================================== SAP On Google CSS ============================== */
+
+  .sap-on-google-systems-card-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    width: 75%;
+    height: 515px;
+    padding: 30px;
+  }
+
+  /* ================================= Retail end to end CSS ========================== */
+
+  .retail-end-to-end-first-container {
+    width: 100%;
+    background-image: linear-gradient(
+      to bottom,
+      rgba(15, 68, 148, 1),
+      rgba(44, 60, 111, 1)
+    );
+    padding: 9%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+  .retail-end-to-end-banner-heading {
+    font-size: 35px;
+    color: white;
+    font-weight: 600;
   }
 }
 
@@ -615,5 +729,38 @@
   }
   .staff-steps-text-content {
     font-size: 25px;
+  }
+
+  /* ====================================== SAP On Google CSS =========================*/
+  .sap-on-google-systems-card-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    width: 80%;
+    height: 515px;
+    padding: 30px;
+  }
+
+  /*================================== Retail End to End CSS =============================*/
+  .retail-end-to-end-banner-heading {
+    font-size: 30px;
+    color: white;
+    text-align: center;
+    font-weight: 600;
+  }
+
+  .retail-end-to-end-sub-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .retail-end-to-end-text-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 }
