@@ -91,7 +91,7 @@ export default function ApplicationDevelopment() {
             </div>
           </div>
           <div className="col-12 col-lg-6">
-            <p style={{ fontSize: "18px" }} className="p-4 pl-3 mt-3">
+            <p style={{ fontSize: "18px",lineHeight: 1.9 }} className="p-4 pl-3 mt-3">
               In today's digital age, app development is a vital aspect of
               businesses, providing them with the ability to create personalized
               solutions that cater to the unique requirements of their clients.

@@ -26,7 +26,7 @@ export default function DigitalFinance() {
             </div>
           </div>
           <div className="col-12 col-lg-6">
-            <p style={{ fontSize: "18px" }} className="p-4 pl-3 mt-3">
+            <p style={{ fontSize: "18px" ,lineHeight: 1.9}} className="p-4 pl-3 mt-3">
               The financial services sector is undergoing a massive shift. With
               innovators, cutting-edge technology, and digitally-savvy customers
               driving market dynamics, traditional players are facing stiff

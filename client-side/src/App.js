@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { Route, Routes, useLocation } from "react-router-dom";
 import AboutUs from "./Components/AboutUs/AboutUs";
+import OpenFinance from "./Components/Solutions/OpenFinance/OpenFinance.js";
 import ResetPassword from "./AdminComponents/resetPassword.js";
 import DigitalFinance from "./Components/Services/InnovationSolution/DigitalFinance/dgitalFinance.js";
 import HomePage from "./Components/HomePage/Home";
@@ -118,6 +119,7 @@ function App() {
         <Route path="/mendixPage" element={<ResellerMendixPage />} />
         <Route path="/AnalyticsBI" element={<Analytics />} />
         <Route path="/polarionPage" element={<ResellerPolarionPage />} />
+        <Route path="/OpenFinance" element={<OpenFinance />}/>
       </Routes>
       {!isInsideAdminPanel && <Footer />}
     </>

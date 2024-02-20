@@ -245,7 +245,7 @@ export default function HomePage() {
       <div className="container-fluid p-0">
         <div className="row">
           <div className="col-12">
-            <Carousel>
+            <Carousel interval={3000}>
               {Banners.map((each, index) => (
                 <Carousel.Item>
                   <img
