@@ -122,7 +122,7 @@ export default function ApplicationDevelopment() {
                   Enquire Now
                 </h1>
                 <form className="form-control p-3">
-                  <p classname="mb-2 mt-2 text-center p-2">
+                  <p classname="mb-2 mt-2 text-left p-2">
                     Please fill in your information and we'll get in touch with
                     you.
                   </p>
