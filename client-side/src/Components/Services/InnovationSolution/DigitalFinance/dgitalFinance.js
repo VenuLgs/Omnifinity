@@ -1,24 +1,25 @@
 import React from "react";
 import { Fade } from "react-awesome-reveal";
+import "./digitalFinance.css";
+
 
 export default function DigitalFinance() {
   return (
-    <div className="ApplicationDevelopmentTotalContainer">
+    <div className="AnalyticsTotalContainer">
       <div className="container-fluid p-0">
         <div className="row">
           <div className="col-12">
             <div>
-              <div className="ApplicationDevelopmentImageContainer mr-0 w-100"></div>
+              <div className=" DigitalFinanceImageContainer mr-0 w-100"></div>
 
-              <div className="ApplicationDevelopmentcontent-container">
+              <div className="content-container">
                 <Fade direction="up">
-                  <h6 className="p-2  mb-3 ApplicationDevelopmentSubHeadings">
+                  <h6 className="p-2  mb-3 AnalyticsSubHeadings">
                     Innovation Solutions
                   </h6>
-                  <h1 className="p-2 mb-3 ApplicationDevelopmentHeading">
-                    Embrace the Digital <br />
-                    Economy Today and <br /> Lead the Financial <br /> Future
-                    Tomorrow!
+                  <h1 className="p-2   mb-3 AnalyticsHeading">
+                    Embrace the Digital <br /> Economy Today and <br />
+                    Lead the Financial <br /> Future Tomorrow!
                   </h1>
                 </Fade>
               </div>
@@ -42,20 +43,21 @@ export default function DigitalFinance() {
           </div>
           <div className="col-12 col-lg-6 p-5 d-flex justify-content-center">
             <Fade direction="down">
-              <div className="ApplicationDevelopmentCardsContainer shadow">
+              <div className="AnalyticsCardsContainer shadow">
                 <h1
-                  className="p-3 text-center pl-0   mb-0 ApplicationDevelopmentEnquiryHeading"
+                  className="p-3 text-center  mb-0 AnalyticsEnquiryHeading"
                   style={{
                     marginBottom: "0px",
                     color: "#ffffff",
+
                     fontWeight: "bold",
                     background: "#4353ff",
                   }}
                 >
                   Enquire Now
                 </h1>
-                <form className="p-3" style={{ background: "#ffffff" }}>
-                  <p className="mb-2 mt-1 text-left p-2">
+                <form className="form-control p-3">
+                  <p classname="mb-2 mt-2 text-center p-2">
                     Please fill in your information and we'll get in touch with
                     you.
                   </p>
@@ -75,23 +77,23 @@ export default function DigitalFinance() {
                     required
                     type="text"
                     id="lastName"
-                    className="w-100 mt-3 p-2 mb-3"
+                    className="w-100 mt-3  p-2 mb-3"
                   />
                   <label htmlFor="email">
                     Email<span style={{ color: "red" }}>*</span>
                   </label>
                   <input
                     required
-                    type="email"
+                    type="text"
                     id="email"
                     className="w-100 mt-3 p-2 mb-3"
                   />
                   <label htmlFor="phoneNumber">
-                    Phone Number <span style={{ color: "red" }}>*</span>
+                    PhoneNumber <span style={{ color: "red" }}>*</span>
                   </label>
                   <input
                     required
-                    type="tel"
+                    type="text"
                     id="phoneNumber"
                     className="w-100 mt-3 p-2 mb-3"
                   />
@@ -114,13 +116,13 @@ export default function DigitalFinance() {
                     id="jobTitle"
                     className="w-100 mt-3 p-2 mb-3"
                   />
-                  <label htmlFor="countryRegion">
+                  <label htmlFor="Country/Region">
                     Country/Region <span style={{ color: "red" }}>*</span>
                   </label>
                   <input
                     required
                     type="text"
-                    id="countryRegion"
+                    id="Country/Region"
                     className="w-100 mt-3 p-2 mb-3"
                   />
                   <label htmlFor="message">
@@ -130,10 +132,9 @@ export default function DigitalFinance() {
                     required
                     rows="5"
                     id="message"
-                    className="w-100 mb-3"
+                    className="mb-3 w-100"
                   ></textarea>
                   <button
-                    type="submit"
                     className="p-3"
                     style={{
                       height: "45px",

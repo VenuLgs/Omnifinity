@@ -92,7 +92,7 @@ export default function Analytics() {
 
               <div className="content-container">
                 <Fade direction="up">
-                  <h6 className="p-2  mb-3 AnalyticsSubHeadings">
+                  <h6 className="p-2   mb-3 AnalyticsSubHeadings">
                     Innovation Solutions
                   </h6>
                   <h1 className="p-2   mb-3 AnalyticsHeading">

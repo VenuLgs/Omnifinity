@@ -1,0 +1,10 @@
+
+.DigitalFinanceImageContainer {
+    background-image: url("https://abacuscambridge.com/hubfs/ACP---Innovation-Solutions---Digital-Financial-Services.jpg") !important;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    width: 100%;
+    filter: brightness(0.7);
+    height: 600px !important;
+  } 

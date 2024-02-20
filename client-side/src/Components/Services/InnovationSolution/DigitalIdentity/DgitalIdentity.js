@@ -1,5 +1,7 @@
 import React from "react";
 import { Fade } from "react-awesome-reveal";
+import "./DigitalIdentity.css" 
+
 
 export default function DigitalIdentity() {
   return (
@@ -8,7 +10,7 @@ export default function DigitalIdentity() {
         <div className="row">
           <div className="col-12">
             <div>
-              <div className="AnalyticsImageContainer  mr-0 w-100"></div>
+              <div className="DigitalIdentityImageContainer  mr-0 w-100"></div>
 
               <div className="content-container">
                 <Fade direction="up">
