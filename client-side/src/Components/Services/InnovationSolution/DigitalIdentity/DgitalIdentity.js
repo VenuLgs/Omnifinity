@@ -5,7 +5,7 @@ import "./DigitalIdentity.css"
 
 export default function DigitalIdentity() {
   return (
-    <div className="AnalyticsTotalContainer" style={{overflow:"hidden"}}>
+    <div className="AnalyticsTotalContainer" >
       <div className="container-fluid p-0">
         <div className="row">
           <div className="col-12">
@@ -61,7 +61,7 @@ export default function DigitalIdentity() {
                   Enquire Now
                 </h1>
                 <form className="form-control p-3">
-                  <p className="mb-2 mt-2 text-center p-2">
+                  <p className="mb-2 mt-2 text-left p-2">
                     Please fill in your information and we'll get in touch with
                     you.
                   </p>
