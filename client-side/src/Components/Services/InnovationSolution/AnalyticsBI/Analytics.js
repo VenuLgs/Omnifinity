@@ -92,7 +92,7 @@ export default function Analytics() {
 
               <div className="content-container">
                 <Fade direction="up">
-                  <h6 className="p-2  mb-3 AnalyticsSubHeadings">
+                  <h6 className="p-2   mb-3 AnalyticsSubHeadings">
                     Innovation Solutions
                   </h6>
                   <h1 className="p-2   mb-3 AnalyticsHeading">
@@ -132,7 +132,7 @@ export default function Analytics() {
                   Enquire Now
                 </h1>
                 <form className="form-control p-3">
-                  <p classname="mb-2 mt-2 text-center p-2">
+                  <p classname="mb-2 mt-2 text-left p-2">
                     Please fill in your information and we'll get in touch with
                     you.
                   </p>
@@ -405,18 +405,8 @@ export default function Analytics() {
               </p>
               <div className="text-center d-flex justify-content-center mt-3 w-100  mb-4">
                 <button
-                  className="p-4"
-                  style={{
-                    height: "45px",
-                    width: "130px",
-                    background: "#0f4494",
-                    cursor: "pointer",
-                    display: "flex",
-                    border: "none",
-                    alignItems: "center",
-                    justifyContent: "center",
-                    color: "#ffffff",
-                  }}
+                  className="btn  mb-3 btn-primary ApplicationDevelopmentButton"
+                  style={{ border: "none", color: "" }}
                 >
                   Contact Us
                 </button>

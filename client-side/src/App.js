@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import { Route, Routes, useLocation } from "react-router-dom";
 import AboutUs from "./Components/AboutUs/AboutUs";
 import ResetPassword from "./AdminComponents/resetPassword.js";
+import DigitalFinance from "./Components/Services/InnovationSolution/DigitalFinance/dgitalFinance.js";
 import HomePage from "./Components/HomePage/Home";
 import Navbar from "./Components/Header/Navbar";
 import ResellerMendixPage from "./Components/Services/ResellerMendixPage";
@@ -14,7 +15,7 @@ import AdminLogin from "./AdminComponents/adminLogin";
 import AdminPannel from "./AdminComponents/adminPanel";
 import Contact from "./Components/ContactUs/Contact";
 import Footer from "./Components/Footer/Footer";
-
+import DigitalIdentity from "./Components/Services/InnovationSolution/DigitalIdentity/DgitalIdentity.js";
 import InnovationSolutions from "./Components/Services/InnovationSolution/InnovationSolutions";
 import ForgetPassword from "./AdminComponents/forgetPassword.js";
 import EnterpriseSystems from "./Components/Services/EnterpriseEdition/EnterpriseSystems";
@@ -69,11 +70,12 @@ function App() {
         />
         <Route path="/about-us" element={<AboutUs />} />
         <Route exact path="/" element={<HomePage />} />
+        <Route exact path="/digitalFinance" element={<DigitalFinance />} />
         <Route path="/adminregister" element={<AdminRegistration />} />
         <Route path="/innovation-solutions" element={<InnovationSolutions />} />
         <Route path="/enterprise-systems" element={<EnterpriseSystems />} />
         <Route path="/managed-services" element={<ManagedServices />} />
-
+        <Route path="/digitalIdentity" element={<DigitalIdentity />} />
         <Route path="/enterprise-systems/sap-hana" element={<SapHana />} />
         <Route
           path="/enterprise-systems/sap-business-by-design"

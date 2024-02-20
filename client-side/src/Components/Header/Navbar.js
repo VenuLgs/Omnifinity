@@ -96,7 +96,7 @@ const Navbar = () => {
                       <Link to="/AnalyticsBI" className="sub-menu-list-item">
                         <li>Analytics & BI</li>
                       </Link>
-                      <Link to="#" className="sub-menu-list-item">
+                      <Link to="/digitalIdentity" className="sub-menu-list-item">
                         <li>Digital Identity</li>
                       </Link>
                       <Link
@@ -105,7 +105,7 @@ const Navbar = () => {
                       >
                         <li>Application Development</li>
                       </Link>
-                      <Link to="#" className="sub-menu-list-item">
+                      <Link to="/digitalFinance" className="sub-menu-list-item">
                         <li>Digital Financial Services</li>
                       </Link>
                     </ul>
