@@ -5,7 +5,7 @@ import "./DigitalIdentity.css"
 
 export default function DigitalIdentity() {
   return (
-    <div className="AnalyticsTotalContainer">
+    <div className="AnalyticsTotalContainer" style={{overflow:"hidden"}}>
       <div className="container-fluid p-0">
         <div className="row">
           <div className="col-12">

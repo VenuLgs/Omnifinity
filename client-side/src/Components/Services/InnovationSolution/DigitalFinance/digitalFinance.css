@@ -1,3 +1,9 @@
+.AnalyticsTotalContainer {
+  min-height: 100vh;
+  overflow-x: hidden; /* Updated line */
+  overflow-y: hidden!important;
+}
+
 
 .DigitalFinanceImageContainer {
     background-image: url("https://abacuscambridge.com/hubfs/ACP---Innovation-Solutions---Digital-Financial-Services.jpg") !important;

@@ -1,5 +1,12 @@
 /* Digital Identity css */
 
+.AnalyticsTotalContainer {
+  min-height: 100vh;
+  overflow-x: hidden; /* Updated line */
+  overflow-y: hidden!important;
+}
+
+
 .DigitalIdentityImageContainer {
     background-image: url("https://abacuscambridge.com/hubfs/ACP---Innovative-Solutions---End-to-End-Software-Engineering1920x540-px%20%282%29.jpg") !important;
     background-size: cover;

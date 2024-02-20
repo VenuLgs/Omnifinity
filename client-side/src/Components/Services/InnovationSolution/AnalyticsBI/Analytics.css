@@ -1,8 +1,9 @@
 .AnalyticsTotalContainer {
   min-height: 100vh;
-  overflow-x: hidden;
-  overflow-y: hidden;
+  overflow-x: hidden; /* Updated line */
+  overflow-y: hidden!important;
 }
+
 .AnalyticsImageContainer {
   background-image: url("https://abacuscambridge.com/hubfs/ACP---Innovative-Solutions---Advanced-Analytics-&-Business-Intelligence.jpg") !important;
   background-size: cover;
