@@ -119,7 +119,7 @@ function App() {
         <Route path="/mendixPage" element={<ResellerMendixPage />} />
         <Route path="/AnalyticsBI" element={<Analytics />} />
         <Route path="/polarionPage" element={<ResellerPolarionPage />} />
-        <Route path="/OpenFinance" element={<OpenFinance />}/>
+        <Route path="/solutions/open-finance" element={<OpenFinance />}/>
       </Routes>
       {!isInsideAdminPanel && <Footer />}
     </>
