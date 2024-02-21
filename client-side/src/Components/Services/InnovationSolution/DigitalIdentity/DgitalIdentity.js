@@ -29,7 +29,7 @@ export default function DigitalIdentity() {
               </div>
             </div>
           </div>
-          <div className="col-12 col-lg-6">
+          <div className="col-12   col-lg-6">
             <p style={{ fontSize: "18px" ,lineHeight: 1.9}} className="p-4 pl-3 mt-3">
               Digital Identity and Access Management (IAM) is essential for
               modern cybersecurity as it enables organizations to manage digital
@@ -69,6 +69,7 @@ export default function DigitalIdentity() {
                     First Name <span style={{ color: "red" }}>*</span>
                   </label>
                   <input
+                  style={{ border: "1px solid" }}
                     required
                     type="text"
                     id="firstName"
@@ -78,6 +79,7 @@ export default function DigitalIdentity() {
                     Last Name <span style={{ color: "red" }}>*</span>
                   </label>
                   <input
+                  style={{ border: "1px solid" }}
                     required
                     type="text"
                     id="lastName"
@@ -87,6 +89,7 @@ export default function DigitalIdentity() {
                     Email<span style={{ color: "red" }}>*</span>
                   </label>
                   <input
+                  style={{ border: "1px solid" }}
                     required
                     type="email"
                     id="email"
@@ -97,6 +100,7 @@ export default function DigitalIdentity() {
                     {/* corrected label text */}
                   </label>
                   <input
+                  style={{ border: "1px solid" }}
                     required
                     type="text"
                     id="phoneNumber"
@@ -106,6 +110,7 @@ export default function DigitalIdentity() {
                     Company Name <span style={{ color: "red" }}>*</span>
                   </label>
                   <input
+                  style={{ border: "1px solid" }}
                     required
                     type="text"
                     id="CompanyName"
@@ -116,6 +121,7 @@ export default function DigitalIdentity() {
                     Job Title <span style={{ color: "red" }}>*</span>
                   </label>
                   <input
+                  style={{ border: "1px solid" }}
                     required
                     type="text"
                     id="jobTitle"
@@ -125,6 +131,7 @@ export default function DigitalIdentity() {
                     Country/Region <span style={{ color: "red" }}>*</span>{" "}
                   </label>
                   <input
+                  style={{ border: "1px solid" }}
                     required
                     type="text"
                     id="CountryRegion"
@@ -134,6 +141,7 @@ export default function DigitalIdentity() {
                     Message <span style={{ color: "red" }}>*</span>
                   </label>
                   <textarea
+                  style={{ border: "1px solid" }}
                     required
                     rows="5"
                     id="message"

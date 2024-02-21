@@ -22,7 +22,7 @@ export default function OpenFinance() {
               </div>
             </div>
           </div>
-          <div className="col-12 col-lg-6">
+          <div className="col-12  col-lg-6">
             <p
               style={{ fontSize: "18px", lineHeight: 1.9 }}
               className="p-4 pl-3 mt-3"
@@ -63,6 +63,7 @@ export default function OpenFinance() {
                     First Name <span style={{ color: "red" }}>*</span>
                   </label>
                   <input
+                    style={{ border: "1px solid" }}
                     required
                     type="text"
                     id="firstName"
@@ -72,6 +73,7 @@ export default function OpenFinance() {
                     Last Name <span style={{ color: "red" }}>*</span>
                   </label>
                   <input
+                    style={{ border: "1px solid" }}
                     required
                     type="text"
                     id="lastName"
@@ -81,6 +83,7 @@ export default function OpenFinance() {
                     Email<span style={{ color: "red" }}>*</span>
                   </label>
                   <input
+                    style={{ border: "1px solid" }}
                     required
                     type="email"
                     id="email"
@@ -90,6 +93,7 @@ export default function OpenFinance() {
                     Phone Number <span style={{ color: "red" }}>*</span>
                   </label>
                   <input
+                    style={{ border: "1px solid" }}
                     required
                     type="tel"
                     id="phoneNumber"
@@ -99,6 +103,7 @@ export default function OpenFinance() {
                     Company Name <span style={{ color: "red" }}>*</span>
                   </label>
                   <input
+                    style={{ border: "1px solid" }}
                     required
                     type="text"
                     id="companyName"
@@ -109,6 +114,7 @@ export default function OpenFinance() {
                     Job Title <span style={{ color: "red" }}>*</span>
                   </label>
                   <input
+                    style={{ border: "1px solid" }}
                     required
                     type="text"
                     id="jobTitle"
@@ -118,6 +124,7 @@ export default function OpenFinance() {
                     Country/Region <span style={{ color: "red" }}>*</span>
                   </label>
                   <input
+                    style={{ border: "1px solid" }}
                     required
                     type="text"
                     id="countryRegion"
@@ -127,6 +134,7 @@ export default function OpenFinance() {
                     Message <span style={{ color: "red" }}>*</span>
                   </label>
                   <textarea
+                   style={{border:"1px solid"}}
                     required
                     rows="5"
                     id="message"
@@ -186,21 +194,24 @@ export default function OpenFinance() {
             </Fade>
           </div>
           <div className="col-12 p-3  mt-3 mb-3  shadow-on-hover text-center col-md-4">
-          <Fade direction="up">
-            <img
-              src="https://27058982.fs1.hubspotusercontent-eu1.net/hubfs/27058982/ACP/Open%20Finance-02.jpg"
-              alt=""
-            />
-            <h3 className="text-center mt-2 mb-2" style={{ color: "#134391" }}>
-              Expanded Financial Services
-            </h3>
-            <p className="text-center mt-2 mb-2">
-              Businesses gain access to a wide range of financial services
-              through a unified interface. This allows organizations to offer
-              their customers a comprehensive suite of services, including
-              banking, payments, lending, investments, and more. It opens up new
-              revenue streams and provides a seamless user experience.
-            </p>
+            <Fade direction="up">
+              <img
+                src="https://27058982.fs1.hubspotusercontent-eu1.net/hubfs/27058982/ACP/Open%20Finance-02.jpg"
+                alt=""
+              />
+              <h3
+                className="text-center mt-2 mb-2"
+                style={{ color: "#134391" }}
+              >
+                Expanded Financial Services
+              </h3>
+              <p className="text-center mt-2 mb-2">
+                Businesses gain access to a wide range of financial services
+                through a unified interface. This allows organizations to offer
+                their customers a comprehensive suite of services, including
+                banking, payments, lending, investments, and more. It opens up
+                new revenue streams and provides a seamless user experience.
+              </p>
             </Fade>
           </div>
           <div className="col-12 p-3 mt-3 mb-3  shadow-on-hover text-center col-md-4">
