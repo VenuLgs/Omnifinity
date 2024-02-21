@@ -16,7 +16,7 @@ export default function OpenFinance() {
                   <h6 className="p-2  mb-3 AnalyticsSubHeadings">Solutions</h6>
                   <h1 className="p-2  mb-3 AnalyticsHeading">Open Finance</h1>
                   <p className="p-2 mb-3 AnalyticsParagraph">
-                    Revolutionize your finance for greater collaboration
+                    Revolutionize your finance <br/> for greater collaboration
                   </p>
                 </Fade>
               </div>
