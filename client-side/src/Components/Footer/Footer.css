@@ -2,8 +2,6 @@
 
 .footer-social-media-icons-main-container {
   display: inline-flex;
-
-  flex-wrap: wrap;
   margin-top: 5%;
 }
 .footer-social-media-icons-main-container .contact-page-social-icon-container {
@@ -159,9 +157,13 @@
 
 @media screen and (max-width: 1025px) {
   .footer-social-media-icons-main-container {
-    display: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row !important;
   }
 }
+
 .text-content,
 .footerheading {
   padding: 0px;
@@ -173,5 +175,5 @@
 .footerheading {
   display: flex !important;
   align-items: center !important;
-  justify-content: center!important;
+  justify-content: center !important;
 }
