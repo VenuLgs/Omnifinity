@@ -21,8 +21,7 @@ export default function DigitalIdentity() {
                     Digital Identity and <br /> Access Management
                   </h1>
                   <p className="p-2 mb-3 AnalyticsParagraph">
-                    Safeguard Your Digital World with Powerful Identity Access
-                    <br />
+                    Safeguard Your Digital World with Powerful <br/> Identity Access
                     Management Solutions
                   </p>
                 </Fade>

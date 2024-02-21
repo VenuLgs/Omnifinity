@@ -1,7 +1,7 @@
 .AnalyticsTotalContainer {
   min-height: 100vh;
   overflow-x: hidden; /* Updated line */
-  overflow-y: hidden!important;
+  overflow-y: hidden !important;
 }
 
 .AnalyticsImageContainer {
@@ -35,19 +35,16 @@
 .AnalyticsParagraph {
   font-size: 25px !important;
   padding-left: 50px !important;
- 
 }
 @media (max-width: 1024px) {
-  .AnalyticsCardsContainer {
-    margin-top: 9px!important;
-  }
+
   .AnalyticsHeading {
     font-size: 45px !important;
     font-weight: bold;
   }
 }
 
-@media(min-width:280px) and (max-width:653px){
+@media (min-width: 280px) and (max-width: 653px) {
   .AnalyticsHeading {
     font-size: 30px !important;
     font-weight: bold;
@@ -55,12 +52,12 @@
 }
 
 
-@media (min-width: 768px) and (max-width: 1024px) {
+
+@media(min-width:280px) and (max-width:1023px){
   .AnalyticsCardsContainer {
     margin-top: 9px !important;
   }
 }
-
 
 .AnalyticsEnquiryHeading {
   border-top-left-radius: 16px !important;
@@ -84,8 +81,6 @@
   list-style-type: none;
 }
 
-
-
 .AnalyticsListContainer {
   display: flex;
   flex-direction: column;
@@ -105,4 +100,19 @@
   outline: none;
   background: transparent;
   cursor: pointer;
+}
+
+@media (min-width:1024px){
+  .AnalyticsCardsContainer {
+    margin-top: -400px !important;
+  }
+  .content-container {
+    position: absolute;
+    top: 19% !important;
+    width: 100%;
+    text-align: left;
+    font-family: "PT Sans";
+    color: #ffffff;
+  }
+  
 }
