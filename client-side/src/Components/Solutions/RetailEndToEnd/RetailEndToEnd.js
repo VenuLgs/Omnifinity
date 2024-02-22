@@ -84,13 +84,13 @@ const RetailEndToEnd = () => {
   return (
     <>
       <div className="saphana-first-container">
-        <div className="saphana-bg-container"></div>
+        <div className="retail-end-to-end-bg-container"></div>
         <div className="saphana-bg-sub-container">
           <h3 className="saphana-enterprise-system-text">SOLUTIONS</h3>
           <h1 className="saphana-bg-heading">End-to-End Retail</h1>
           <p className="saphana-bg-sub-heading">
-            EXPERIENCE COMPREHENSIVE TRANSFORMATION WITH ABACUS CAMBRIDGE
-            PARTNERS — YOUR TRUSTED RETAIL DIGITALIZATION GUIDE
+            EXPERIENCE COMPREHENSIVE TRANSFORMATION WITH OMNIFINITY — YOUR
+            TRUSTED RETAIL DIGITALIZATION GUIDE
           </p>
         </div>
       </div>
@@ -98,15 +98,15 @@ const RetailEndToEnd = () => {
         <div className="saphana-second-main-left-container">
           <Fade direction="up">
             <p className="saphana-second-main-left-descripton">
-              Abacus Cambridge Partners specializes in providing end-to-end
-              retail ERP solutions that harness the power of SAP's suite of
-              products. Our comprehensive ERP solutions are tailored to meet the
-              unique needs of retail businesses, helping them streamline
-              operations, enhance efficiency, and drive growth.
+              Omnifinity specializes in providing end-to-end retail ERP
+              solutions that harness the power of SAP's suite of products. Our
+              comprehensive ERP solutions are tailored to meet the unique needs
+              of retail businesses, helping them streamline operations, enhance
+              efficiency, and drive growth.
             </p>
             <p className="saphana-second-main-left-descripton">
-              At Abacus, we understand that the retail industry operates in a
-              dynamic and competitive landscape. To stay ahead, retailers need
+              At Omnifinity, we understand that the retail industry operates in
+              a dynamic and competitive landscape. To stay ahead, retailers need
               robust software solutions that integrate and automate their key
               business processes. This is where our end-to-end retail ERP
               solutions come into play. By leveraging SAP's suite of products,
@@ -214,7 +214,7 @@ const RetailEndToEnd = () => {
           Deployment Options
         </h1>
         <p className="saphana-last-description">
-          Abacus offers tailored deployment options for SAP Business One for
+          Omnifinity offers tailored deployment options for SAP Business One for
           Retail to fit your unique business requirements and financial
           resources.
         </p>
@@ -228,7 +228,7 @@ const RetailEndToEnd = () => {
               />
               <h4 className="saphana-systems-card-heading">On Cloud</h4>
               <p className="saphana-systems-card-description">
-                Maximise the ROI of your ERP investment with Abacus' highly
+                Maximise the ROI of your ERP investment with Omnifinity' highly
                 scalable and flexible SAP Business One on Cloud deployment
                 models, offering low TCO, faster implementation, data security,
                 and better scalability options.
@@ -245,7 +245,7 @@ const RetailEndToEnd = () => {
               />
               <h4 className="saphana-systems-card-heading">On-Premise</h4>
               <p className="saphana-systems-card-description">
-                With Abacus's on-premise deployment option, businesses can
+                With Omnifinity's on-premise deployment option, businesses can
                 benefit from having complete control over their ERP system, as
                 it is installed on their own servers and maintained by their own
                 IT team.{" "}
@@ -257,7 +257,7 @@ const RetailEndToEnd = () => {
 
       <div className="retail-end-to-end-banner-container">
         <h1 className="retail-end-to-end-banner-heading">
-          Why Abacus for your End-to-End Retail Solution
+          Why Omnifinity for your End-to-End Retail Solution
         </h1>
         <div className="retail-end-to-end-sub-container">
           {bannerDetails.map((el) => (

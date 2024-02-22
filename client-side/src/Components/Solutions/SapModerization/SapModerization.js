@@ -1,64 +1,118 @@
 import React from "react";
 
-import "../SapHana/SapHana.css";
+import "../../Services/EnterpriseEdition/SapHana/SapHana.css";
 import { Fade } from "react-awesome-reveal";
-import WhyUsBanner from "../../WhyUsBanner/WhyusBanner";
 
-import sapbusinessone1 from "../../../../images/Enterprise/SapBusinessOne/sapbusinessone1.jpg";
-import sapbusinessone2 from "../../../../images/Enterprise/SapBusinessOne/sapbusinessone2.webp";
-import sapbusinessone3 from "../../../../images/Enterprise/SapBusinessOne/sapbusinessone3.webp";
-import sapbusinessone4 from "../../../../images/Enterprise/SapBusinessOne/sapbusinessone4.jpg";
-import sapbusinessone5 from "../../../../images/Enterprise/SapBusinessOne/sapbusinessone5.webp";
-import sapbusinessone6 from "../../../../images/Enterprise/SapBusinessOne/sapbusinessone6.webp";
+import sapmoderization1 from "../../../images/Solutions/SapModerization/sapmoderization1.jpg";
+import sapmoderization2 from "../../../images/Solutions/SapModerization/sapmoderization2.jpg";
+import sapmoderization3 from "../../../images/Solutions/SapModerization/sapmoderization3.jpg";
+import sapmoderization4 from "../../../images/Solutions/SapModerization/sapmoderization4.jpg";
+import sapmoderization5 from "../../../images/Solutions/SapModerization/sapmoderization5.jpg";
+import sapmoderization6 from "../../../images/Solutions/SapModerization/sapmoderization6.jpg";
+import sapmoderization7 from "../../../images/Solutions/SapModerization/sapmoderization7.jpg";
+import sapmoderization8 from "../../../images/Solutions/SapModerization/sapmoderization8.jpg";
+import sapmoderization9 from "../../../images/Solutions/SapModerization/sapmoderization9.jpg";
+import sapmoderization10 from "../../../images/Solutions/SapModerization/sapmoderization10.jpg";
+import sapmoderization11 from "../../../images/Solutions/SapModerization/sapmoderization11.jpg";
+
 import { useNavigate } from "react-router-dom";
 
 const data = [
   {
     id: 1,
-    image: sapbusinessone1,
-    heading: "Financial Management",
+    image: sapmoderization1,
+    heading:
+      "Streamlined Processes, Improved Performance: Unlocking Growth through SAP on Google Cloud",
     description:
-      "SAP Business One helps manage financials, including general ledger, accounts payable, accounts receivable, fixed assets, and banking. The software also generates financial reports and statements quickly and accurately.",
+      "Streamline your internal processes and drive growth with faster development times and significant reductions in system outages. With SAP on Google Cloud, enterprises can experience efficient performance and accelerated innovation.",
     link: "",
   },
   {
     id: 2,
-    image: sapbusinessone2,
-    heading: "Sales Management",
+    image: sapmoderization2,
+    heading: "Cost-Effective and Agile",
     description:
-      "SAP Business One enables managing sales processes, including customer data, sales opportunities, sales orders, and invoicing. The software tracks customer interactions and analyzes sales performance to identify areas for improvement.",
+      "Reducing Costs and Boosting Agility with SAP on Google Cloud Experience up to 50% reduction in infrastructure and operational costs with SAP on Google Cloud. This cost-effective solution enables agility and innovation, allowing businesses to respond quickly to changing market conditions.",
     link: "",
   },
   {
     id: 3,
-    image: sapbusinessone3,
-    heading: "Customer Relationship Management",
+    image: sapmoderization3,
+    heading:
+      "Certified Hosting for Secure and Fast Cloud Infrastructure: Ensuring Security and Speed for SAP Applicationst",
     description:
-      "SAP Business One includes CRM features to manage customer interactions, such as sales, marketing, and service activities. The software tracks customer data, sales history, and service requests to improve the customer experience.",
+      "With certified hosting for SAP applications, enterprises can enjoy a secure and fast cloud infrastructure. This effective solution provides reliable and scalable hosting for mission-critical applications.",
     link: "",
   },
   {
     id: 4,
-    image: sapbusinessone4,
-    heading: "Inventory Management",
+    image: sapmoderization4,
+    heading:
+      "Next-Gen Technology for Modernization: Accelerating Modernization with SAP Leonardo, Machine Learning, and BigQuery",
     description:
-      "SAP Business One streamlines inventory management by tracking stock levels, managing purchase orders, and monitoring demand. The software's forecasting capabilities enable businesses to anticipate demand and plan production accordingly.",
+      "Leverage next-gen technologies like SAP Leonardo, Machine Learning, and BigQuery to accelerate modernization. By embracing cutting-edge technology, enterprises can achieve digital transformation and stay ahead of the competition.",
     link: "",
   },
   {
     id: 5,
-    image: sapbusinessone5,
-    heading: "Procurement Management",
+    image: sapmoderization5,
+    heading:
+      "Better Insights, Enhanced Decision-Making: Combining Google Cloud Analytics with SAP S/4 HANA",
     description:
-      "SAP Business One enables managing procurement processes, including purchase requests, purchase orders, and goods receipts. The software monitors supplier performance and tracks deliveries to ensure timely and cost-effective procurement.",
+      "Combine the power of Google Cloud's analytics with SAP S/4 HANA to accelerate innovation and enhance decision-making. This approach provides better insights, leading to data-driven transformations that improve customer experience.",
     link: "",
   },
   {
     id: 6,
-    image: sapbusinessone6,
-    heading: "Manufacturing Management",
+    image: sapmoderization6,
+    heading:
+      "Quick Innovation, Improved Customer Experience: Leveraging Data-Powered Transformations for Better Product Innovation",
     description:
-      "SAP Business One's manufacturing features enable managing the production process, including bill of materials, production orders, and material requirements planning. The software tracks production costs and analyzes production performance to identify areas for improvement.",
+      "Fast-track your product innovation and improve customer experience by leveraging data-powered transformations. By embracing data-driven approaches, enterprises can better understand their customers' needs and deliver innovative solutions.",
+    link: "",
+  },
+  {
+    id: 7,
+    image: sapmoderization7,
+    heading:
+      "Modernizing and Creating New SAP Apps with Apigee: Unleashing New Business Models with SAP and Apigee",
+    description:
+      "Unleash new business models by modernizing and creating new SAP apps with Apigee. By exposing digital assets to third-party developers, enterprises can create new revenue streams and improve sales while enhancing customer experience.",
+    link: "",
+  },
+];
+
+const details2 = [
+  {
+    id: 1,
+    image: sapmoderization8,
+    heading: "TRANSFORM",
+    description:
+      "Omnifinity provides end-to-end SAP modernization and migration services that integrate SAP strategy into a revenue-generating business agenda, ensuring a seamless transition and maximum ROI for enterprises.",
+    link: "",
+  },
+  {
+    id: 2,
+    image: sapmoderization9,
+    heading: "ADVISORY",
+    description:
+      "At Omnifinity, we believe that a successful SAP cloud migration is not just about technology, but also about crafting a clear vision for your business. That's why our team of experts work closely with you to understand your unique needs and goals and develop a tailor-made roadmap for your SAP cloud migration.",
+    link: "",
+  },
+  {
+    id: 3,
+    image: sapmoderization10,
+    heading: "MIGRATION",
+    description:
+      "Migrating your SAP application to Google Cloud can be a complex and costly undertaking, but not with Omnifinity. Our team of experts provides a seamless and secure migration service that minimizes risk and optimizes cost.",
+    link: "",
+  },
+  {
+    id: 4,
+    image: sapmoderization11,
+    heading: "OPTIMIZE AND MANAGE",
+    description:
+      "At Omnifinity, we know that modernizing your SAP landscape is just the first step towards digital transformation. That's why we help you maximize the benefits of modernization by incorporating cloud governance, cost optimization, premium security tactics, and proactive monitoring into every step of the process.",
     link: "",
   },
 ];
@@ -69,7 +123,7 @@ const SapModerization = () => {
   return (
     <>
       <div className="saphana-first-container">
-        <div className="sap-business-one-bg-container"></div>
+        <div className="sap-moderization-bg-container"></div>
         <div className="saphana-bg-sub-container">
           <h3 className="saphana-enterprise-system-text">SOLUTIONS</h3>
           <h1 className="saphana-bg-heading">
@@ -87,7 +141,7 @@ const SapModerization = () => {
               Enterprises today are racing to embrace the latest SAP
               technologies to drive growth and stay competitive. However, many
               are struggling to fully harness their capabilities. That's where
-              Abacus comes in. We provide end-to-end SAP modernization and
+              Omnifinity comes in. We provide end-to-end SAP modernization and
               migration services, including expert advisory, cloud strategy,
               seamless migration and upgrade, and ongoing support and
               maintenance.
@@ -167,13 +221,40 @@ const SapModerization = () => {
                     alt=""
                     className="saphana-systems-card-image"
                   />
+                  <h4 className="sap-moderization-card-heading">
+                    {each.heading}
+                  </h4>
+                  <p className="sap-moderization-card-description">
+                    {each.description}
+                  </p>
+                </li>
+              </Fade>
+            );
+          })}
+        </ul>
+      </div>
+      <div className="saphana-systems-card-main-container">
+        <h1 className="saphana-systems-card-main-heading">
+          Why Omnifinity is the Comprehensive Partner for your Modernization and
+          Migration Services
+        </h1>
+
+        <ul className="saphana-systems-card-flex-container">
+          {details2.map((each) => {
+            return (
+              <Fade damping={0.1} direction="up" delay={90}>
+                <li className="sap-on-google-systems-card-container">
+                  <img
+                    src={each.image}
+                    alt=""
+                    className="saphana-systems-card-image"
+                  />
                   <h4 className="saphana-systems-card-heading">
                     {each.heading}
                   </h4>
                   <p className="saphana-systems-card-description">
                     {each.description}
                   </p>
-                  <p>learn more</p>
                 </li>
               </Fade>
             );
