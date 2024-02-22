@@ -2,7 +2,6 @@ import React from "react";
 import { Fade } from "react-awesome-reveal";
 import "./digitalFinance.css";
 
-
 export default function DigitalFinance() {
   return (
     <div className="AnalyticsTotalContainer">
@@ -25,8 +24,11 @@ export default function DigitalFinance() {
               </div>
             </div>
           </div>
-          <div className="col-12 col-lg-6">
-            <p style={{ fontSize: "18px" }} className="p-4 pl-3 mt-3">
+          <div className="col-12  col-lg-6">
+            <p
+              style={{ fontSize: "18px", lineHeight: 1.9 }}
+              className="p-4 pl-3 mt-3"
+            >
               The financial services sector is undergoing a massive shift. With
               innovators, cutting-edge technology, and digitally-savvy customers
               driving market dynamics, traditional players are facing stiff
@@ -65,6 +67,7 @@ export default function DigitalFinance() {
                     First Name <span style={{ color: "red" }}>*</span>
                   </label>
                   <input
+                    style={{ border: "1px solid" }}
                     required
                     type="text"
                     id="firstName"
@@ -74,6 +77,7 @@ export default function DigitalFinance() {
                     Last Name <span style={{ color: "red" }}>*</span>
                   </label>
                   <input
+                    style={{ border: "1px solid" }}
                     required
                     type="text"
                     id="lastName"
@@ -83,6 +87,7 @@ export default function DigitalFinance() {
                     Email<span style={{ color: "red" }}>*</span>
                   </label>
                   <input
+                    style={{ border: "1px solid" }}
                     required
                     type="text"
                     id="email"
@@ -92,6 +97,7 @@ export default function DigitalFinance() {
                     PhoneNumber <span style={{ color: "red" }}>*</span>
                   </label>
                   <input
+                    style={{ border: "1px solid" }}
                     required
                     type="text"
                     id="phoneNumber"
@@ -101,6 +107,7 @@ export default function DigitalFinance() {
                     Company Name <span style={{ color: "red" }}>*</span>
                   </label>
                   <input
+                    style={{ border: "1px solid" }}
                     required
                     type="text"
                     id="CompanyName"
@@ -111,6 +118,7 @@ export default function DigitalFinance() {
                     Job Title <span style={{ color: "red" }}>*</span>
                   </label>
                   <input
+                    style={{ border: "1px solid" }}
                     required
                     type="text"
                     id="jobTitle"
@@ -120,6 +128,7 @@ export default function DigitalFinance() {
                     Country/Region <span style={{ color: "red" }}>*</span>
                   </label>
                   <input
+                  style={{ border: "1px solid" }}
                     required
                     type="text"
                     id="Country/Region"
@@ -129,6 +138,7 @@ export default function DigitalFinance() {
                     Message <span style={{ color: "red" }}>*</span>
                   </label>
                   <textarea
+                  style={{ border: "1px solid" }}
                     required
                     rows="5"
                     id="message"
@@ -163,10 +173,10 @@ export default function DigitalFinance() {
             <Fade direction="up">
               <h2 className="text-center p-2 mt-3">
                 Empowering Financial Services Firms for the Digital Future:
-                Abacus as Your Trusted Transformation Partner
+                Omnifinity as Your Trusted Transformation Partner
               </h2>
-              <p className="text-center mt-3 p-2 mb-4">
-                Abacus is the ideal partner for your financial services firm's
+              <p className="text-center mt-3 p-2 mb-4" >
+                Omnifinity is the ideal partner for your financial services firm's
                 digital transformation journey. Our expertise in intelligent
                 applications, digital platforms, and domain knowledge provides
                 you with the tools you need to revolutionize your business

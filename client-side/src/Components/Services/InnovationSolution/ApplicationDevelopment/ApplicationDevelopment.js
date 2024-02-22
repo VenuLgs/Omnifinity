@@ -90,8 +90,8 @@ export default function ApplicationDevelopment() {
               </div>
             </div>
           </div>
-          <div className="col-12 col-lg-6">
-            <p style={{ fontSize: "18px" }} className="p-4 pl-3 mt-3">
+          <div className="col-12   col-lg-6">
+            <p style={{ fontSize: "18px",lineHeight: 1.9 }} className="p-4 pl-3 mt-3">
               In today's digital age, app development is a vital aspect of
               businesses, providing them with the ability to create personalized
               solutions that cater to the unique requirements of their clients.
@@ -130,6 +130,7 @@ export default function ApplicationDevelopment() {
                     First Name <span style={{ color: "red" }}>*</span>
                   </label>
                   <input
+                  style={{ border: "1px solid" }}
                     required
                     type="text"
                     id="firstName"
@@ -139,6 +140,7 @@ export default function ApplicationDevelopment() {
                     Last Name <span style={{ color: "red" }}>*</span>
                   </label>
                   <input
+                  style={{ border: "1px solid" }}
                     required
                     type="text"
                     id="lastName"
@@ -148,6 +150,7 @@ export default function ApplicationDevelopment() {
                     Email<span style={{ color: "red" }}>*</span>
                   </label>
                   <input
+                  style={{ border: "1px solid" }}
                     required
                     type="text"
                     id="email"
@@ -157,6 +160,7 @@ export default function ApplicationDevelopment() {
                     PhoneNumber <span style={{ color: "red" }}>*</span>
                   </label>
                   <input
+                  style={{ border: "1px solid" }}
                     required
                     type="text"
                     id="phoneNumber"
@@ -166,6 +170,7 @@ export default function ApplicationDevelopment() {
                     Company Name <span style={{ color: "red" }}>*</span>
                   </label>
                   <input
+                  style={{ border: "1px solid" }}
                     required
                     type="text"
                     id="CompanyName"
@@ -176,6 +181,7 @@ export default function ApplicationDevelopment() {
                     Job Title <span style={{ color: "red" }}>*</span>
                   </label>
                   <input
+                  style={{ border: "1px solid" }}
                     required
                     type="text"
                     id="jobTitle"
@@ -185,6 +191,7 @@ export default function ApplicationDevelopment() {
                     Country/Region <span style={{ color: "red" }}>*</span>
                   </label>
                   <input
+                  style={{ border: "1px solid" }}
                     required
                     type="text"
                     id="Country/Region"
@@ -194,6 +201,7 @@ export default function ApplicationDevelopment() {
                     Message <span style={{ color: "red" }}>*</span>
                   </label>
                   <textarea
+                  style={{ border: "1px solid" }}
                     required
                     rows="5"
                     id="message"

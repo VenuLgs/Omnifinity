@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from "react";
-// import Footer from "../Footer/Footer.js";
 import { Carousel } from "react-bootstrap";
 import Player from "../Videos/pexels-tima-miroshnichenko-5377697 (2160p).mp4";
 import { IoHome } from "react-icons/io5";
@@ -245,7 +244,7 @@ export default function HomePage() {
       <div className="container-fluid p-0">
         <div className="row">
           <div className="col-12">
-            <Carousel>
+            <Carousel interval={3000}>
               {Banners.map((each, index) => (
                 <Carousel.Item>
                   <img

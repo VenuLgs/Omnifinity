@@ -106,7 +106,7 @@ export default function Analytics() {
             </div>
           </div>
           <div className="col-12 col-lg-6">
-            <p style={{ fontSize: "18px" }} className="p-4 pl-3 mt-3">
+            <p style={{ fontSize: "18px",lineHeight: 1.9 }} className="p-4 pl-3 mt-3">
               In today's data-driven world, businesses cannot afford to ignore
               the power of Advanced Analytics and Business Intelligence (BI).
               These tools can provide a competitive edge by unlocking valuable
@@ -140,6 +140,7 @@ export default function Analytics() {
                     First Name <span style={{ color: "red" }}>*</span>
                   </label>
                   <input
+                  style={{ border: "1px solid" }}
                     required
                     type="text"
                     id="firstName"
@@ -149,6 +150,7 @@ export default function Analytics() {
                     Last Name <span style={{ color: "red" }}>*</span>
                   </label>
                   <input
+                  style={{ border: "1px solid" }}
                     required
                     type="text"
                     id="lastName"
@@ -158,6 +160,7 @@ export default function Analytics() {
                     Email<span style={{ color: "red" }}>*</span>
                   </label>
                   <input
+                  style={{ border: "1px solid" }}
                     required
                     type="text"
                     id="email"
@@ -167,6 +170,7 @@ export default function Analytics() {
                     PhoneNumber <span style={{ color: "red" }}>*</span>
                   </label>
                   <input
+                  style={{ border: "1px solid" }}
                     required
                     type="text"
                     id="phoneNumber"
@@ -176,6 +180,7 @@ export default function Analytics() {
                     Company Name <span style={{ color: "red" }}>*</span>
                   </label>
                   <input
+                  style={{ border: "1px solid" }}
                     required
                     type="text"
                     id="CompanyName"
@@ -186,6 +191,7 @@ export default function Analytics() {
                     Job Title <span style={{ color: "red" }}>*</span>
                   </label>
                   <input
+                  style={{ border: "1px solid" }}
                     required
                     type="text"
                     id="jobTitle"
@@ -195,6 +201,7 @@ export default function Analytics() {
                     Country/Region <span style={{ color: "red" }}>*</span>
                   </label>
                   <input
+                  style={{ border: "1px solid" }}
                     required
                     type="text"
                     id="Country/Region"
@@ -204,6 +211,7 @@ export default function Analytics() {
                     Message <span style={{ color: "red" }}>*</span>
                   </label>
                   <textarea
+                  style={{ border: "1px solid" }}
                     required
                     rows="5"
                     id="message"

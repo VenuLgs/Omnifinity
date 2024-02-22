@@ -4,6 +4,7 @@ import Contact2 from "../Images/contact2.webp";
 import Contact3 from "../Images/contact3.webp";
 import Contact4 from "../Images/conatct4.webp";
 import ReCAPTCHA from "react-google-recaptcha";
+import { Fade } from "react-awesome-reveal";
 // import Footer from "../Footer/Footer"
 import "./Contact.css";
 const TEST_SITE_KEY = "6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI";
@@ -46,25 +47,27 @@ export default function Contact() {
     <div className="totalContactUsContainer">
       <div className="container-fluid p-0 w-100">
         <div className="row">
-          <div style={{height:"400px"}}>
-          <div className="col-12 contactbgcontainer">
-            {/* <h1 className="contactHeading text-primary" >Contact US!</h1> */}
-          </div>
-          <div className="col-12 text-center w-100">
-          <h1 className="contactHeading text-center" >Contact US!</h1>
-          </div>
+          <div style={{ height: "400px" }}>
+            <div className="col-12 contactbgcontainer">
+              {/* <h1 className="contactHeading text-primary" >Contact US!</h1> */}
+            </div>
+            <div className="col-12 text-center w-100">
+              <h1 className="contactHeading text-center">Contact US!</h1>
+            </div>
           </div>
           {Data.map((each, index) => (
             <div className="col-12 col-md-3 text-center w-90 mt-3 mb-3 p-4">
-              <img
-                src={each.imageUrl}
-                height="150"
-                width="150"
-                alt={`${index + 1}`}
-              />
-              <h6 className="text-primary mt-3">{each.title}</h6>
-              <p className="text-secondary">{each.description}</p>
-              <p className="text-secondary">{each.phone}</p>
+              <Fade direction="up">
+                <img
+                  src={each.imageUrl}
+                  height="150"
+                  width="150"
+                  alt={`${index + 1}`}
+                />
+                <h6 className="text-primary mt-3">{each.title}</h6>
+                <p className="text-secondary">{each.description}</p>
+                <p className="text-secondary">{each.phone}</p>
+              </Fade>
             </div>
           ))}
           <div className="col-12">
@@ -78,64 +81,114 @@ export default function Contact() {
                     className="form-control"
                     style={{ border: "none", outline: "none" }}
                   >
-                    <div className="container-fluid p-0 w-100">
+                    <div className="container-fluid p-0  w-100">
                       <div className="row">
                         <div className="col-12 p-2 text-center bg-primary">
                           <h3 style={{ color: "#ffffff" }}>Get in touch!</h3>
                         </div>
                         <div className="p-2 mt-3 mb-3 col-md-6">
-                          <label htmlFor="email" className="text-left" style={{fontWeight:"normal"}}>
+                          <label
+                            htmlFor="email"
+                            className="text-left"
+                            style={{ fontWeight: "normal" }}
+                          >
                             Email <span style={{ color: "red" }}>*</span>
                           </label>
-                          <input  id="email" type="text" className="w-100" />
+                          <input
+                            style={{ border: "1px solid" }}
+                            id="email"
+                            type="text"
+                            className="w-100 p-2"
+                          />
                         </div>
                         <div className="p-2 mt-3 mb-3 col-md-6">
-                          <label htmlFor="phoneNumber" className="text-left" style={{fontWeight:"normal"}}>
+                          <label
+                            htmlFor="phoneNumber"
+                            className="text-left"
+                            style={{ fontWeight: "normal" }}
+                          >
                             phoneNumber <span style={{ color: "red" }}>*</span>
                           </label>
                           <input
+                            style={{ border: "1px solid" }}
                             type="text"
                             id="phoneNumber"
-                            className="w-100"
+                            className="w-100 p-2"
                           />
                         </div>
                         <div className="p-2 mt-3 mb-3 col-md-6">
-                          <label className="text-left" htmlFor="firstName" style={{fontWeight:"normal"}}>
+                          <label
+                            className="text-left"
+                            htmlFor="firstName"
+                            style={{ fontWeight: "normal" }}
+                          >
                             first name
                           </label>
-                          <input type="text" id="firstName" className="w-100" />
+                          <input
+                            style={{ border: "1px solid" }}
+                            type="text"
+                            id="firstName"
+                            className="w-100 p-2"
+                          />
                         </div>
                         <div className="p-2 mt-3 mb-3 col-md-6">
-                          <label htmlFor="lastName" className="text-left" style={{fontWeight:"normal"}}>
+                          <label
+                            htmlFor="lastName"
+                            className="text-left"
+                            style={{ fontWeight: "normal" }}
+                          >
                             last name
                           </label>
-                          <input id="lastName" type="text" className="w-100" />
+                          <input
+                            style={{ border: "1px solid" }}
+                            id="lastName"
+                            type="text"
+                            className="w-100 p-2"
+                          />
                         </div>
-                        <div className="p-2 mt-3 mb-3 col-md-6" style={{fontWeight:"normal"}}>
-                          <label className="text-left" htmlFor="companyName" style={{fontWeight:"normal"}}>
+                        <div
+                          className="p-2 mt-3 mb-3 col-md-6"
+                          style={{ fontWeight: "normal" }}
+                        >
+                          <label
+                            className="text-left"
+                            htmlFor="companyName"
+                            style={{ fontWeight: "normal" }}
+                          >
                             Company name
                           </label>
                           <input
+                            style={{ border: "1px solid" }}
                             type="text"
                             id="companyName"
-                            className="w-100"
+                            className="w-100 p-2"
                           />
                         </div>
                         <div className="p-2 mt-3 mb-3 col-md-6">
-                          <label className="text-left" htmlFor="CountryRegion" style={{fontWeight:"normal"}}>
+                          <label
+                            className="text-left"
+                            htmlFor="CountryRegion"
+                            style={{ fontWeight: "normal" }}
+                          >
                             Country/Region
                           </label>
                           <input
+                            style={{ border: "1px solid" }}
                             type="text"
                             id="CountryRegion"
-                            className="w-100"
+                            className="w-100 p-2"
                           />
                         </div>
                         <div className="col-12">
-                          <label className="text-left" htmlFor="message" style={{fontWeight:"normal"}}>
+                          <label
+                            className="text-left"
+                            htmlFor="message"
+                            style={{ fontWeight: "normal" }}
+                          >
                             Message
                           </label>
                           <textarea
+                            style={{ border: "1px solid" }}
                             rows="5"
                             id="message"
                             className="w-100 p-2 mt-3 mb-3"
