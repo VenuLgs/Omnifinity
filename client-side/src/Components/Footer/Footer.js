@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "@fortawesome/fontawesome-free/css/all.min.css";
 import "./Footer.css";
 import Scroll from "../Scroll/Scroll.js";
@@ -16,9 +17,7 @@ export default function Footer() {
       <div className="container">
         <div className="row">
           <div className="col-12 col-md-3 mt-3 p-3 text-center">
-
             <h1 className="mt-2 mb-2 footerheading  text-center">Omnifinity</h1>
-
 
             <div className="footer-social-media-icons-main-container">
               <div className="contact-page-social-icon-container contact-page-facebook-container">
@@ -59,33 +58,66 @@ export default function Footer() {
           </div>
           <div className="col-12 col-md-3 mt-3">
             <ul className="text-content p-3 text-center">
-              <li className="mt-2 mb-2">SAP S/4HANA</li>
-              <li className="mt-2 mb-2">SAP Business ByDesign</li>
-              <li className="mt-2 mb-2">SAP Business One</li>
-              <li className="mt-2 mb-2">SAP Customer Checkout</li>
-              <li className="mt-2 mb-2">SAP Ariba</li>
+              <li className="mt-2 mb-2">
+                <Link
+                  to="/enterprise-systems/sap-hana"
+                  style={{ textDecoration: "none", color: "#ffffff" }}
+                >
+                  {" "}
+                  SAP S/4HANA
+                </Link>
+              </li>
+              <li className="mt-2 mb-2">
+                <Link  style={{ textDecoration: "none", color: "#ffffff" }} to="/enterprise-systems/sap-business-by-design">SAP Business ByDesign</Link>
+              </li>
+              <li className="mt-2 mb-2">
+                <Link  style={{ textDecoration: "none", color: "#ffffff" }} to="/enterprise-systems/sap-business-one">SAP Business One</Link>
+              </li>
+              <li className="mt-2 mb-2">
+                <Link  style={{ textDecoration: "none", color: "#ffffff" }} to="/enterprise-systems/sap-customer-checkout">SAP Customer Checkout</Link>
+              </li>
+              <li className="mt-2 mb-2">
+                <Link  style={{ textDecoration: "none", color: "#ffffff" }} to="/enterprise-systems/sap-ariba">SAP Ariba</Link>
+              </li>
             </ul>
           </div>
           <div className="col-12 col-md-3 mt-3">
             <ul className="text-content p-3 text-center">
-              <li className="mt-2 mb-2">APPLICATION DEVELOPMENT</li>
-              <li className="mt-2 mb-2">Analytics & BI</li>
-              <li className="mt-2 mb-2">Digitiz Identity</li>
-              <li className="mt-2 mb-2">Digital Financial Services</li>
+              <li className="mt-2 mb-2">
+                <Link  style={{ textDecoration: "none", color: "#ffffff" }} to="/ApplicationDevelopment">APPLICATION DEVELOPMENT</Link>
+              </li>
+              <li className="mt-2 mb-2">
+                <Link   style={{ textDecoration: "none", color: "#ffffff" }} to="/AnalyticsBI">Analytics & BI</Link>
+              </li>
+              <li className="mt-2 mb-2">
+                <Link  style={{ textDecoration: "none", color: "#ffffff" }} to="/digitalIdentity">Digitiz Identity</Link>
+              </li>
+              <li className="mt-2 mb-2">
+                <Link  style={{ textDecoration: "none", color: "#ffffff" }} to="/digitalFinance">Digital Financial Services</Link>
+              </li>
             </ul>
           </div>
 
           <div className="col-12 col-md-3 mt-3">
             <ul className="text-content text-center p-3">
-              <li className="mt-2 mb-2">DEVOPS</li>
-              <li className="mt-2 mb-2">MANAGED CLOUD</li>
-              <li className="mt-2 mb-2">STAFF AUGMENTATION</li>
+              <li className="mt-2 mb-2">
+                <Link  style={{ textDecoration: "none", color: "#ffffff" }} to="/managed-services/devops">DEVOPS</Link>
+              </li>
+              <li className="mt-2 mb-2">
+                <Link  style={{ textDecoration: "none", color: "#ffffff" }} to="/managed-services/manage-cloud">MANAGED CLOUD</Link>
+              </li>
+              <li className="mt-2 mb-2">
+                <Link  style={{ textDecoration: "none", color: "#ffffff" }} to="/managed-services/staff-augmentation">STAFF AUGMENTATION</Link>
+              </li>
             </ul>
           </div>
           <div className="col-12 text-center">
             © 2024 Omnifinity. All Rights Reserved Designed & Developed with by
             <br />{" "}
-            <a href="https://labyrinthglobalsolutions.com/">
+            <a
+              href="https://labyrinthglobalsolutions.com/"
+              style={{ color: "#ffffff" }}
+            >
               {" "}
               Labyrinth Global Solutions{" "}
             </a>
