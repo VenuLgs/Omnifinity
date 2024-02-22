@@ -207,3 +207,221 @@
 .our-leader-image {
   width: 55%;
 }
+
+@media screen and (max-width: 1200px) {
+  .aboutus-main-container {
+    display: flex;
+    flex-direction: column;
+    gap: 8%;
+  }
+  .aboutus-first-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+    width: 100%;
+    position: relative;
+  }
+  .aboutus-first-text-container {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+  }
+  .aboutus-heading {
+    font-weight: 500;
+    color: white;
+    font-size: 50px;
+    text-align: center;
+    width: 80%;
+    margin: 0px;
+  }
+  .aboutus-description {
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    width: 70%;
+  }
+  .aboutus-second-text-container {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .aboutus-third-image-text-container {
+    width: 90%;
+    height: 375px;
+    display: flex;
+    gap: 3%;
+  }
+  .aboutus-third-image-container {
+    width: 57%;
+  }
+  .aboutus-third-text-container {
+    width: 37%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .aboutus-third-heading {
+    font-weight: 500;
+    font-size: 32px;
+    color: black;
+    width: 100%;
+    text-align: center;
+    margin: 0px;
+  }
+  .aboutus-second-description {
+    color: black;
+    font-size: 16px;
+    font-weight: 400;
+    overflow: hidden;
+    line-height: 1.9;
+    padding: 10px;
+  }
+  .aboutus-third-heading {
+    font-weight: 500;
+    font-size: 42px;
+    color: black;
+    width: 100%;
+    text-align: center;
+    margin: 0px;
+  }
+  .aboutus-global-colors-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .aboutus-global-color-image-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 45%;
+    padding: 20px;
+    height: max-content;
+  }
+}
+
+@media screen and (max-width: 512px) {
+  .aboutus-first-text-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+  }
+
+  .aboutus-first-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+    width: 100%;
+    position: relative;
+  }
+  .aboutus-heading {
+    font-weight: 500;
+    color: white;
+    font-size: 38px;
+    text-align: center;
+    width: 80%;
+    margin: 0px;
+  }
+  .aboutus-description {
+    color: white;
+    font-size: 18px;
+    text-align: center;
+    width: 70%;
+  }
+  .aboutus-second-text-container {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .aboutus-second-heading {
+    font-weight: 500;
+    color: black;
+    font-size: 38px;
+    text-align: center;
+  }
+  .aboutus-second-description {
+    color: black;
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 1.9;
+    padding: 10px;
+  }
+  .aboutus-third-image-text-container {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    gap: 5%;
+  }
+  .aboutus-third-image-container {
+    width: 100%;
+  }
+  .aboutus-third-text-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  .aboutus-third-heading {
+    font-weight: 500;
+    font-size: 30px;
+    color: black;
+    text-align: center;
+    margin: 0px;
+  }
+  .aboutus-global-colors-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .aboutus-global-color-image-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 20px;
+    height: max-content;
+  }
+  .aboutus-global-color-image {
+    height: 110px;
+    width: 110px;
+  }
+  .aboutus-global-color-text {
+    font-size: 30px;
+    font-weight: 400;
+    color: rgb(52, 52, 233);
+    margin: 0px;
+  }
+
+  .aboutus-our-values-conatainer {
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 5%;
+  }
+
+  .aboutus-our-values-text-image-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+    margin: 2%;
+  }
+}

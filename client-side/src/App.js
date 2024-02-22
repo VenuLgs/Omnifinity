@@ -30,6 +30,8 @@ import DevOps from "./Components/Services/ManagedServices/DevOps/DevOps.js";
 import Staff from "./Components/Services/ManagedServices/StaffAgumentation/Staff.js";
 import SapOnGoogle from "./Components/Solutions/SapOnGoogleCloud/SapOnGoogle.js";
 import RetailEndToEnd from "./Components/Solutions/RetailEndToEnd/RetailEndToEnd.js";
+import SapModerization from "./Components/Solutions/SapModerization/SapModerization.js";
+import News from "./Components/Insights/News/News.js";
 
 function App() {
   const location = useLocation();
@@ -107,6 +109,11 @@ function App() {
         />
 
         <Route path="/solutions/sap-on-google" element={<SapOnGoogle />} />
+        <Route
+          path="/solutions/sap-moderization"
+          element={<SapModerization />}
+        />
+        <Route path="/insights/news" element={<News />} />
         <Route path="/enterprise-systems/sap-ariba" element={<SapAriba />} />
         <Route path="/AnalyticsBI" element={<Analytics />} />
         <Route path="/adminVerifyEmail" element={<AdminEmailVerify />} />

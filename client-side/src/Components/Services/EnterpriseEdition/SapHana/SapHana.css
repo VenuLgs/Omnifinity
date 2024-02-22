@@ -379,6 +379,17 @@
 }
 
 /* ========================================= SAP On Google CSS =========================== */
+.sap-on-google-bg-container {
+  background-image: url("../../../../images/Solutions/SapOnGoogle/sapongooglebg.jpg");
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  filter: brightness(0.6);
+  background-size: cover;
+  background-position: center;
+}
 
 .sap-on-google-systems-card-container {
   display: flex;
@@ -395,6 +406,17 @@
 }
 
 /* ======================================== Retail End to End CSS ========================= */
+.retail-end-to-end-bg-container {
+  background-image: url("../../../../images/Solutions/RetailEndToEnd/retailendtoendbg.jpg");
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  filter: brightness(0.6);
+  background-size: cover;
+  background-position: center;
+}
 
 .retail-end-to-end-first-container {
   width: 100%;
@@ -456,6 +478,125 @@
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
+}
+
+/* ================================================== Sap Moderization CSS =================================*/
+
+.sap-moderization-bg-container {
+  background-image: url("../../../../images/Solutions/SapModerization/sapmoderizationbg.jpg");
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  filter: brightness(0.6);
+  background-size: cover;
+  background-position: center;
+}
+
+.sap-moderization-card-heading {
+  font-size: 20px;
+  color: #134391;
+  font-weight: 400;
+  margin: 0px;
+  font-style: normal;
+  text-align: center;
+}
+.sap-moderization-card-description {
+  font-size: 14px;
+  color: #444444;
+  margin: 0px;
+  line-height: 1.5rem;
+  overflow: hidden;
+}
+
+/* ========================================== News CSS ======================================= */
+
+.news-bg-container {
+  background-image: url("../../../../images/news-bg.webp");
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  filter: brightness(0.6);
+  background-size: cover;
+  background-position: center;
+}
+
+.news-bg-sub-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  z-index: 1;
+}
+
+.news-bg-heading {
+  color: #fff;
+  font-size: 50px;
+  margin: 0px;
+  width: 40%;
+  text-align: center;
+}
+
+.news-cards-main-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.news-cards-holding-container {
+  display: flex;
+  flex-wrap: wrap;
+  width: 80%;
+}
+
+.news-card {
+  width: 40%;
+  padding: 30px;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0 43px 70px rgba(0, 0, 0, 0.12);
+  border-radius: 15px;
+  margin: 30px;
+}
+
+.news-card-body {
+  padding: 10px 0px;
+}
+
+.news-image {
+  width: 100%;
+  height: 300px;
+}
+
+.news-card-title {
+  font-size: 20px;
+  font-weight: 500;
+  color: black;
+}
+
+.news-card-text {
+  font-size: 13px;
+}
+
+.news-icons-container {
+  display: flex;
+  gap: 4px;
+}
+
+.news-icon {
+  color: #fff;
+  background-color: #0c5394;
+  font-size: 20px;
+  border-radius: 2px;
+}
+
+.news-icon:hover {
+  color: #0c5394;
+  background-color: white;
+  border-radius: 2px;
 }
 
 @media screen and (max-width: 768px) {
@@ -583,6 +724,72 @@
     font-size: 35px;
     color: white;
     font-weight: 600;
+  }
+
+  /* =============================================== News CSs =================================== */
+
+  .news-bg-heading {
+    color: #fff;
+    font-size: 40px;
+    margin: 0px;
+    width: 80%;
+    text-align: center;
+  }
+
+  .news-cards-main-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+
+  .news-cards-holding-container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 99%;
+  }
+
+  .news-card {
+    width: 90%;
+    padding: 30px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 43px 70px rgba(0, 0, 0, 0.12);
+    border-radius: 15px;
+    margin: 30px;
+  }
+
+  .news-image {
+    width: 100%;
+    height: 300px;
+  }
+
+  .news-card-title {
+    font-size: 20px;
+    font-weight: 500;
+    color: black;
+  }
+
+  .news-card-text {
+    font-size: 13px;
+  }
+
+  .news-icons-container {
+    display: flex;
+    gap: 4px;
+  }
+
+  .news-icon {
+    color: #fff;
+    background-color: #0c5394;
+    font-size: 20px;
+    border-radius: 2px;
+  }
+
+  .news-icon:hover {
+    color: #0c5394;
+    background-color: white;
+    border-radius: 2px;
   }
 }
 
@@ -762,5 +969,71 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+  }
+
+  /* ========================================== NEWS CSS ==================================== */
+
+  .news-bg-heading {
+    color: #fff;
+    font-size: 30px;
+    margin: 0px;
+    width: 40%;
+    text-align: center;
+  }
+
+  .news-cards-main-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+
+  .news-cards-holding-container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 98%;
+  }
+
+  .news-card {
+    width: 90%;
+    padding: 30px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 43px 70px rgba(0, 0, 0, 0.12);
+    border-radius: 15px;
+    margin: 30px;
+  }
+
+  .news-image {
+    width: 100%;
+    height: 150px;
+  }
+
+  .news-card-title {
+    font-size: 18px;
+    font-weight: 500;
+    color: black;
+  }
+
+  .news-card-text {
+    font-size: 13px;
+  }
+
+  .news-icons-container {
+    display: flex;
+    gap: 4px;
+  }
+
+  .news-icon {
+    color: #fff;
+    background-color: #0c5394;
+    font-size: 20px;
+    border-radius: 2px;
+  }
+
+  .news-icon:hover {
+    color: #0c5394;
+    background-color: white;
+    border-radius: 2px;
   }
 }

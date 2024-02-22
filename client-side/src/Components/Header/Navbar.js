@@ -96,7 +96,10 @@ const Navbar = () => {
                       <Link to="/AnalyticsBI" className="sub-menu-list-item">
                         <li>Analytics & BI</li>
                       </Link>
-                      <Link to="/digitalIdentity" className="sub-menu-list-item">
+                      <Link
+                        to="/digitalIdentity"
+                        className="sub-menu-list-item"
+                      >
                         <li>Digital Identity</li>
                       </Link>
                       <Link
@@ -140,14 +143,10 @@ const Navbar = () => {
                   </li>
                 </Link>
                 <Link to="/mendixPage" className="sub-menu-list-item">
-                  <li>
-                    Mendix <FaCaretRight />
-                  </li>
+                  <li>Mendix</li>
                 </Link>
                 <Link to="/polarionPage" className="sub-menu-list-item">
-                  <li>
-                    Polarion <FaCaretRight />
-                  </li>
+                  <li>Polarion</li>
                 </Link>
               </ul>
             </li>
@@ -187,10 +186,10 @@ const Navbar = () => {
                 Insights <FaCaretDown />
               </Link>
               <ul className="sub-menu">
-                <Link to="#" className="sub-menu-list-item">
+                <Link to="/insights/news" className="sub-menu-list-item">
                   <li>News</li>
                 </Link>
-                <Link to="#" className="sub-menu-list-item">
+                <Link to="/insights/blogs" className="sub-menu-list-item">
                   <li>Blogs</li>
                 </Link>
               </ul>

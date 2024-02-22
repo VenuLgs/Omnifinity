@@ -50,13 +50,13 @@ const SapOnGoogle = () => {
   return (
     <>
       <div className="saphana-first-container">
-        <div className="saphana-bg-container"></div>
+        <div className="sap-on-google-bg-container"></div>
         <div className="saphana-bg-sub-container">
           <h3 className="saphana-enterprise-system-text">SOLUTIONS</h3>
           <h1 className="saphana-bg-heading">SAP on Google Cloud</h1>
           <p className="saphana-bg-sub-heading">
-            Modernize your SAP with the best of Google's technology and Abacus'
-            world-class capabilities
+            Modernize your SAP with the best of Google's technology and
+            Omnifinity' world-class capabilities
           </p>
         </div>
       </div>
@@ -130,15 +130,15 @@ const SapOnGoogle = () => {
       </div>
       <div className="saphana-systems-card-main-container">
         <h1 className="saphana-systems-card-main-heading">
-          Abacus' Google Cloud Services for SAP Modernization
+          Omnifinity' Google Cloud Services for SAP Modernization
         </h1>
         <p className="saphana-last-description">
-          Abacus Cambridge Partners leverages Google Cloud to help enterprises
-          transform their business infrastructure and undergo successful cloud
-          migration and modernization. Our dedicated team of Google Cloud
-          experts delivers tailored solutions to your unique business needs,
-          ensuring seamless digital transformation by simplifying the complex
-          structures of the cloud system.
+          Omnifinity leverages Google Cloud to help enterprises transform their
+          business infrastructure and undergo successful cloud migration and
+          modernization. Our dedicated team of Google Cloud experts delivers
+          tailored solutions to your unique business needs, ensuring seamless
+          digital transformation by simplifying the complex structures of the
+          cloud system.
         </p>
 
         <ul className="saphana-systems-card-flex-container">
