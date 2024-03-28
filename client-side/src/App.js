@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { Route, Routes, useLocation } from "react-router-dom";
 import AboutUs from "./Components/AboutUs/AboutUs";
+import Blogs from "./Components/Insights/News/Blogs/Blogs.js";
 import OpenFinance from "./Components/Solutions/OpenFinance/OpenFinance.js";
 import ResetPassword from "./AdminComponents/resetPassword.js";
 import DigitalFinance from "./Components/Services/InnovationSolution/DigitalFinance/dgitalFinance.js";
@@ -114,6 +115,7 @@ function App() {
           path="/solutions/sap-moderization"
           element={<SapModerization />}
         />
+        <Route path="/insights/blogs" element={<Blogs />} />
         <Route path="/insights/news" element={<News />} />
         <Route path="/enterprise-systems/sap-ariba" element={<SapAriba />} />
         <Route path="/AnalyticsBI" element={<Analytics />} />
@@ -126,7 +128,7 @@ function App() {
         <Route path="/mendixPage" element={<ResellerMendixPage />} />
         <Route path="/AnalyticsBI" element={<Analytics />} />
         <Route path="/polarionPage" element={<ResellerPolarionPage />} />
-        <Route path="/solutions/open-finance" element={<OpenFinance />}/>
+        <Route path="/solutions/open-finance" element={<OpenFinance />} />
       </Routes>
       {!isInsideAdminPanel && <Footer />}
     </>
