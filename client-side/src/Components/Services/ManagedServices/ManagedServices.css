@@ -2,6 +2,7 @@
   display: flex;
   flex-direction: column;
   width: 100%;
+  background-color: #161616;
 }
 
 .managed-services-first-container {
@@ -250,6 +251,7 @@
     margin: 16px;
     width: 80%;
     line-height: 2rem;
+    color: #fff;
   }
   .managed-services-card-container {
     width: 95%;

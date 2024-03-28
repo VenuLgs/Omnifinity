@@ -11,27 +11,27 @@ import profile from "../../images/profile.png";
 const ourValues = [
   {
     id: 0,
-    head: "Data-Driven Symphony",
+    head: "We Craft Your Data Symphony",
     image: green,
-    desc: "We don't just build apps, we weave them into the fabric of your data strategy. Every solution starts with a deep understanding of your unique data landscape, ensuring your apps play in perfect harmony with your business goals.",
+    desc: "More than just app builders, we're strategic partners. Our Canadian team of experts understands your unique needs. We'll analyze your data landscape, then design tailored solutions that integrate seamlessly with your goals.",
   },
   {
     id: 1,
     head: "Mendix Maestro",
     image: green,
-    desc: "We're certified Mendix experts, capable of composing beautiful, user-friendly applications at lightning speed. This means faster development cycles, lower costs, and easier maintenance for your data-driven instruments.",
+    desc: "As certified Mendix pros, we deliver stunning, user-centric applications faster and more cost-effectively. Your digital tools will be intuitive and a breeze to maintain.",
   },
   {
     id: 2,
     head: "Polarion Precision",
     image: green,
-    desc: "We don't just build apps, we weave them into the fabric of your data strategy. Every solution starts with a deep understanding of your unique data landscape, ensuring your apps play in perfect harmony with your business goals.",
+    desc: "Flawless execution matters. Polarion's ALM platform ensures top-tier quality control throughout development. Your apps launch polished and ready to perform.",
   },
   {
     id: 3,
-    head: "Oracle Cloud Orchestra",
+    head: "Oracle Cloud Your Limitless Stage: ",
     image: green,
-    desc: "We harness the power of Oracle Cloud to provide secure, scalable, and reliable infrastructure for your data and applications. This ensures your symphony can grow and evolve seamlessly, reaching even the grandest audiences. ",
+    desc: "Reach new audiences and scale effortlessly with Oracle Cloud's secure infrastructure. We'll future-proof your tech stack for continued growth.",
   },
 ];
 
@@ -106,11 +106,14 @@ const AboutUs = () => {
       <div className="aboutus-first-container">
         <div className="aboutus-background"></div>
         <div className="aboutus-first-text-container">
-          <h1 className="aboutus-heading">Where Data Ignites Transformation</h1>
-          <p className="aboutus-description">
+          <h1 className="aboutus-heading">
+            Canadian Innovation Unleashed: Data Drives Your Digital
+            Transformation
+          </h1>
+          {/* <p className="aboutus-description">
             Orchestrating Data-Driven Innovation with Mendix, Polarion, and
             Oracle Cloud
-          </p>
+          </p> */}
         </div>
       </div>
 
@@ -118,18 +121,11 @@ const AboutUs = () => {
         <div className="aboutus-second-text-container">
           <h2 className="omnifinity-sub-heading ">About Us</h2>
           <p className="omnifinity-description">
-            Imagine a world where your data sings, your apps dance, and your
-            business soars to new heights. At Omnifinity, we don't just build
-            apps, we conduct a symphony of data, technology, and strategy to
-            unlock your organization's true potential. We leverage the power of
-            Mendix low-code development, Polarion ALM platform, and the robust
-            capabilities of Oracle Cloud to deliver agile, insightful, and
-            scalable solutions.Think of us as your maestro, guiding you on a
-            data-driven odyssey. Our team of business intelligence experts and
-            Mendix certified developers act as your trusted chorus, translating
-            complex data into actionable harmonies. We delve deep to uncover
-            hidden insights, trends, and patterns, empowering you to make
-            informed decisions that resonate with your business goals.
+            Welcome to the Canadian-born data revolution! At Omnifinity, we
+            empower businesses to harness the full potential of their data. Our
+            cutting-edge solutions powered by Mendix, Polarion, and Oracle Cloud
+            will modernize your operations and propel you ahead of the
+            competition.
           </p>
         </div>
       </div>
@@ -159,35 +155,7 @@ const AboutUs = () => {
           </div>
         </div>
       </div>
-      <div className="aboutus-second-container">
-        <div className="aboutus-our-global-point-container">
-          <h1 className="omnifinity-sub-heading">Our Global Footprint</h1>
-          <img
-            src={worldMap}
-            alt="about-us-world-map"
-            className="aboutus-world-map-image"
-          />
-        </div>
-      </div>
-      <div className="aboutus-second-container">
-        <div className="aboutus-global-colors-container">
-          {ourGlobal.map((global) => (
-            <div
-              className="aboutus-global-color-image-container"
-              key={global.id}
-            >
-              <img
-                alt="About Us-01-1"
-                className="aboutus-global-color-image"
-                src={global.image}
-              />
 
-              <h3 className="omnifinity-card-heading">{global.head}</h3>
-              <p className="omnifinity-card-para">{global.desc}</p>
-            </div>
-          ))}
-        </div>
-      </div>
       <div className="aboutus-last-container">
         <h1 className="omnifinity-sub-heading">Our Values</h1>
         <div className="aboutus-our-values-conatainer">

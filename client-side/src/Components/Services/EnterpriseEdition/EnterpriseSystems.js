@@ -66,33 +66,30 @@ const EnterpriseSystems = () => {
       <div className="enterprise-systems-first-container">
         <div className="enterprise-systems-bg-container"> </div>
         <div className="enterprise-systems-bg-sub-container">
-          <h1 className="enterprise-systems-bg-heading">Enterprise Systems</h1>
+          <h1 className="enterprise-systems-bg-heading">
+            Modernize Your IT with Oracle Cloud: PaaS & IaaS Solutions
+          </h1>
           <p className="enterprise-systems-bg-sub-heading">
-            Tread new paths for your Business
+            Accelerate innovation and optimize costs with our expert Oracle PaaS
+            and IaaS services.
           </p>
         </div>
       </div>
       <div className="enterprise-systems-second-container">
         <p className="enterprise-systems-main-description">
-          Omnifinity, an SAP Gold Partner, has been providing comprehensive
-          Enterprise Systems solutions to businesses of all sizes, with the goal
-          of driving innovation, engagement, and value relevant to their
-          business needs. As the world progresses into the age of intelligence,
-          it is imperative not to be left behind. To become an intelligent and
-          agile enterprise, you need the right tools and methodologies.
-          Omnifinity enables you to achieve this goal by implementing the
-          necessary solutions to accelerate business growth, transfer knowledge,
-          and continuously improve your business.
+          We are a proud Oracle Partner specializing in harnessing the
+          transformative power of Oracle Cloud. Our certified team empowers your
+          organization to achieve digital agility and gain a competitive edge
+          through comprehensive PaaS and IaaS solutions tailored to your unique
+          business goals.
         </p>
         <p className="enterprise-systems-main-description">
-          Our SAP offerings are tailored to meet the needs of small, medium, and
-          large enterprises that seek to transition to intelligent platforms,
-          thereby gaining an edge over their competitors in a digitally
-          competitive world. Whether you are a growing startup or an established
-          enterprise, Omnifinity has the expertise to guide you towards becoming
-          an intelligent and agile enterprise.
+          A stylized "cloud map" with clear PaaS and IaaS sections, showcasing
+          the connected nature of these services within the Oracle Cloud
+          ecosystem. Consider using Oracle brand colors and subtle visual
+          metaphors for services (e.g., database icons in PaaS).
         </p>
-        <div className="enterprise-systems-card-main-container">
+        {/* <div className="enterprise-systems-card-main-container">
           <h1 className="enterprise-systems-card-main-heading">
             Choose the right Innovation Solution for your Business
           </h1>
@@ -119,10 +116,10 @@ const EnterpriseSystems = () => {
               );
             })}
           </ul>
-        </div>
+        </div> */}
       </div>
       <div className="enterprise-systems-third-container">
-        <button className="enterprise-systems-btn">Contact Us</button>
+        <button className="omnifinity-button-inactive">Contact Us</button>
       </div>
     </div>
   );

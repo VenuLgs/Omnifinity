@@ -92,31 +92,44 @@ export default function Analytics() {
 
               <div className="content-container">
                 <Fade direction="up">
-                  <h6 className="p-2   mb-3 AnalyticsSubHeadings">
-                    Innovation Solutions
-                  </h6>
-                  <h1 className="p-2   mb-3 AnalyticsHeading">
-                    Advanced Analytics & <br /> Business Intelligence
+                  <h1 className="p-2 mb-3 AnalyticsHeading">
+                    Analytics and BI Services <br /> Transform Data into
+                    Actionable Insights
                   </h1>
-                  <p className="p-2 mb-3 AnalyticsParagraph">
-                    Actionable Insights, Transformative Results
-                  </p>
                 </Fade>
               </div>
             </div>
           </div>
-          <div className="col-12 col-lg-6">
-            <p style={{ fontSize: "18px",lineHeight: 1.9 }} className="p-4 pl-3 mt-3">
-              In today's data-driven world, businesses cannot afford to ignore
-              the power of Advanced Analytics and Business Intelligence (BI).
-              These tools can provide a competitive edge by unlocking valuable
-              insights from data, improving decision-making, increasing
-              operational efficiency, and identifying new growth opportunities.
-              By leveraging both BI and Advanced Analytics, businesses can make
-              data-driven decisions and stay ahead of the curve.
+          <div className="innovation-solutions-second-container">
+            <p className="innovation-solutions-main-description">
+              Our comprehensive analytics platform unlocks the power of your
+              data, regardless of its source. Gain insights through intuitive
+              data exploration tools, visually compelling dashboards, and
+              advanced predictive analytics.
             </p>
           </div>
-          <div className="col-12 col-lg-6 p-5 d-flex justify-content-center">
+          {/* <div className="col-12 ">
+            <p className="p-4 pl-3 mt-3 analytics-content">
+              Our comprehensive analytics platform unlocks the power of your
+              data, regardless of its source. Gain insights through intuitive
+              data exploration tools, visually compelling dashboards, and
+              advanced predictive analytics.
+            </p>
+            <h2>Key Features</h2>
+            <ul className="AnalyticsList  mt-3 p-5">
+              <li className="mt-3 mb-3 ">
+                User-friendly interface for self-service BI
+              </li>
+              <li className="mt-3 mb-3 ">
+                Drag-and-drop visualizations for quick analysis
+              </li>
+              <li className="mt-3 mb-3 ">Prebuilt and customizable reports</li>
+              <li className="mt-3 mb-3 ">
+                Integration with Oracle systems and other data sources
+              </li>
+            </ul> 
+          </div> */}
+          {/* <div className="col-12 col-lg-6 p-5 d-flex justify-content-center">
             <Fade direction="down">
               <div className="AnalyticsCardsContainer shadow">
                 <h1
@@ -140,7 +153,7 @@ export default function Analytics() {
                     First Name <span style={{ color: "red" }}>*</span>
                   </label>
                   <input
-                  style={{ border: "1px solid" }}
+                    style={{ border: "1px solid" }}
                     required
                     type="text"
                     id="firstName"
@@ -150,7 +163,7 @@ export default function Analytics() {
                     Last Name <span style={{ color: "red" }}>*</span>
                   </label>
                   <input
-                  style={{ border: "1px solid" }}
+                    style={{ border: "1px solid" }}
                     required
                     type="text"
                     id="lastName"
@@ -160,7 +173,7 @@ export default function Analytics() {
                     Email<span style={{ color: "red" }}>*</span>
                   </label>
                   <input
-                  style={{ border: "1px solid" }}
+                    style={{ border: "1px solid" }}
                     required
                     type="text"
                     id="email"
@@ -170,7 +183,7 @@ export default function Analytics() {
                     PhoneNumber <span style={{ color: "red" }}>*</span>
                   </label>
                   <input
-                  style={{ border: "1px solid" }}
+                    style={{ border: "1px solid" }}
                     required
                     type="text"
                     id="phoneNumber"
@@ -180,7 +193,7 @@ export default function Analytics() {
                     Company Name <span style={{ color: "red" }}>*</span>
                   </label>
                   <input
-                  style={{ border: "1px solid" }}
+                    style={{ border: "1px solid" }}
                     required
                     type="text"
                     id="CompanyName"
@@ -191,7 +204,7 @@ export default function Analytics() {
                     Job Title <span style={{ color: "red" }}>*</span>
                   </label>
                   <input
-                  style={{ border: "1px solid" }}
+                    style={{ border: "1px solid" }}
                     required
                     type="text"
                     id="jobTitle"
@@ -201,7 +214,7 @@ export default function Analytics() {
                     Country/Region <span style={{ color: "red" }}>*</span>
                   </label>
                   <input
-                  style={{ border: "1px solid" }}
+                    style={{ border: "1px solid" }}
                     required
                     type="text"
                     id="Country/Region"
@@ -211,7 +224,7 @@ export default function Analytics() {
                     Message <span style={{ color: "red" }}>*</span>
                   </label>
                   <textarea
-                  style={{ border: "1px solid" }}
+                    style={{ border: "1px solid" }}
                     required
                     rows="5"
                     id="message"
@@ -237,16 +250,16 @@ export default function Analytics() {
                 </form>
               </div>
             </Fade>
-          </div>
+          </div> */}
         </div>
       </div>
       <div className="container">
         <div className="row">
           <div className="col-12">
-            <h1 className="text-center p-2">
+            <h1 className="text-center p-2" style={{ color: "white" }}>
               Key Solutions for your Advance Analytics and Business Intelligence
             </h1>
-            <p className="p-2 text-center">
+            <p className="p-2 text-center" style={{ color: "white" }}>
               Integrate our credible knowledge with the most robust BI and smart
               analytics tools in the world to make insightful, data-driven
               decisions and elevate your business.
@@ -264,10 +277,18 @@ export default function Analytics() {
                     height="150"
                     width="150"
                   />
-                  <h5 className="text-primary text-center  mb-0 mt-2">
+                  <h5
+                    className="text-primary text-center  mb-0 mt-2"
+                    style={{ color: "white" }}
+                  >
                     {each.title}
                   </h5>
-                  <p className="mb-3 p-4 text-center">{each.description}</p>
+                  <p
+                    className="mb-3 p-4 text-center"
+                    style={{ color: "white" }}
+                  >
+                    {each.description}
+                  </p>
                 </div>
               </Fade>
             </div>
@@ -281,39 +302,45 @@ export default function Analytics() {
 
           <div className="col-12 col-md-6 AnalyticsListContainer mb-3">
             <Fade direction="up">
-              <h1>Why BigQuery?</h1>
+              <h1 style={{ color: "white" }}>
+                Fusion CX/ERP/HCM/SCM Analytics
+              </h1>
               <ul className="AnalyticsList text-center mt-3  p-2 pl-3">
-                <li className="mt-3 mb-3 ">
-                  Fully managed and serverless for max agility and scale
+                <li className="mt-3 mb-3 " style={{ color: "#aaaaaa" }}>
+                  Enhance customer experiences, optimize sales and marketing,
+                  and drive service excellence.
                 </li>
-                <li className="mt-3 mb-3 ">
-                  Fast, in-memory BI Engine - rapid reporting and analysis
+                <li className="mt-3 mb-3 " style={{ color: "#aaaaaa" }}>
+                  Improve financial visibility, streamline decision-making, and
+                  identify cost-saving opportunities.
                 </li>
-                <li className="mt-3 mb-3 ">
-                  Gigabyte to petabyte-scale storage and SQL queries
+                <li className="mt-3 mb-3 " style={{ color: "#aaaaaa" }}>
+                  Analyze workforce trends, manage talent effectively, and make
+                  data-driven HR decisions
                 </li>
-                <li className="mt-3 mb-3 ">
-                  Encrypted, resilient, and readily accessible.
+                <li className="mt-3 mb-3 " style={{ color: "#aaaaaa" }}>
+                  Optimize supply chain processes, improve inventory management,
+                  and enhance demand forecasting.
                 </li>
               </ul>
             </Fade>
           </div>
           <div className="col-12 col-md-6 AnalyticsListContainer mb-3">
             <Fade direction="up">
-              <h1>Why Looker?</h1>
+              <h1 style={{ color: "white" }}>Why Partner with Omnifinity?</h1>
               <ul className="AnalyticsList text-center mt-3 p-2">
-                <li className="mt-3 mb-3 ">
-                  LookML which standardizes enterprise-wide data & metrics
+                <li className="mt-3 mb-3 " style={{ color: "#aaaaaa" }}>
+                  Our certified team guides you through every stage of
+                  implementation and ensures you get the most from your
+                  investment.
                 </li>
-                <li className="mt-3 mb-3">
-                  100% in-database, no restriction or loading delay
+                <li className="mt-3 mb-3" style={{ color: "#aaaaaa" }}>
+                  Leverage prebuilt solutions to start driving insights quickly
+                  and see tangible results sooner.
                 </li>
-                <li className="mt-3 mb-3 ">
-                  Multi-cloud, multi-database access, supporting any data
-                  framework
-                </li>
-                <li className="mt-3 mb-3">
-                  Replicable & reusable for given parameters to extract insights
+                <li className="mt-3 mb-3" style={{ color: "#aaaaaa" }}>
+                  We'll help you turn your data into a competitive advantage,
+                  fueling better decision-making across your organization.
                 </li>
               </ul>
             </Fade>
@@ -327,7 +354,7 @@ export default function Analytics() {
         <div className="container">
           <div className="row">
             <div className="col-12">
-              <h1 className="text-center mb-3 mt-3">
+              <h1 className="text-center mb-3 mt-3" style={{ color: "white" }}>
                 Omnifinity for your Advance Analytics and BI
               </h1>
             </div>
@@ -335,8 +362,8 @@ export default function Analytics() {
               <button
                 className={
                   activeTab === "Consult"
-                    ? "AnalyticsActive"
-                    : "AnalyticsInactive"
+                    ? "omnifinity-button-active"
+                    : "omnifinity-button-inactive"
                 }
                 onClick={() => setTab("Consult")}
               >
@@ -347,8 +374,8 @@ export default function Analytics() {
               <button
                 className={
                   activeTab === "Implement"
-                    ? "AnalyticsActive"
-                    : "AnalyticsInactive"
+                    ? "omnifinity-button-active"
+                    : "omnifinity-button-inactive"
                 }
                 onClick={() => setTab("Implement")}
               >
@@ -359,8 +386,8 @@ export default function Analytics() {
               <button
                 className={
                   activeTab === "Manage"
-                    ? "AnalyticsActive"
-                    : "AnalyticsInactive"
+                    ? "omnifinity-button-active"
+                    : "omnifinity-button-inactive"
                 }
                 onClick={() => setTab("Manage")}
               >
@@ -371,8 +398,8 @@ export default function Analytics() {
               <button
                 className={
                   activeTab === "Improve"
-                    ? "AnalyticsActive"
-                    : "AnalyticsInactive"
+                    ? "omnifinity-button-active"
+                    : "omnifinity-button-inactive"
                 }
                 onClick={() => setTab("Improve")}
               >
@@ -380,14 +407,30 @@ export default function Analytics() {
               </button>
             </div>
             <div className="col-12 col-xl-6  mt-3 mb-3">
-              <h4 className="mt-3 mb-3 p-2">{Filtered[0].title1}</h4>
-              <p className="mt-3 mb-3 p-2">{Filtered[0].description1}</p>
-              <h4 className="mt-3 mb-3 p-2">{Filtered[0].title2}</h4>
-              <p className="mt-3 mb-3 p-2">{Filtered[0].description2}</p>
-              <h4 className="mt-3 mb-3 p-2">{Filtered[0].title3}</h4>
-              <p className="mt-3 mb-3 p-2">{Filtered[0].description3}</p>
-              <h4 className="mt-3 mb-3 p-2">{Filtered[0].title4}</h4>
-              <p className="mt-3 mb-3 p-2">{Filtered[0].description4}</p>
+              <h4 className="mt-3 mb-3 p-2" style={{ color: "white" }}>
+                {Filtered[0].title1}
+              </h4>
+              <p className="mt-3 mb-3 p-2" style={{ color: "#aaaaaa" }}>
+                {Filtered[0].description1}
+              </p>
+              <h4 className="mt-3 mb-3 p-2" style={{ color: "white" }}>
+                {Filtered[0].title2}
+              </h4>
+              <p className="mt-3 mb-3 p-2" style={{ color: "#aaaaaa" }}>
+                {Filtered[0].description2}
+              </p>
+              <h4 className="mt-3 mb-3 p-2" style={{ color: "white" }}>
+                {Filtered[0].title3}
+              </h4>
+              <p className="mt-3 mb-3 p-2" style={{ color: "#aaaaaa" }}>
+                {Filtered[0].description3}
+              </p>
+              <h4 className="mt-3 mb-3 p-2" style={{ color: "white" }}>
+                {Filtered[0].title4}
+              </h4>
+              <p className="mt-3 mb-3 p-2" style={{ color: "#aaaaaa" }}>
+                {Filtered[0].description4}
+              </p>
             </div>
             <div
               className="col-12 col-xl-6 mt-3 mb-3"
@@ -403,7 +446,7 @@ export default function Analytics() {
               <hr className="w-100" />
             </div>
             <div className="col-12 text-center">
-              <p style={{ fontSize: "18px" }}>
+              <p style={{ fontSize: "18px", color: "white" }}>
                 Omnifinity can help you master the art of utilizing real-time
                 data streams. Solve business-critical challenges, enhance the
                 customer experience, and meet your organizational goals. With
@@ -412,10 +455,7 @@ export default function Analytics() {
                 results.
               </p>
               <div className="text-center d-flex justify-content-center mt-3 w-100  mb-4">
-                <button
-                  className="btn  mb-3 btn-primary ApplicationDevelopmentButton"
-                  style={{ border: "none", color: "" }}
-                >
+                <button className="omnifinity-button-inactive">
                   Contact Us
                 </button>
               </div>

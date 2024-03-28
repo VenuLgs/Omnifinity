@@ -142,21 +142,23 @@ export default function HomePage() {
       projectId: 1,
       imageUrl: homepage3,
       title: "Operate",
-      description: "Master Your Operations with Expert Managed Services",
+      description:
+        "Focus on Mendix application development. Use relevant imagery and headlines like Rapid Application Development with Mendix",
     },
     {
       projectId: 2,
       imageUrl: homepage2,
 
       title: "BUILD YOUR DIGITAL CORE",
-      description: "Empower Your Enterprise with Unrivalled Systems",
+      description:
+        "Highlight Oracle Cloud solutions. Consider a headline like Transform Your Business with Oracle Cloud",
     },
     {
       projectId: 3,
       imageUrl: homepage1,
 
       title: "Embrace the AI Transformation",
-      description: "Unleashing New Business Horizons",
+      description: "Polarion",
     },
     {
       projectId: 4,
@@ -302,7 +304,7 @@ export default function HomePage() {
                     }
                     onClick={() => updateState("EnterpriseSystems")}
                   >
-                    Enterprise System
+                    Schedule a Free Consultation
                   </button>
                 </div>
                 <div className="col-md-4 col-12 mb-2">
@@ -314,7 +316,7 @@ export default function HomePage() {
                     }
                     onClick={() => updateState("InnovationSolutions")}
                   >
-                    Innovation Solutions
+                    Discover Our Case Studies
                   </button>
                 </div>
                 <div className="col-md-4 col-12 mb-2">
@@ -326,7 +328,7 @@ export default function HomePage() {
                     }
                     onClick={() => updateState("ManagedServices")}
                   >
-                    Managed Services
+                    Contact Us to Learn More
                   </button>
                 </div>
               </div>

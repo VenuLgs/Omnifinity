@@ -51,10 +51,10 @@ const Navbar = () => {
                 Services <FaCaretDown />
               </Link>
               <ul className="sub-menu">
-                <Link to="/enterprise-systems" className="sub-menu-list-item">
+                <Link to="/Oracle" className="sub-menu-list-item">
                   <li>
-                    Enterprise Systems
-                    <ul className="enter-prise-menu">
+                    Oracle
+                    {/* <ul className="enter-prise-menu">
                       <Link
                         to="/enterprise-systems/sap-hana"
                         className="sub-menu-list-item"
@@ -86,13 +86,13 @@ const Navbar = () => {
                         <li>SAP Ariba</li>
                       </Link>
                     </ul>
-                    <FaCaretRight className="right-icon" />
+                    <FaCaretRight className="right-icon" /> */}
                   </li>
                 </Link>
-                <Link to="/innovation-solutions" className="sub-menu-list-item">
+                <Link to="/Paas" className="sub-menu-list-item">
                   <li>
-                    Innovation Solutions
-                    <ul className="innovation-menu">
+                    PaaS
+                    {/* <ul className="innovation-menu">
                       <Link to="/AnalyticsBI" className="sub-menu-list-item">
                         <li>Analytics & BI</li>
                       </Link>
@@ -112,14 +112,14 @@ const Navbar = () => {
                         <li>Digital Financial Services</li>
                       </Link>
                     </ul>
-                    <FaCaretRight className="right-icon" />
+                    <FaCaretRight className="right-icon" /> */}
                   </li>
                 </Link>
 
-                <Link to="/managed-services" className="sub-menu-list-item">
+                <Link to="/Iaas" className="sub-menu-list-item">
                   <li>
-                    Managed Services
-                    <ul className="managed-menu">
+                    IaaS
+                    {/* <ul className="managed-menu">
                       <Link
                         to="/managed-services/manage-cloud"
                         className="sub-menu-list-item"
@@ -139,8 +139,11 @@ const Navbar = () => {
                         <li>Staff Augmentation</li>
                       </Link>
                     </ul>
-                    <FaCaretRight />
+                    <FaCaretRight /> */}
                   </li>
+                </Link>
+                <Link to="/AnalyticsBI" className="sub-menu-list-item">
+                  <li>Analytics & BI</li>
                 </Link>
                 <Link to="/mendixPage" className="sub-menu-list-item">
                   <li>Mendix</li>

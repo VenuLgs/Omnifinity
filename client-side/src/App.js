@@ -76,9 +76,9 @@ function App() {
         <Route exact path="/" element={<HomePage />} />
         <Route exact path="/digitalFinance" element={<DigitalFinance />} />
         <Route path="/adminregister" element={<AdminRegistration />} />
-        <Route path="/innovation-solutions" element={<InnovationSolutions />} />
-        <Route path="/enterprise-systems" element={<EnterpriseSystems />} />
-        <Route path="/managed-services" element={<ManagedServices />} />
+        <Route path="/Paas" element={<InnovationSolutions />} />
+        <Route path="/Oracle" element={<EnterpriseSystems />} />
+        <Route path="/Iaas" element={<ManagedServices />} />
         <Route path="/digitalIdentity" element={<DigitalIdentity />} />
         <Route path="/enterprise-systems/sap-hana" element={<SapHana />} />
         <Route

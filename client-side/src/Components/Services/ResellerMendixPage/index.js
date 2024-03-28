@@ -63,10 +63,9 @@ class ResellerMendix extends Component {
             <div className="reseller-mendix-side-description">
               <div className="mendix-card-description">
                 <h1 className="omnifinity-sub-heading">SIEMENS MENDIX</h1>
-                <p className="mendix-card-description-para">
-                  Omnifinity is Siemens Mendix Channel partner in India.
-                </p>
+
                 <p className="omnifinity-description">
+                  Omnifinity is Siemens Mendix Channel partner in India.
                   Omnifinity have been working with Mendix application
                   development space since 2019 even before Siemens acquisition
                   of Polarion. Omnifinity is your go-to destination for
