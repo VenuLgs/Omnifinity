@@ -116,8 +116,8 @@ const AboutUs = () => {
 
       <div className="aboutus-second-container">
         <div className="aboutus-second-text-container">
-          <h2 className="aboutus-second-heading">About Us</h2>
-          <p className="aboutus-second-description">
+          <h2 className="omnifinity-sub-heading ">About Us</h2>
+          <p className="omnifinity-description">
             Imagine a world where your data sings, your apps dance, and your
             business soars to new heights. At Omnifinity, we don't just build
             apps, we conduct a symphony of data, technology, and strategy to
@@ -143,8 +143,8 @@ const AboutUs = () => {
             />
           </div>
           <div className="aboutus-third-text-container">
-            <h2 className="aboutus-third-heading">Omnifinity Group</h2>
-            <p className="aboutus-second-description">
+            <h2 className="omnifinity-sub-heading">Omnifinity Group</h2>
+            <p className="omnifinity-description">
               But wait, there's more! We don't just build and conduct, we also
               refine and orchestrate with the help of Polarion. This
               industry-leading ALM platform allows us to streamline application
@@ -161,7 +161,7 @@ const AboutUs = () => {
       </div>
       <div className="aboutus-second-container">
         <div className="aboutus-our-global-point-container">
-          <h1 className="aboutus-third-heading">Our Global Footprint</h1>
+          <h1 className="omnifinity-sub-heading">Our Global Footprint</h1>
           <img
             src={worldMap}
             alt="about-us-world-map"
@@ -182,13 +182,14 @@ const AboutUs = () => {
                 src={global.image}
               />
 
-              <h3 className="aboutus-global-color-text">{global.head}</h3>
-              <p>{global.desc}</p>
+              <h3 className="omnifinity-card-heading">{global.head}</h3>
+              <p className="omnifinity-card-para">{global.desc}</p>
             </div>
           ))}
         </div>
       </div>
-      <div className="aboutus-second-container">
+      <div className="aboutus-last-container">
+        <h1 className="omnifinity-sub-heading">Our Values</h1>
         <div className="aboutus-our-values-conatainer">
           {ourValues.map((value) => (
             <div
@@ -201,8 +202,8 @@ const AboutUs = () => {
                 src={value.image}
               />
 
-              <h3 className="aboutus-our-values-card-heading">{value.head}</h3>
-              <p>{value.desc}</p>
+              <h3 className="omnifinity-card-heading">{value.head}</h3>
+              <p className="omnifinity-card-para">{value.desc}</p>
             </div>
           ))}
         </div>

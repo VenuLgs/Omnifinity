@@ -1,3 +1,7 @@
+.aboutus-main-container {
+  background-color: #161616;
+}
+
 .aboutus-first-container {
   display: flex;
   justify-content: center;
@@ -206,6 +210,15 @@
 
 .our-leader-image {
   width: 55%;
+}
+
+.aboutus-last-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  margin-top: 20px;
 }
 
 @media screen and (max-width: 1200px) {

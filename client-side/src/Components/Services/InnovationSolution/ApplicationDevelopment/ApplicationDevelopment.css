@@ -1,7 +1,7 @@
 .AnalyticsTotalContainer {
   min-height: 100vh;
   overflow-x: hidden; /* Updated line */
-  overflow-y: hidden!important;
+  overflow-y: hidden !important;
 }
 
 .ApplicationDevelopmentImageContainer {
@@ -15,7 +15,6 @@
 }
 
 .ApplicationDevelopmentCardsContent {
-  font-family: PT Sans;
   font-size: 17px;
   font-style: normal;
   font-weight: 400;

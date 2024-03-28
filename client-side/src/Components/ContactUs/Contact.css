@@ -17,6 +17,7 @@
   min-height: 100vh;
   overflow-x: hidden;
   overflow-y: hidden;
+  background-color: #161616;
 }
 
 .contactHeading {
@@ -26,4 +27,21 @@
 
   color: #ffffff;
   font-weight: 900;
+}
+
+.contact-us-card-description {
+  text-align: center;
+  font-size: 16px;
+  font-weight: 500;
+  color: #aaaaaa;
+}
+
+.contact-us-input {
+  background-color: #474747;
+  color: #fff;
+  border: none;
+}
+
+.contact-us-input::placeholder {
+  color: #cccaca;
 }

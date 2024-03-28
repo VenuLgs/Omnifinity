@@ -64,86 +64,89 @@ export default function Contact() {
                   width="150"
                   alt={`${index + 1}`}
                 />
-                <h6 className="text-primary mt-3">{each.title}</h6>
-                <p className="text-secondary">{each.description}</p>
-                <p className="text-secondary">{each.phone}</p>
+                <h6 className="omnifinity-card-heading">{each.title}</h6>
+                <p className="contact-us-card-description">
+                  {each.description}
+                </p>
+                <p className="contact-us-card-description">{each.phone}</p>
               </Fade>
             </div>
           ))}
           <div className="col-12">
             <div className="container">
-              <div
-                className="row shadow mb-3 p-2"
-                style={{ border: "1px solid black" }}
-              >
+              <div className="row shadow mb-3">
                 <div className="col-12">
                   <form
                     className="form-control"
-                    style={{ border: "none", outline: "none" }}
+                    style={{
+                      border: "none",
+                      outline: "none",
+                      backgroundColor: "#161616",
+                    }}
                   >
                     <div className="container-fluid p-0  w-100">
                       <div className="row">
-                        <div className="col-12 p-2 text-center bg-primary">
+                        <div className="col-12 p-2 text-center bg-secondary">
                           <h3 style={{ color: "#ffffff" }}>Get in touch!</h3>
                         </div>
                         <div className="p-2 mt-3 mb-3 col-md-6">
                           <label
                             htmlFor="email"
-                            className="text-left"
+                            className="omnifinity-label"
                             style={{ fontWeight: "normal" }}
                           >
                             Email <span style={{ color: "red" }}>*</span>
                           </label>
                           <input
-                            style={{ border: "1px solid" }}
                             id="email"
                             type="text"
-                            className="w-100 p-2"
+                            className="w-100 p-2 contact-us-input"
+                            placeholder="Enter your email"
                           />
                         </div>
                         <div className="p-2 mt-3 mb-3 col-md-6">
                           <label
                             htmlFor="phoneNumber"
-                            className="text-left"
+                            className="omnifinity-label"
                             style={{ fontWeight: "normal" }}
                           >
-                            phoneNumber <span style={{ color: "red" }}>*</span>
+                            PhoneNumber <span style={{ color: "red" }}>*</span>
                           </label>
                           <input
-                            style={{ border: "1px solid" }}
                             type="text"
                             id="phoneNumber"
-                            className="w-100 p-2"
+                            className="w-100 p-2 contact-us-input"
+                            placeholder="Enter your Phone number"
                           />
                         </div>
                         <div className="p-2 mt-3 mb-3 col-md-6">
                           <label
-                            className="text-left"
+                            className="omnifinity-label"
                             htmlFor="firstName"
                             style={{ fontWeight: "normal" }}
                           >
-                            first name
+                            First name
                           </label>
                           <input
-                            style={{ border: "1px solid" }}
                             type="text"
                             id="firstName"
-                            className="w-100 p-2"
+                            className="w-100 p-2 contact-us-input"
+                            placeholder="Enter First Name"
                           />
                         </div>
                         <div className="p-2 mt-3 mb-3 col-md-6">
                           <label
                             htmlFor="lastName"
-                            className="text-left"
+                            className="omnifinity-label"
                             style={{ fontWeight: "normal" }}
                           >
-                            last name
+                            Last name
                           </label>
                           <input
-                            style={{ border: "1px solid" }}
                             id="lastName"
                             type="text"
-                            className="w-100 p-2"
+                            className="w-100 p-2 contact-us-input"
+                            placeholder="Enter Last Name"
                           />
                         </div>
                         <div
@@ -151,73 +154,66 @@ export default function Contact() {
                           style={{ fontWeight: "normal" }}
                         >
                           <label
-                            className="text-left"
+                            className="omnifinity-label"
                             htmlFor="companyName"
                             style={{ fontWeight: "normal" }}
                           >
                             Company name
                           </label>
                           <input
-                            style={{ border: "1px solid" }}
                             type="text"
                             id="companyName"
-                            className="w-100 p-2"
+                            className="w-100 p-2 contact-us-input"
+                            placeholder="Enter Company Name"
                           />
                         </div>
                         <div className="p-2 mt-3 mb-3 col-md-6">
                           <label
-                            className="text-left"
+                            className="omnifinity-label"
                             htmlFor="CountryRegion"
                             style={{ fontWeight: "normal" }}
                           >
                             Country/Region
                           </label>
                           <input
-                            style={{ border: "1px solid" }}
                             type="text"
                             id="CountryRegion"
-                            className="w-100 p-2"
+                            className="w-100 p-2 contact-us-input"
+                            placeholder="Country/Region"
                           />
                         </div>
                         <div className="col-12">
                           <label
-                            className="text-left"
+                            className="omnifinity-label"
                             htmlFor="message"
                             style={{ fontWeight: "normal" }}
                           >
                             Message
                           </label>
                           <textarea
-                            style={{ border: "1px solid" }}
                             rows="5"
                             id="message"
-                            className="w-100 p-2 mt-3 mb-3"
+                            className="w-100 p-2 mt-3 mb-3 contact-us-input"
                             cols="54"
+                            placeholder="Enter Message"
                           ></textarea>
                         </div>
                         <div className="col-12 text-center w-100">
                           <ReCAPTCHA
-                            style={{ display: "inline-block" }}
-                            theme="white"
+                            style={{
+                              display: "inline-block",
+                              backgroundColor: "black",
+                              border: "none",
+                            }}
+                            theme="dark"
                             ref={_reCaptchaRef}
                             sitekey={TEST_SITE_KEY}
                           />
                         </div>
-                        <div className="col-4 text-center">
+                        <div className="text-center">
                           <button
                             type="submit"
-                            className="p-2 text-left"
-                            style={{
-                              border: "none",
-                              outline: "none",
-                              height: "45px",
-                              width: "150px",
-                              display: "flex",
-                              justifyContent: "center",
-                              alignItems: "center",
-                              color: "#ffffff",
-                              backgroundColor: "#0f4494",
-                            }}
+                            className="omnifinity-button-active"
                           >
                             Submit
                           </button>

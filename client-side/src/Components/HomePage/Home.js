@@ -14,7 +14,11 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import { useNavigate } from "react-router-dom";
 import "./Home.css";
+
+import service1 from "../Images/enterprisesystems.png";
+import service2 from "../Images/innovations.png";
 
 import homepage1 from "../../images/HomePage/homepage1.webp";
 import homepage2 from "../../images/HomePage/homepage2.webp";
@@ -23,6 +27,7 @@ import homepage4 from "../../images/HomePage/homepage4.webp";
 
 export default function HomePage() {
   const [state, updateState] = useState("EnterpriseSystems");
+  const navigate = useNavigate();
   useEffect(() => {
     window.addEventListener("scroll", HomeHandleScroll);
     return () => {
@@ -31,7 +36,7 @@ export default function HomePage() {
   });
 
   const HomeHandleScroll = () => {
-    var revals = document.querySelectorAll(".HomeContentContainer");
+    var revals = document.querySelectorAll(".home-reveal");
     for (var i = 0; i < revals.length; i++) {
       var windowheight = window.innerHeight;
       var revaltop = revals[i].getBoundingClientRect().top;
@@ -213,8 +218,7 @@ export default function HomePage() {
     {
       projectId: 1,
       category: "EnterpriseSystems",
-      imageURL:
-        "https://abacuscambridge.com/hubfs/SAP-Circle-infographic-100-I-600x450px.jpg",
+      imageURL: service1,
       title: "Enterprise Systems",
       description:
         "Proven capabilities across numerous platforms from SAP, the global leader in Enterprise Systems.",
@@ -222,7 +226,7 @@ export default function HomePage() {
     {
       projectId: 2,
       category: "InnovationSolutions",
-      imageURL: "https://abacuscambridge.com/hubfs/ACP/03-600x450-300res.jpg",
+      imageURL: service2,
       title: "Innovation Solutions",
       description:
         "World-class track record with enterprise customers in Innovation Solutions built on API-first, cloud-first & data-first architecture.",
@@ -281,20 +285,20 @@ export default function HomePage() {
           </div>
         </div>
       </div>
-      <div className="container mt-3 p-0">
+      <div className="container mt-5 mb-5 p-0">
         <div className="row">
           <div className="col-12 text-center">
-            <h1>What We Do</h1>
+            <h1 className="omnifinity-sub-heading">What We Do</h1>
           </div>
           <div className="col-12 text-center  w-100">
             <div className="container-fluid w-100  p-0">
-              <div className="row">
+              <div className="row d-flex align-items-center mt-2 mb-2">
                 <div className="col-md-4 col-12 mb-2">
                   <button
                     className={
                       state === "EnterpriseSystems"
-                        ? "HomeActive"
-                        : "HomeInactive"
+                        ? "omnifinity-button-active"
+                        : "omnifinity-button-inactive"
                     }
                     onClick={() => updateState("EnterpriseSystems")}
                   >
@@ -305,8 +309,8 @@ export default function HomePage() {
                   <button
                     className={
                       state === "InnovationSolutions"
-                        ? "HomeActive"
-                        : "HomeInactive"
+                        ? "omnifinity-button-active"
+                        : "omnifinity-button-inactive"
                     }
                     onClick={() => updateState("InnovationSolutions")}
                   >
@@ -317,8 +321,8 @@ export default function HomePage() {
                   <button
                     className={
                       state === "ManagedServices"
-                        ? "HomeActive"
-                        : "HomeInactive"
+                        ? "omnifinity-button-active"
+                        : "omnifinity-button-inactive"
                     }
                     onClick={() => updateState("ManagedServices")}
                   >
@@ -332,10 +336,17 @@ export default function HomePage() {
             <div className="container-fluid w-100 text-center p-0">
               <div className="row">
                 <div className="col-12 col-md-6  d-flex flex-column justify-content-center text-center">
-                  <h1 className="text-primary">{filtered[0].title}</h1>
-                  <p>{filtered[0].description}</p>
+                  <h1 className="omnifinity-sub-heading">
+                    {filtered[0].title}
+                  </h1>
+                  <p className="omnifinity-description">
+                    {filtered[0].description}
+                  </p>
                   <div className="text-center  w-100 d-flex justify-content-center">
-                    <button className="btn btn-primary" id="homeButton">
+                    <button
+                      className="omnifinity-button-inactive"
+                      onClick={() => navigate("/contactUs")}
+                    >
                       Learn More
                     </button>
                   </div>
@@ -352,10 +363,9 @@ export default function HomePage() {
               </div>
             </div>
           </div>
-          <div className="col-12 w-100 col-md-6"></div>
         </div>
       </div>
-      <div className="container-fluid p-0">
+      <div className="container-fluid mt-3 mb-3 p-0">
         <div className="row">
           <div className="col-12 mt-5 w-100">
             <div className="HomePageVideoContainer">
@@ -372,13 +382,11 @@ export default function HomePage() {
           </div>
         </div>
       </div>
-      <div className="container p-0 mt-3">
+      <div className="container p-0 mt-5 mb-5">
         <div className="row">
           <div className="col-12 text-center mb-2">
-            <h1>Strategic Partnerships</h1>
-          </div>
-          <div className="col-12">
-            <p style={{ textAlign: "center" }} className="p-2">
+            <h1 className="omnifinity-sub-heading">STRATEGIC PARTNERSHIPS</h1>
+            <p className="omnifinity-description">
               Partnership and collaboration with global technology leaders are
               at the core of Omnifinity philosophy. By bringing together
               specialists and leaders, our goal is to generate significant value
@@ -398,10 +406,14 @@ export default function HomePage() {
               justifyContent: "center",
             }}
           >
-            <Slider {...settings} style={{ width: "85%" }} className="mt-2">
+            <Slider {...settings} className="mt-2 home-slider">
               {images.map((image, index) => (
                 <div key={index}>
-                  <img src={image} alt={`${index + 1}`} width="200" />
+                  <img
+                    src={image}
+                    alt={`${index + 1}`}
+                    className="home-slider-image"
+                  />
                 </div>
               ))}
             </Slider>
@@ -409,52 +421,52 @@ export default function HomePage() {
         </div>
       </div>
       <div className="container">
-        <div className="row tex-center">
+        <div className="row tex-center mt-4 mb-4">
           <div className="col-12 mb-3 mt-3">
-            <h1 className="text-center mb-2">Omnifinity at a Glance</h1>
+            <h1 className="omnifinity-sub-heading">OMNIFINITY AT A GLANCE</h1>
           </div>
-          <div className="col-12 col-md-6 text-center mt-3 mb-2">
-            <div className="HomeContentContainer d-flex text-center justify-content-center">
-              <IoHome size="60"   color="rgba(15, 68, 148, 1.0)" />
-              <div>
-                <h5>1987 Genesis</h5>
-                <p style={{ width: "250px" }}>
+          <div className="col-12 col-md-6 col-lg-3 text-center mt-4 mb-3">
+            <div className="HomeContentContainer home-reveal">
+              <IoHome size="60" color="#CE9887" />
+              <div className="home-page-content-card">
+                <h5 className="omnifinity-card-heading">1987 Genesis</h5>
+                <p className="omnifinity-card-para">
                   Born from a rich track record of management consulting,
                   technology services and business outsourcing.
                 </p>
               </div>
             </div>
           </div>
-          <div className="col-12 col-md-6 text-center mb-2">
-            <div className="HomeContentContainer d-flex text-center  justify-content-center">
-              <IoPower size="60" color="rgba(15, 68, 148, 1.0)" />
-              <div>
-                <h5>Resource Pool</h5>
-                <p style={{ width: "250px" }}>
+          <div className="col-12 col-md-6 col-lg-3 text-center mt-4 mb-3">
+            <div className="HomeContentContainer home-reveal ">
+              <IoPower size="60" color="#CE9887" />
+              <div className="home-page-content-card">
+                <h5 className="omnifinity-card-heading">Resource Pool</h5>
+                <p className="omnifinity-card-para">
                   Multiple delivery centres and a talent pool of 3500 through
                   strategic partnerships.
                 </p>
               </div>
             </div>
           </div>
-          <div className="col-12 col-md-6 text-center  mb-2">
-            <div className="HomeContentContainer d-flex text-center   justify-content-center">
-              <AiOutlineGlobal size="60" color="rgba(15, 68, 148, 1.0)" />
-              <div>
-                <h5>Global Footprint</h5>
-                <p style={{ width: "250px" }}>
+          <div className="col-12 col-md-6 col-lg-3  text-center mt-4  mb-3">
+            <div className="HomeContentContainer home-reveal ">
+              <AiOutlineGlobal size="60" color="#CE9887" />
+              <div className="home-page-content-card">
+                <h5 className="omnifinity-card-heading">Global Footprint</h5>
+                <p className="omnifinity-card-para">
                   Headquartered in London with offices in New York, Riyadh and
                   Dubai
                 </p>
               </div>
             </div>
           </div>
-          <div className="col-12 col-md-6 text-center  mb-2">
-            <div className="HomeContentContainer d-flex text-center  justify-content-center">
-              <BsFillPeopleFill size="60" color="rgba(15, 68, 148, 1.0)" />
-              <div>
-                <h5>Customer Base</h5>
-                <p style={{ width: "250px" }}>
+          <div className="col-12 col-md-6 col-lg-3 text-center mt-4  mb-3">
+            <div className="HomeContentContainer home-reveal ">
+              <BsFillPeopleFill size="60" color="#CE9887" />
+              <div className="home-page-content-card">
+                <h5 className="omnifinity-card-heading">Customer Base</h5>
+                <p className="omnifinity-card-para">
                   Actively serving 1000+ clients globally across 40 industries
                   and 18 countries.
                 </p>
@@ -464,38 +476,34 @@ export default function HomePage() {
         </div>
       </div>
       <div className="container">
-        <div className="row">
+        <div className="row mt-5 mb-5">
           <div className="col-12">
-            <h1 className="text-center mb-3 ">Featured Solutions</h1>
+            <h1 className="omnifinity-sub-heading">FEATURED SOLUTIONS</h1>
           </div>
-          {HomeCards.map((each) => (
-            <div className="col-12 col-md-4  mb-3">
-              <div className="HomecardsContainer text-center  shadow HomeContentContainer mb-2 p-2">
+          <div className="home-page-last-cards-container">
+            {" "}
+            {HomeCards.map((each) => (
+              <div className="home-page-last-card  home-reveal">
                 <img
                   src={each.imageUrl}
-                  style={{ height: "200px", borderRadius: "8px", width: "90%" }}
                   alt={each.projectId}
+                  className="home-page-last-card-image"
                 />
-                <h3 className="mt-3 mb-2 text-center">{each.title}</h3>
-                <p className="mt-3 mb-2 text-center">{each.description}</p>
-                <div style={{ textAlign: "center" }}>
-                  <button
-                    style={{
-                      display: "block!important",
-                      color: "black",
-                      background: "transparent",
-                      border: "none",
-                      outline: "none",
-                      fontSize: "25px",
-                      fontWeight: "450",
-                    }}
-                  >
-                    Learn More
-                  </button>
+                <div className="home-page-last-card-text-container">
+                  <h3 className="omnifinity-card-heading">{each.title}</h3>
+                  <p className="omnifinity-card-para">{each.description}</p>
+                  <div className="d-flex justify-content-center w-100 p-2">
+                    <button
+                      className="omnifinity-button-inactive"
+                      onClick={() => navigate("/contactUs")}
+                    >
+                      Learn More
+                    </button>
+                  </div>
                 </div>
               </div>
-            </div>
-          ))}
+            ))}
+          </div>
         </div>
       </div>
       {/* <Footer /> */}

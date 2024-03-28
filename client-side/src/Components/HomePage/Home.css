@@ -6,33 +6,21 @@
   left: 50%;
   width: 50%;
   transform: translate(-50%, -50%);
- 
-  text-align: center!important;
-
+  text-align: center !important;
   z-index: 2;
-  
-  /* background: #02070cb8; */
   padding: 20px;
 }
-.carouselHeading{
-  font-size:65px !important;
+.carouselHeading {
+  font-size: 65px !important;
 }
 
-.carouselParagraph{
-  font-size:25px!important;
-}
-
-@media(max-width:991px){
-  .carouselHeading{
-    font-size:40px !important;
-  }
-  .carouselParagraph{
-    font-size:20px!important;
-  }
+.carouselParagraph {
+  font-size: 25px !important;
 }
 
 .HomePageTotalContainer {
   min-height: 100vh;
+  background-color: #161616;
   overflow-x: hidden;
   overflow-y: hidden;
 }
@@ -47,59 +35,145 @@
   height: 300px; /* Adjust this value based on your requirements */
   object-fit: cover; /* Ensures the video covers the entire container */
 }
-.HomeActive {
-  border-radius: 16px;
-  background: #0f4494;
-  color: white;
-}
-.HomeInactive {
-  color: blue;
-  border: none;
-  outline: none;
-  background: transparent;
-  cursor: pointer;
-}
+
 .HomeInactive:hover {
   background-color: none !important;
 }
 
-.HomeContentContainer {
+.home-reveal {
   position: relative;
   transform: translateY(150px);
   opacity: 0;
   transition: all 1s ease;
-  min-height: 200px;
 }
-.HomeContentContainer.active {
+
+.home-reveal.active {
   transform: translateY(0px);
   opacity: 1;
 }
-.HomecardsContainer {
-  background: #fff;
-  border: 0.5px solid #fff;
+
+.HomeContentContainer {
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
 }
 
-#homeButton {
-  height: 45px;
-  width: 150px;
-  border-radius: 8px;
-  color: #ffffff;
-  text-align: center;
+.home-page-content-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding-top: 10px;
+  padding-left: 3px;
+}
+.home-page-content-card.active {
+  transform: translateY(0px);
+  opacity: 1;
+}
+
+.home-page-content-para {
+  text-align: start;
+}
+
+.home-page-last-cards-container {
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
-  background: #0b24de;
-  font-weight: bold;
+  flex-wrap: wrap;
+  margin-top: 30px;
+  gap: 2%;
 }
+
+.home-page-last-card {
+  width: 32%;
+  height: 490px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #000000;
+  border-radius: 10px;
+}
+
+.home-page-last-card-text-container {
+  padding: 10px;
+}
+
+.home-page-last-card-image {
+  width: 100%;
+  height: 240px;
+  aspect-ratio: 3/2;
+
+  border-radius: 10px;
+}
+
+.home-slider {
+  width: 85%;
+}
+
 .carouselBanner {
   z-index: -1;
-
-  filter:brightness(0.5);
-
- 
+  filter: brightness(0.5);
   height: 100%;
   width: 100%;
-  background-color:#02070cb8!important;
+  background-color: #02070cb8 !important;
   /* background: rgba(12, 4, 4, 0.238); */
 }
 
+.home-slider-image {
+  width: 170px;
+}
+
+@media (max-width: 991px) {
+  .carouselHeading {
+    font-size: 40px !important;
+  }
+  .carouselParagraph {
+    font-size: 20px !important;
+  }
+  .home-page-last-card {
+    margin-top: 25px;
+    width: 90%;
+    height: 490px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #000000;
+    border-radius: 10px;
+  }
+
+  .home-slider {
+    width: 100%;
+  }
+
+  .HomeContentContainer {
+    position: relative;
+    transform: translateY(150px);
+    opacity: 0;
+    transition: all 1s ease;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .home-page-content-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding-top: 10px;
+    padding-left: 3px;
+  }
+}
+
+@media screen and (max-width: 720px) {
+  .home-slider {
+    width: 50%;
+  }
+  .home-slider-image {
+    width: 100px;
+  }
+}

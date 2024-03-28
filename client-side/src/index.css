@@ -29,7 +29,91 @@ code {
   font-size: 17px;
 }
 
+.omnifinity-sub-heading {
+  text-align: center;
+  font-weight: 600;
+  color: white;
+  font-size: 38px;
+}
+
+.omnifinity-description {
+  font-size: 16px;
+  font-weight: 500;
+  color: #aaaaaa;
+}
+
+.omnifinity-card-heading {
+  font-size: 20px;
+  font-weight: 500;
+  color: white;
+}
+
+.omnifinity-card-para {
+  font-size: 16px;
+  font-weight: 500;
+  text-align: start;
+  color: #aaaaaa;
+}
+
+.omnifinity-button-active {
+  border-radius: 10px;
+  padding: 10px;
+  font-size: 16px;
+  outline: none;
+  font-weight: 600;
+  width: 170px;
+  border: none;
+  background: #fff;
+  color: rgba(0, 0, 0, 0.745);
+}
+.omnifinity-button-inactive {
+  font-size: 16px;
+  font-weight: 600;
+  width: 170px;
+  color: white;
+  border-radius: 10px;
+  padding: 10px;
+  border: none;
+  outline: none;
+  background: #3c3c3c;
+  cursor: pointer;
+}
+
+.omnifinity-label {
+  color: #e3e5e7;
+  font-weight: 500;
+  font-size: 16px;
+  text-align: start;
+}
+
+@media screen and (max-width: 1200px) {
+  .omnifinity-sub-heading {
+    text-align: center;
+    font-weight: 600;
+    color: white;
+    font-size: 36px;
+  }
+}
+
 @media screen and (max-width: 512px) {
+  .omnifinity-sub-heading {
+    text-align: center;
+    font-weight: 600;
+    color: white;
+    font-size: 34px;
+  }
+  .omnifinity-card-heading {
+    font-size: 20px;
+    font-weight: 500;
+    color: white;
+  }
+
+  .omnifinity-card-para {
+    font-size: 16px;
+    font-weight: 500;
+    text-align: center;
+    color: #aaaaaa;
+  }
   .omnifinity-button {
     height: auto;
     width: auto;

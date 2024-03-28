@@ -31,20 +31,18 @@ class ResellerPolarian extends Component {
           </div>
         ) : (
           <div className="resellar-polarian-main-container container-fluid">
-            <div className="siemens-resellar-polarian-card row ">
+            <div className="siemens-resellar-polarian-card row mt-4 ">
               <div className="reseller-polarian-side-description col-12 col-md-6">
                 <div className="resellar-polarian-card-description">
-                  <h1 className="resellar-polarian-card-description-heading">
-                    SIEMENS POLARION
-                  </h1>
-                  <p className="resellar-polarian-card-description-para">
+                  <h1 className="omnifinity-sub-heading">SIEMENS POLARION</h1>
+                  <p className="omnifinity-description">
                     Omnifinity is Siemens Polarion Channel partner in India.
                   </p>
-                  <p className="resellar-polarian-card-description-para">
+                  <p className="omnifinity-description">
                     Omnifinity have been working in Polarion ALM space since
                     2014 even before Siemens acquisition of Polarion.
                   </p>
-                  <p className="resellar-polarian-card-description-para">
+                  <p className="omnifinity-description">
                     We have been delivering flawless services across global to
                     various industries such as Automotive, Aerospace, Oil & Gas
                     and Life Science.
@@ -70,7 +68,7 @@ class ResellerPolarian extends Component {
               </div>
               <div className="reseller-polarian-side-description col-12 col-md-6">
                 <div className="resellar-polarian-card-description">
-                  <h1 className="resellar-polarian-card-description-heading">
+                  <h1 className="omnifinity-sub-heading">
                     BENEFITS & VALUE ADDITION OF POLARION
                   </h1>
                   <ul className="labyrinth-offering-unorderedlist-contianer">
@@ -113,10 +111,10 @@ class ResellerPolarian extends Component {
                         />
                       </div>
                       <div className="content">
-                        <h1 className="polarian-resellsr-card-heading">
+                        <h1 className="omnifinity-card-heading">
                           SAFe for Polarion
                         </h1>
-                        <p className="polarian-resellar-card-para">
+                        <p className="omnifinity-card-para">
                           Labyrinth has successfully implemented SAFe (Agile
                           Scaled Framework) at several customers.
                         </p>
@@ -131,10 +129,10 @@ class ResellerPolarian extends Component {
                         <img src={polarionmendixicon} alt="seo-friendly" />
                       </div>
                       <div className="content">
-                        <h1 className="polarian-resellsr-card-heading">
+                        <h1 className="omnifinity-card-heading">
                           Medical Devices
                         </h1>
-                        <p className="polarian-resellar-card-para">
+                        <p className="omnifinity-card-para">
                           Labyrinth implemented Polarion solution at Med devices
                           companies and helped them with FDA 21 Part 11, Part
                           820, IEC 62304, ISO 14971 compliance, saved their
@@ -155,10 +153,10 @@ class ResellerPolarian extends Component {
                         />
                       </div>
                       <div className="content">
-                        <h1 className="polarian-resellsr-card-heading">
+                        <h1 className="omnifinity-card-heading">
                           Embedded Systems
                         </h1>
-                        <p className="polarian-resellar-card-para">
+                        <p className="omnifinity-card-para">
                           Automate systems engineering and develop quality
                           software and achieve high efficiency and ROI with
                           Polarion Application Life Cycle Management.
@@ -174,10 +172,8 @@ class ResellerPolarian extends Component {
                         <img src={polarioanautomotiveicon} alt="theme" />
                       </div>
                       <div className="content">
-                        <h1 className="polarian-resellsr-card-heading">
-                          Automotive
-                        </h1>
-                        <p className="polarian-resellar-card-para">
+                        <h1 className="omnifinity-card-heading">Automotive</h1>
+                        <p className="omnifinity-card-para">
                           Achieve ISO 26262, ASPICE and CMMI standards by
                           implementing Polarion.
                         </p>
@@ -196,10 +192,8 @@ class ResellerPolarian extends Component {
                         />
                       </div>
                       <div className="content">
-                        <h1 className="polarian-resellsr-card-heading">
-                          Aerospace
-                        </h1>
-                        <p className="polarian-resellar-card-para">
+                        <h1 className="omnifinity-card-heading">Aerospace</h1>
+                        <p className="omnifinity-card-para">
                           Polarion offers guaranteed end-to-end traceability for
                           DO-178C, quickly bring your products to market by 50%
                           reduce time with improved quality and safety.

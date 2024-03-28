@@ -17,7 +17,7 @@
   top: 19% !important;
   width: 100%;
   text-align: left;
-  font-family: "PT Sans";
+
   color: #ffffff;
 }
 .AnalyticsSubHeadings {
@@ -37,7 +37,6 @@
   padding-left: 50px !important;
 }
 @media (max-width: 1024px) {
-
   .AnalyticsHeading {
     font-size: 45px !important;
     font-weight: bold;
@@ -51,9 +50,7 @@
   }
 }
 
-
-
-@media(min-width:280px) and (max-width:1023px){
+@media (min-width: 280px) and (max-width: 1023px) {
   .AnalyticsCardsContainer {
     margin-top: 9px !important;
   }
@@ -102,7 +99,7 @@
   cursor: pointer;
 }
 
-@media (min-width:1024px){
+@media (min-width: 1024px) {
   .AnalyticsCardsContainer {
     margin-top: -400px !important;
   }
@@ -111,8 +108,7 @@
     top: 19% !important;
     width: 100%;
     text-align: left;
-    font-family: "PT Sans";
+
     color: #ffffff;
   }
-  
 }

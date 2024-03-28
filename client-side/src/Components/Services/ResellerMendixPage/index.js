@@ -3,7 +3,7 @@ import "./index.css";
 
 import { BeatLoader } from "react-spinners";
 import medixsideimage from "../../Images/medixsideimage.webp";
-import mendixbanner from "../../Images/mendixremovebg.webp";
+import mendixbanner from "../../../images/mendixlogo.png";
 import mendix3 from "../../Images/mendix3.webp";
 import mendixappicon from "../../Images/mendixiappicon.webp";
 import mendixcloudicon from "../../Images/mendixcloudicon.webp";
@@ -62,13 +62,11 @@ class ResellerMendix extends Component {
 
             <div className="reseller-mendix-side-description">
               <div className="mendix-card-description">
-                <h1 className="mendix-card-description-heading">
-                  SIEMENS MENDIX
-                </h1>
+                <h1 className="omnifinity-sub-heading">SIEMENS MENDIX</h1>
                 <p className="mendix-card-description-para">
                   Omnifinity is Siemens Mendix Channel partner in India.
                 </p>
-                <p className="mendix-card-description-para">
+                <p className="omnifinity-description">
                   Omnifinity have been working with Mendix application
                   development space since 2019 even before Siemens acquisition
                   of Polarion. Omnifinity is your go-to destination for
@@ -79,7 +77,7 @@ class ResellerMendix extends Component {
                   your digital initiatives. Let's embark on this exciting
                   journey together and empower innovation with Omnifinity.
                 </p>
-                <p className="mendix-card-description-para">
+                <p className="omnifinity-description">
                   We have been delivering flawless services across global to
                   various industries such as Automotive, Aerospace, Oil & Gas
                   and Life Sciences.
@@ -103,9 +101,7 @@ class ResellerMendix extends Component {
               </div>
               <div className="reseller-mendix-side-description-2">
                 <div className="mendix-card-description-2">
-                  <h1 className="mendix-card-description-heading">
-                    LABYRINTH OFFERING
-                  </h1>
+                  <h1 className="omnifinity-sub-heading">LABYRINTH OFFERING</h1>
                   <ul className="labyrinth-offering-unorderedlist-contianer">
                     <li>Installation, upgrades and maintenance of Mendix</li>
                     <li>Implementation (Large & Small)</li>
