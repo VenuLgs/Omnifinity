@@ -34,6 +34,8 @@ import SapOnGoogle from "./Components/Solutions/SapOnGoogleCloud/SapOnGoogle.js"
 import RetailEndToEnd from "./Components/Solutions/RetailEndToEnd/RetailEndToEnd.js";
 import SapModerization from "./Components/Solutions/SapModerization/SapModerization.js";
 import News from "./Components/Insights/News/News.js";
+import DetailedBlog1 from "./Components/Insights/News/Blogs/DetailedBlog1.js";
+import DetailedBlog2 from "./Components/Insights/News/Blogs/DetailedBlog2.js";
 
 function App() {
   const location = useLocation();
@@ -129,6 +131,8 @@ function App() {
         <Route path="/AnalyticsBI" element={<Analytics />} />
         <Route path="/polarionPage" element={<ResellerPolarionPage />} />
         <Route path="/solutions/open-finance" element={<OpenFinance />} />
+        <Route path="/blogDetails/1" element={<DetailedBlog1 />} />
+        <Route path="/blogDetails/2" element={<DetailedBlog2 />} />
       </Routes>
       {!isInsideAdminPanel && <Footer />}
     </>
