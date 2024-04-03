@@ -21,10 +21,12 @@ import service1 from "../Images/enterprisesystems.png";
 import service2 from "../Images/innovations.png";
 
 import homepage1 from "../../images/HomePage/homepage1.webp";
-import homepage2 from "../../images/HomePage/homepage2.webp";
 import homepage3 from "../../images/HomePage/homepage3.webp";
-import oracle from "../../images/blog1.jpg";
-import homepage4 from "../../images/HomePage/homepage4.webp";
+import oracleBanner from "../../images/blog1.jpg";
+import mendix from "../../images/mendixBanner.png";
+import mendixService from "../../images/mendix.jpg";
+import polarion from "../../images/polarion-logo.webp";
+import oracle from "../../images/oracle.png";
 
 export default function HomePage() {
   const [state, updateState] = useState("EnterpriseSystems");
@@ -141,13 +143,13 @@ export default function HomePage() {
   const Banners = [
     {
       projectId: 1,
-      imageUrl: homepage3,
+      imageUrl: mendix,
       title: "MENDIX",
       description: "Rapid Application Development with Mendix",
     },
     {
       projectId: 2,
-      imageUrl: oracle,
+      imageUrl: oracleBanner,
 
       title: "ORACLE",
       description: "Transform Your Business with Oracle Cloud",
@@ -185,28 +187,28 @@ export default function HomePage() {
 
   const HomeCards = [
     {
+      link: "Oracle",
       projectId: 1,
-      title: "Open Finance",
-      imageUrl:
-        "https://27058982.fs1.hubspotusercontent-eu1.net/hubfs/27058982/ACP/Untitled%20design%20(20).jpg",
+      title: "Oracle",
+      imageUrl: oracle,
       description:
-        "Advance your financial services with intelligent applications and technologies to transform your business models and deliver an unparalleled customer experience in the digital economy.",
+        "Advance your financial services with intelligent applications and technologies to transform your business models and deliver an unparalleled customer experience in the digital economy.Accelerate innovation and optimize costs with our expert Oracle PaaS and IaaS services.",
     },
     {
+      link: "mendixPage",
       projectId: 2,
-      title: "SAP Modernization",
+      title: "Mendix",
       description:
-        "Whether you need to migrate from SAP ECC to S/4 HANA or perform infrastructure modernization, we can help you develop a tailor-made strategy for all your needs.",
-      imageUrl:
-        "https://27058982.fs1.hubspotusercontent-eu1.net/hubfs/27058982/jeshoots-com-sMKUYIasyDM-unsplash.jpg",
+        "Omnifinity is Siemens Mendix Channel partner in India. Omnifinity have been working with Mendix application development space since 2019 even before Siemens acquisition of Polarion. ",
+      imageUrl: mendixService,
     },
     {
+      link: "polarionPage",
       projectId: 3,
-      title: "SAP on GCP",
+      title: "Polarion",
       description:
-        "Leverage Google Cloud Technologies to improve processes and maximize efficiency in your business. Adopt secured cloud-native technologies and accelerate innovation in the right direction.",
-      imageUrl:
-        "	https://27058982.fs1.hubspotusercontent-eu1.net/hubfs/27058982/pexels-deepanker-verma-1482061.jpg",
+        "Omnifinity is Siemens Polarion Channel partner in India.Omnifinity have been working in Polarion ALM space since 2014 even before Siemens acquisition of Polarion.",
+      imageUrl: polarion,
     },
   ];
 
@@ -474,7 +476,7 @@ export default function HomePage() {
       <div className="container">
         <div className="row mt-5 mb-5">
           <div className="col-12">
-            <h1 className="omnifinity-sub-heading">FEATURED SOLUTIONS</h1>
+            <h1 className="omnifinity-sub-heading">FEATURED SERVICES</h1>
           </div>
           <div className="home-page-last-cards-container">
             {" "}
@@ -491,7 +493,7 @@ export default function HomePage() {
                   <div className="d-flex justify-content-center w-100 p-2">
                     <button
                       className="omnifinity-button-inactive"
-                      onClick={() => navigate("/contactUs")}
+                      onClick={() => navigate(`/${each.link}`)}
                     >
                       Learn More
                     </button>

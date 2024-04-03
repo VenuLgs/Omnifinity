@@ -3,6 +3,7 @@ import blog1 from "../../../images/blog1.jpg";
 import design2 from "../../../images/Insights/Blogs/design 2.jpg";
 import { FaFacebookSquare, FaLinkedin } from "react-icons/fa";
 import { FaSquareXTwitter } from "react-icons/fa6";
+import { useNavigate } from "react-router-dom";
 
 const cardsData = [
   {
@@ -30,6 +31,7 @@ const cardsData = [
 ];
 
 const Blogs = () => {
+  const navigate = useNavigate();
   return (
     <div className="blogs-main-container">
       <div className="saphana-first-container">
@@ -43,7 +45,11 @@ const Blogs = () => {
       <div className="news-cards-main-container">
         <div className="news-cards-holding-container">
           {cardsData.map((el) => (
-            <div class="news-card" key={el.id}>
+            <div
+              class="news-card"
+              key={el.id}
+              onClick={() => navigate(`/blogDetails/${el.id}`)}
+            >
               <img
                 src={el.img}
                 alt=" of Omnifinity joining LinkedWorld Global Alliance"

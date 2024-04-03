@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 import "./EnterpriseSystems.css";
 import { Fade } from "react-awesome-reveal";
@@ -61,6 +61,8 @@ const EnterpriseSystems = () => {
     },
   ];
 
+  const navigate = useNavigate();
+
   return (
     <div className="enterprise-systems-main-container">
       <div className="enterprise-systems-first-container">
@@ -119,7 +121,12 @@ const EnterpriseSystems = () => {
         </div> */}
       </div>
       <div className="enterprise-systems-third-container">
-        <button className="omnifinity-button-inactive">Contact Us</button>
+        <button
+          className="omnifinity-button-inactive"
+          onClick={() => navigate("/contactUs")}
+        >
+          Contact Us
+        </button>
       </div>
     </div>
   );

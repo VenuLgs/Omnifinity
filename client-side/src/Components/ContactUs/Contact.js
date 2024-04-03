@@ -15,7 +15,6 @@ const Data = [
     imageUrl: <FaCanadianMapleLeaf className="cantact-us-icon" />,
     title: "Canada",
     description: "886 lakewood north west edmonton alberta",
-    phone: "+44 (0) 203 580 4343",
   },
   {
     projectId: 2,
@@ -23,7 +22,6 @@ const Data = [
     title: "India ",
     description:
       "LGS office Cyber Space Building, 5th Floor, Madhapur Hi-Tech City, 500081",
-    phone: "+1 347 701 4221",
   },
 ];
 
@@ -49,7 +47,6 @@ export default function Contact() {
                 <p className="contact-us-card-description">
                   {each.description}
                 </p>
-                <p className="contact-us-card-description">{each.phone}</p>
               </Fade>
             </div>
           ))}
