@@ -100,7 +100,9 @@ class ResellerMendix extends Component {
               </div>
               <div className="reseller-mendix-side-description-2">
                 <div className="mendix-card-description-2">
-                  <h1 className="omnifinity-sub-heading">LABYRINTH OFFERING</h1>
+                  <h1 className="omnifinity-sub-heading">
+                    OMNIFINITY OFFERING
+                  </h1>
                   <ul className="labyrinth-offering-unorderedlist-contianer">
                     <li>Installation, upgrades and maintenance of Mendix</li>
                     <li>Implementation (Large & Small)</li>

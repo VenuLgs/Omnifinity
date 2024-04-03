@@ -23,6 +23,7 @@ import service2 from "../Images/innovations.png";
 import homepage1 from "../../images/HomePage/homepage1.webp";
 import homepage2 from "../../images/HomePage/homepage2.webp";
 import homepage3 from "../../images/HomePage/homepage3.webp";
+import oracle from "../../images/blog1.jpg";
 import homepage4 from "../../images/HomePage/homepage4.webp";
 
 export default function HomePage() {
@@ -141,30 +142,23 @@ export default function HomePage() {
     {
       projectId: 1,
       imageUrl: homepage3,
-      title: "Operate",
-      description:
-        "Focus on Mendix application development. Use relevant imagery and headlines like Rapid Application Development with Mendix",
+      title: "MENDIX",
+      description: "Rapid Application Development with Mendix",
     },
     {
       projectId: 2,
-      imageUrl: homepage2,
+      imageUrl: oracle,
 
-      title: "BUILD YOUR DIGITAL CORE",
-      description:
-        "Highlight Oracle Cloud solutions. Consider a headline like Transform Your Business with Oracle Cloud",
+      title: "ORACLE",
+      description: "Transform Your Business with Oracle Cloud",
     },
     {
       projectId: 3,
       imageUrl: homepage1,
 
-      title: "Embrace the AI Transformation",
-      description: "Polarion",
-    },
-    {
-      projectId: 4,
-      imageUrl: homepage4,
-      title: "Innovate",
-      description: "Harness Cutting-Edge Frameworks for Business Innovation",
+      title: "Polarion",
+      description:
+        "Achieve agility and get full control over your cyber-physical systems application lifecycle with Polarion",
     },
   ];
 

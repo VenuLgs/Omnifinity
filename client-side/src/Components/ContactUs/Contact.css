@@ -45,3 +45,8 @@
 .contact-us-input::placeholder {
   color: #cccaca;
 }
+
+.cantact-us-icon {
+  font-size: 80px;
+  color: white;
+}

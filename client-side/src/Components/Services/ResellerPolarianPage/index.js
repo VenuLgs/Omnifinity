@@ -115,7 +115,7 @@ class ResellerPolarian extends Component {
                           SAFe for Polarion
                         </h1>
                         <p className="omnifinity-card-para">
-                          Labyrinth has successfully implemented SAFe (Agile
+                          Omnifinity has successfully implemented SAFe (Agile
                           Scaled Framework) at several customers.
                         </p>
                       </div>
@@ -133,9 +133,9 @@ class ResellerPolarian extends Component {
                           Medical Devices
                         </h1>
                         <p className="omnifinity-card-para">
-                          Labyrinth implemented Polarion solution at Med devices
-                          companies and helped them with FDA 21 Part 11, Part
-                          820, IEC 62304, ISO 14971 compliance, saved their
+                          Omnifinity implemented Polarion solution at Med
+                          devices companies and helped them with FDA 21 Part 11,
+                          Part 820, IEC 62304, ISO 14971 compliance, saved their
                           overall cost by 40% to 50%.
                         </p>
                       </div>

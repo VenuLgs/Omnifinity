@@ -139,8 +139,8 @@
 }
 
 .aboutus-global-color-image {
-  height: 100px;
-  width: 100px;
+  height: 120px;
+  width: 120px;
 }
 
 .aboutus-global-color-text {
@@ -166,6 +166,7 @@
   flex-direction: column;
   padding: 20px;
   margin: 2%;
+  gap: 10px;
 }
 
 .aboutus-our-values-text-image-container:hover {
