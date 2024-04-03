@@ -177,3 +177,13 @@
   align-items: center !important;
   justify-content: center !important;
 }
+
+.footer-links-list {
+  list-style-type: none;
+}
+
+.footer-link {
+  font-size: 16px;
+  color: white;
+  text-decoration: none;
+}

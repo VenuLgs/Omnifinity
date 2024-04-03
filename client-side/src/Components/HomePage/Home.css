@@ -115,7 +115,7 @@
 
 .carouselBanner {
   z-index: -1;
-  filter: brightness(0.5);
+  filter: brightness(0.7);
   height: 100%;
   width: 100%;
   background-color: #02070cb8 !important;

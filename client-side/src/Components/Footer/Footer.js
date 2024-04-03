@@ -57,70 +57,47 @@ export default function Footer() {
             </div>
           </div>
           <div className="col-12 col-md-3 mt-3">
-            <ul className="text-content p-3 text-center">
-              <li className="mt-2 mb-2">
-                <Link
-                  to="/enterprise-systems/sap-hana"
-                  style={{ textDecoration: "none", color: "#ffffff" }}
-                >
+            <ul className="p-3 footer-links-list ">
+              <li className="mt-2 mb-2 ">
+                <Link to="/Oracle" className="footer-link">
                   {" "}
-                  SAP S/4HANA
+                  Oracle
                 </Link>
               </li>
               <li className="mt-2 mb-2">
-                <Link  style={{ textDecoration: "none", color: "#ffffff" }} to="/enterprise-systems/sap-business-by-design">SAP Business ByDesign</Link>
+                <Link to="/Paas" className="footer-link">
+                  Paas
+                </Link>
               </li>
               <li className="mt-2 mb-2">
-                <Link  style={{ textDecoration: "none", color: "#ffffff" }} to="/enterprise-systems/sap-business-one">SAP Business One</Link>
+                <Link to="/Iaas" className="footer-link">
+                  Iaas
+                </Link>
               </li>
               <li className="mt-2 mb-2">
-                <Link  style={{ textDecoration: "none", color: "#ffffff" }} to="/enterprise-systems/sap-customer-checkout">SAP Customer Checkout</Link>
-              </li>
-              <li className="mt-2 mb-2">
-                <Link  style={{ textDecoration: "none", color: "#ffffff" }} to="/enterprise-systems/sap-ariba">SAP Ariba</Link>
+                <Link to="/mendixPage" className="footer-link">
+                  Mendix
+                </Link>
               </li>
             </ul>
           </div>
           <div className="col-12 col-md-3 mt-3">
-            <ul className="text-content p-3 text-center">
+            <ul className="p-3 footer-links-list ">
               <li className="mt-2 mb-2">
-                <Link  style={{ textDecoration: "none", color: "#ffffff" }} to="/ApplicationDevelopment">APPLICATION DEVELOPMENT</Link>
+                <Link to="/polarionPage" className="footer-link">
+                  Polarion
+                </Link>
               </li>
               <li className="mt-2 mb-2">
-                <Link   style={{ textDecoration: "none", color: "#ffffff" }} to="/AnalyticsBI">Analytics & BI</Link>
-              </li>
-              <li className="mt-2 mb-2">
-                <Link  style={{ textDecoration: "none", color: "#ffffff" }} to="/digitalIdentity">Digitiz Identity</Link>
-              </li>
-              <li className="mt-2 mb-2">
-                <Link  style={{ textDecoration: "none", color: "#ffffff" }} to="/digitalFinance">Digital Financial Services</Link>
+                <Link to="/AnalyticsBI" className="footer-link">
+                  Analytics & BI
+                </Link>
               </li>
             </ul>
           </div>
 
-          <div className="col-12 col-md-3 mt-3">
-            <ul className="text-content text-center p-3">
-              <li className="mt-2 mb-2">
-                <Link  style={{ textDecoration: "none", color: "#ffffff" }} to="/managed-services/devops">DEVOPS</Link>
-              </li>
-              <li className="mt-2 mb-2">
-                <Link  style={{ textDecoration: "none", color: "#ffffff" }} to="/managed-services/manage-cloud">MANAGED CLOUD</Link>
-              </li>
-              <li className="mt-2 mb-2">
-                <Link  style={{ textDecoration: "none", color: "#ffffff" }} to="/managed-services/staff-augmentation">STAFF AUGMENTATION</Link>
-              </li>
-            </ul>
-          </div>
           <div className="col-12 text-center">
             © 2024 Omnifinity. All Rights Reserved Designed & Developed with by
-            <br />{" "}
-            <a
-              href="https://labyrinthglobalsolutions.com/"
-              style={{ color: "#ffffff" }}
-            >
-              {" "}
-              Labyrinth Global Solutions{" "}
-            </a>
           </div>
           <div className="col-12">
             <Scroll />

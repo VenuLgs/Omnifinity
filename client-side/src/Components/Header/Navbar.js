@@ -54,45 +54,24 @@ const Navbar = () => {
                 <Link to="/Oracle" className="sub-menu-list-item">
                   <li>
                     Oracle
-                    {/* <ul className="enter-prise-menu">
-                      <Link
-                        to="/enterprise-systems/sap-hana"
-                        className="sub-menu-list-item"
-                      >
-                        <li>SAP S/4 HANA</li>
+                    <ul className="enter-prise-menu">
+                      <Link to="/Paas" className="sub-menu-list-item">
+                        <li> PaaS</li>
                       </Link>
-                      <Link
-                        to="/enterprise-systems/sap-business-by-design"
-                        className="sub-menu-list-item"
-                      >
-                        <li>SAP Business ByDesign</li>
+                      <Link to="/Iaas" className="sub-menu-list-item">
+                        <li> IaaS</li>
                       </Link>
-                      <Link
-                        to="/enterprise-systems/sap-business-one"
-                        className="sub-menu-list-item"
-                      >
-                        <li>SAP Business One</li>
-                      </Link>
-                      <Link
-                        to="/enterprise-systems/sap-customer-checkout"
-                        className="sub-menu-list-item"
-                      >
-                        <li>SAP Customer Checkout</li>
-                      </Link>
-                      <Link
-                        to="/enterprise-systems/sap-ariba"
-                        className="sub-menu-list-item"
-                      >
-                        <li>SAP Ariba</li>
+                      <Link to="/AnalyticsBI" className="sub-menu-list-item">
+                        <li>Analytics & BI</li>
                       </Link>
                     </ul>
-                    <FaCaretRight className="right-icon" /> */}
+                    <FaCaretRight className="right-icon" />
                   </li>
                 </Link>
-                <Link to="/Paas" className="sub-menu-list-item">
+                {/* <Link to="/Paas" className="sub-menu-list-item">
                   <li>
                     PaaS
-                    {/* <ul className="innovation-menu">
+                     <ul className="innovation-menu">
                       <Link to="/AnalyticsBI" className="sub-menu-list-item">
                         <li>Analytics & BI</li>
                       </Link>
@@ -112,14 +91,14 @@ const Navbar = () => {
                         <li>Digital Financial Services</li>
                       </Link>
                     </ul>
-                    <FaCaretRight className="right-icon" /> */}
+                    <FaCaretRight className="right-icon" /> 
                   </li>
-                </Link>
+                </Link> */}
 
-                <Link to="/Iaas" className="sub-menu-list-item">
+                {/* <Link to="/Iaas" className="sub-menu-list-item">
                   <li>
                     IaaS
-                    {/* <ul className="managed-menu">
+                     <ul className="managed-menu">
                       <Link
                         to="/managed-services/manage-cloud"
                         className="sub-menu-list-item"
@@ -139,12 +118,12 @@ const Navbar = () => {
                         <li>Staff Augmentation</li>
                       </Link>
                     </ul>
-                    <FaCaretRight /> */}
+                    <FaCaretRight /> 
                   </li>
-                </Link>
-                <Link to="/AnalyticsBI" className="sub-menu-list-item">
+                </Link> */}
+                {/* <Link to="/AnalyticsBI" className="sub-menu-list-item">
                   <li>Analytics & BI</li>
-                </Link>
+                </Link> */}
                 <Link to="/mendixPage" className="sub-menu-list-item">
                   <li>Mendix</li>
                 </Link>
@@ -153,7 +132,7 @@ const Navbar = () => {
                 </Link>
               </ul>
             </li>
-            <li className="nav-list-item">
+            {/* <li className="nav-list-item">
               <Link to="#" className="nav-link-item">
                 Solutions <FaCaretDown />
               </Link>
@@ -183,15 +162,15 @@ const Navbar = () => {
                   <li>Open Finance</li>
                 </Link>
               </ul>
-            </li>
+            </li> */}
             <li className="nav-list-item">
               <Link to="#" className="nav-link-item">
                 Insights <FaCaretDown />
               </Link>
               <ul className="sub-menu">
-                <Link to="/insights/news" className="sub-menu-list-item">
+                {/* <Link to="/insights/news" className="sub-menu-list-item">
                   <li>News</li>
-                </Link>
+                </Link> */}
                 <Link to="/insights/blogs" className="sub-menu-list-item">
                   <li>Blogs</li>
                 </Link>

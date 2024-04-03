@@ -1,9 +1,9 @@
 import React from "react";
-import Contact1 from "../Images/contact1.webp";
-import Contact2 from "../Images/contact2.webp";
-import Contact3 from "../Images/contact3.webp";
-import Contact4 from "../Images/conatct4.webp";
+
 import ReCAPTCHA from "react-google-recaptcha";
+import { GiIndiaGate } from "react-icons/gi";
+import { FaCanadianMapleLeaf } from "react-icons/fa";
+
 import { Fade } from "react-awesome-reveal";
 // import Footer from "../Footer/Footer"
 import "./Contact.css";
@@ -12,32 +12,18 @@ const TEST_SITE_KEY = "6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI";
 const Data = [
   {
     projectId: 1,
-    imageUrl: Contact1,
-    title: "London",
-    description: "Two Kingdom Street, 6th Floor, Paddington,London W2 6BD ",
+    imageUrl: <FaCanadianMapleLeaf className="cantact-us-icon" />,
+    title: "Canada",
+    description: "886 lakewood north west edmonton alberta",
     phone: "+44 (0) 203 580 4343",
   },
   {
     projectId: 2,
-    imageUrl: Contact2,
-    title: "New York",
-    description: "405 Lexington Avenue, The Chrysler Building,New York 10174",
-    phone: "+1 347 701 4221",
-  },
-  {
-    projectId: 3,
-    imageUrl: Contact3,
-    title: "Dubai",
+    imageUrl: <GiIndiaGate className="cantact-us-icon" />,
+    title: "India ",
     description:
-      "Liberty House, Sheikh Zayed Rd, Trade Centre, DIFC Dubai 417624",
-    phone: "+971 4 446 1890",
-  },
-  {
-    projectId: 4,
-    imageUrl: Contact4,
-    title: "Riyadh",
-    description: "Akaria, Olayya Street,PO Box 295879,Riyadh 11351",
-    phone: "+966 11 4600 670",
+      "LGS office Cyber Space Building, 5th Floor, Madhapur Hi-Tech City, 500081",
+    phone: "+1 347 701 4221",
   },
 ];
 
@@ -56,14 +42,9 @@ export default function Contact() {
             </div>
           </div>
           {Data.map((each, index) => (
-            <div className="col-12 col-md-3 text-center w-90 mt-3 mb-3 p-4">
+            <div className="col-12 col-md-6 text-center w-90 mt-3 mb-3 p-4">
               <Fade direction="up">
-                <img
-                  src={each.imageUrl}
-                  height="150"
-                  width="150"
-                  alt={`${index + 1}`}
-                />
+                {each.imageUrl}
                 <h6 className="omnifinity-card-heading">{each.title}</h6>
                 <p className="contact-us-card-description">
                   {each.description}

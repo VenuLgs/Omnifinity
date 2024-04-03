@@ -1,104 +1,37 @@
 import React from "react";
 import "./AboutUs.css";
 import handshake from "../../images/handshake.webp";
-import worldMap from "../../images/map.webp";
-import green from "../../images/green.webp";
-import yellow from "../../images/yellow.webp";
-import blue from "../../images/blue.webp";
-import purple from "../../images/purple.webp";
-import profile from "../../images/profile.png";
+import data from "../../images/data.png";
+import mendix from "../../images/mendix.jpg";
+import polarion from "../../images/polarion-logo.webp";
+import oracle from "../../images/oracle.png";
 
 const ourValues = [
   {
     id: 0,
     head: "We Craft Your Data Symphony",
-    image: green,
+    image: data,
     desc: "More than just app builders, we're strategic partners. Our Canadian team of experts understands your unique needs. We'll analyze your data landscape, then design tailored solutions that integrate seamlessly with your goals.",
   },
   {
     id: 1,
     head: "Mendix Maestro",
-    image: green,
+    image: mendix,
     desc: "As certified Mendix pros, we deliver stunning, user-centric applications faster and more cost-effectively. Your digital tools will be intuitive and a breeze to maintain.",
   },
   {
     id: 2,
     head: "Polarion Precision",
-    image: green,
+    image: polarion,
     desc: "Flawless execution matters. Polarion's ALM platform ensures top-tier quality control throughout development. Your apps launch polished and ready to perform.",
   },
   {
     id: 3,
     head: "Oracle Cloud Your Limitless Stage: ",
-    image: green,
+    image: oracle,
     desc: "Reach new audiences and scale effortlessly with Oracle Cloud's secure infrastructure. We'll future-proof your tech stack for continued growth.",
   },
 ];
-
-const ourGlobal = [
-  {
-    id: 0,
-    head: "Offices",
-    image: green,
-    desc: "London | New York | Riyadh | Dubai",
-  },
-  {
-    id: 1,
-    head: "Delivery Centers",
-    image: purple,
-    desc: "Lahore | Karachi | Islamabad",
-  },
-  {
-    id: 2,
-    head: "Resource Base",
-    image: yellow,
-    desc: "Egypt | Algeria | India | Germany",
-  },
-  {
-    id: 3,
-    head: "Project Sites",
-    image: blue,
-    desc: "Bahrain | Caribbean Islands | Egypt | Ethiopia | Ghana | Iraq | Ivory Coast | Kenya | Kuwait | KSA | Malaysia | Malawi | Morocco | Oman | Qatar | Tunisia | UAE | UK | USA",
-  },
-];
-
-// const leadershipCards = [
-//   {
-//     id: 0,
-//     name: "Name",
-//     deignation: "Designation",
-//     image: profile,
-//     link: "profile",
-//   },
-//   {
-//     id: 1,
-//     name: "Name",
-//     image: profile,
-//     deignation: "Designation",
-//     link: "profile",
-//   },
-//   {
-//     id: 2,
-//     name: "Name",
-//     image: profile,
-//     deignation: "Designation",
-//     link: "profile",
-//   },
-//   {
-//     id: 3,
-//     name: "Name",
-//     image: profile,
-//     deignation: "Designation",
-//     link: "profile",
-//   },
-//   {
-//     id: 4,
-//     name: "Name",
-//     image: profile,
-//     deignation: "Designation",
-//     link: "profile",
-//   },
-// ];
 
 const AboutUs = () => {
   return (
