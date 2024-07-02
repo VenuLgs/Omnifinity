@@ -21,38 +21,35 @@ export default function Footer() {
 
             <div className="footer-social-media-icons-main-container">
               <div className="contact-page-social-icon-container contact-page-facebook-container">
-                <a
-                  href="https://m.facebook.com/LabyrinthGlobalSolutions/"
-                  target="blank"
+                <p
+                
                   className="contact-page-social-icon-anchor"
                 >
                   <span className="footer-social-media-span-ele">
                     <FaFacebookF className="contact-page-social-icon" />
                   </span>
-                </a>
+                </p>
               </div>
 
               <div className="contact-page-social-icon-container contact-page-instagram-container">
-                <a
-                  href="https://instagram.com/labyrinth_global_solutions?igshid=NTc4MTIwNjQ2YQ=="
-                  target="blank"
+                <p
+                
                   className="contact-page-social-icon-anchor"
                 >
                   <span>
                     <FaInstagramSquare className="contact-page-social-icon" />
                   </span>
-                </a>
+                </p>
               </div>
               <div className="contact-page-social-icon-container contact-page-linkedin-container">
-                <a
-                  href="https://www.linkedin.com/company/14662183/admin/feed/posts/"
-                  target="blank"
+                <p
+               
                   className="contact-page-social-icon-anchor"
                 >
                   <span>
                     <FaLinkedin className="contact-page-social-icon" />
                   </span>
-                </a>
+                </p>
               </div>
             </div>
           </div>
@@ -97,7 +94,16 @@ export default function Footer() {
           </div>
 
           <div className="col-12 text-center">
-            © 2024 Omnifinity. All Rights Reserved Designed & Developed with by
+            © 2024 Omnifinity. All Rights Reserved Designed & Developed by
+          </div>
+          <div className="col-12 text-center">
+            <a
+              href="https://www.labyrinthglobalsolutions.com/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Labyrinth Global Solutions
+            </a>
           </div>
           <div className="col-12">
             <Scroll />
